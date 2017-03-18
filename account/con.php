@@ -50,7 +50,8 @@
          $_SESSION['PERFIL'] = $member['perfil'];
          $_SESSION['FOTO'] = $member['foto'];
          $_SESSION['ROL'] = $member['rol'];
-         
+         $_SESSION['TEL'] = $member['telefono'];
+
            
             
          session_write_close();

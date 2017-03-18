@@ -524,6 +524,7 @@
 
                         soy de <?php  echo $_SESSION['CIUDAD']; ?>           
                      </div>
+
                   </div>
                </div>
             </div>
@@ -625,7 +626,13 @@
 
                         <div class="content">
                            <ul class="sidebar_widget">
-
+                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                           <a href="../registro/newtour.php">Agregar un nuevo Tour</a><br>
+                           <a href="tours_users/">Ver mis Tours</a><br><br>
+                           <a href="../registro/newtour.php">Ver mis Bicis</a><br>
+                           <a href="">Publicar una Bici</a>
+                           </li>
+                              
                            <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Escribe Una Historia</span></h2>
                                  <ul class="posts blog withthumb ">
