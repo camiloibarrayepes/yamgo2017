@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US"  data-menu="leftalign">
    <head>
-      <?php
+   <?php
    require_once('../conexion.php');
-   session_start();
-
+    session_start();
    ?>
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../wp-content/uploads/2016/12/TG-Thumb.png" />
-      <title>Registrate</title>
+      <title>Agregar Bici</title>
       <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
       <link rel='dns-prefetch' href='http://s.w.org' />
       <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; Feed" href="../feed/index.html" />
@@ -76,11 +75,11 @@
       <meta name="generator" content="WooCommerce 2.6.14" />
       <link rel="canonical" href="index.html" />
       <link rel='shortlink' href='index.html' />
-      <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ccontact-us%7C.json" />
-      <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ccontact-us%7C&format=xml.xml" />
+      <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Cpage-left-sidebar%7C.json" />
+      <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Cpage-left-sidebar%7C&format=xml.xml" />
       <meta name="generator" content="Powered by Slider Revolution 5.3.1.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
    </head>
-   <body class="page-template-default page page-id-3090 ppb_enable">
+   <body class="page-template page-template-page_l page-template-page_l-php page page-id-2452">
       <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="leftalign"/>
       <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="0"/>
       <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="0"/>
@@ -193,13 +192,13 @@
                      <a href="index.html#">Pages</a>
                      <ul class="sub-menu">
                         <li id="menu-item-2468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="../about-us/index.html">About Us</a></li>
-                        <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3090 current_page_item menu-item-3093"><a href="index.html">Contact Us</a></li>
+                        <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="../contact-us/index.html">Contact Us</a></li>
                         <li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../faqs/index.html">FAQs</a></li>
                         <li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-galleries menu-item-313"><a href="../galleries/gallery/index.html">Gallery</a></li>
                         <li id="menu-item-2456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="../page-fullwidth/index.html">Page Fullwidth</a></li>
                         <li id="menu-item-2460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2460"><a href="../page-video-header/index.html">Page + Video Background Header</a></li>
                         <li id="menu-item-2455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2455"><a href="../page-right-sidebar/index.html">Page Right Sidebar</a></li>
-                        <li id="menu-item-2454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2454"><a href="../page-left-sidebar/index.html">Page Left Sidebar</a></li>
+                        <li id="menu-item-2454" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2452 current_page_item menu-item-2454"><a href="index.html">Page Left Sidebar</a></li>
                      </ul>
                   </li>
                   <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15">
@@ -423,13 +422,13 @@
                                           <a href="index.html#">Pages</a>
                                           <ul class="sub-menu">
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="../about-us/index.html">About Us</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3090 current_page_item menu-item-3093"><a href="index.html">Contact Us</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="../contact-us/index.html">Contact Us</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../faqs/index.html">FAQs</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-galleries menu-item-313"><a href="../galleries/gallery/index.html">Gallery</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="../page-fullwidth/index.html">Page Fullwidth</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2460"><a href="../page-video-header/index.html">Page + Video Background Header</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2455"><a href="../page-right-sidebar/index.html">Page Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2454"><a href="../page-left-sidebar/index.html">Page Left Sidebar</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2452 current_page_item menu-item-2454"><a href="index.html">Page Left Sidebar</a></li>
                                           </ul>
                                        </li>
                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-15">
@@ -461,14 +460,15 @@
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="../shortcodes/tabs/index.html">Tabs</a></li>
                                           </ul>
                                        </li>
-                                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-2442">
-                                          <a href="../shop/index.html">Shop</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2443"><a href="../shop/index.html">Shop Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2444"><a href="../shop/index-sidebar=1.html">Shop Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-2445"><a href="../shop/beach-shoe/index.html">Single Product Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2462"><a href="../shop/safety-set/index-sidebar=1.html">Single Product With Sidebar</a></li>
-                                          </ul>
+                                       <li>
+                                        <?php
+               if(isset($_SESSION['EMAIL'])){
+                  ?> <a href="logout.php">Cerrar Sesión</a> <?PHP
+               }
+               else{
+                  ?> <a href="../shop/index.html">Iniciar Sesión</a> <?PHP
+               }              
+               ?>
                                        </li>
                                     </ul>
                                  </div>
@@ -491,132 +491,227 @@
                </div>
             </div>
          </div>
-         <div id="page_caption" class="hasbg parallax    " style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-115070.jpeg'); height: 300px;" >
+         <div id="page_caption" class="hasbg parallax" style="height:300px; background-image:url('../wp-content/uploads/2016/12/venice-WBEUROCITIES16.jpg');" >
             <div class="page_title_wrapper">
                <div class="page_title_inner">
                   <div class="page_title_content">
-                     <h1 >Agregar Nuevo Tour	</h1>
+                    
+                       
+                     
+                      
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Begin content -->
+         <!-- Base de datos -->
+        
+         <div id="page_content_wrapper" class="hasbg ">
+            <div class="inner">
+               <!-- Begin main content -->
+               <div class="inner_wrapper">
+                  <div class="sidebar_content left_sidebar">
+                   
+
+                  <form action="../logic/logic_new_bici.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
+
+                     <h4 class="p1">Agregar Datos de la Bici</h4>
+                     <p><label> Marca<br />
+                        <span class="wpcf7-form-control-wrap your-name">
+                           <input type="text" name="marca" size="78" required/>
+                           </span> </label>
+                     </p>
+                     <p><label> Color<br>
+                        <span class="wpcf7-form-control-wrap your-name">
+                           <input type="text" name="color"  size="78" required/>
+                           </span> </label>
+                     </p>
+                      <p><label>Sube una foto de tu Bici <br />
+                        <span class="wpcf7-form-control-wrap tel-729"><input class="form-control" type="file" name="photo1" id="imagen" required/></span> </label>
+                     </p>
+                     <input style="visibility: hidden;" type="text" name="id_user" value="<?php echo $_SESSION['ID']; ?>">                     
+
+                      <p><input type="submit" value="Agregar Bici" onClick="validate()"/></p>
+                                
+                  </form>
+                              
+                    
+
+
                      
                   </div>
-               </div>
-            </div>
-         </div>
-         <div class="ppb_wrapper hasbg ">
-            <div  class="one withsmallpadding ppb_text" style="text-align:center;padding:0px 0 0px 0;margin-top:20px;" >
-               <div class="standard_wrapper">
-                  <div class="page_content_wrapper">
-                     <div class="inner">
-                        
-                     </div>
+
+                  
+                  <div class="sidebar_wrapper left_sidebar">
+
+
+                  <div class="content">
+
                   </div>
-               </div>
-            </div>
-            <div  class="one withsmallpadding ppb_text" style="text-align:left;padding:0px 0 0px 0;margin-bottom:60px;" >
-               <div class="standard_wrapper">
-                  <div class="page_content_wrapper">
-                     <div class="inner">
-                        <div style="margin:auto;width:60%">
-                           
 
-                              <div class="screen-reader-response"></div>
 
-                              <form action="../logic/logic_registro_newtour.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
-                                 
-                                 <p><label> Nombre del Tour<br />
-                                    <span class="wpcf7-form-control-wrap your-name"><input   minlength="5" type="text" name="nombre" value="" size="70" required/></span> </label>
-                                 </p>
+                     <div class="sidebar">
 
-                                 <p><label> Destino <br />
-                                    <span class="wpcf7-form-control-wrap your-email"><input type="text" name="destino" value="" size="70" required/></span> </label>
-                                 </p>
-                                 <p><label> Origen<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="origen" value="" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Fecha Salida<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="fecha_salida" value="" size="70" 
-                                     placeholder="De que Ciudad eres o donde estas?" required/></span> </label>
-                                 </p>
-                                  <p><label> Fecha Llegada<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="fecha_llegada" value="" size="70" 
-                                     placeholder="De que Ciudad eres o donde estas?" required/></span> </label>
-                                 </p>  
-                                 
-                                  <p><label> Hora Salida<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="hora_salida" value="" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Hora llegada (opcional)<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="hora_llegada" value="" size="70" /></span> </label>
-                                 </p>
-                                  <p><label> Cupos<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="cupos" value="" size="70"  required/></span> </label>
-                                 </p><br>
- <hr>
-                                 <input type="text" style="visibility: hidden;" name="id_user" value="<?php echo $_SESSION['ID']; ?>" />
-                                 
-                                  <p><label> Contacto Organizador<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="contacto" value="<?php echo $_SESSION['NAME']; ?>" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Email de Contacto<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="email" name="email_contacto" value="<?php echo $_SESSION['EMAIL']; ?>" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Telefono de Contacto<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="telefono_contacto" value="<?php echo $_SESSION['TEL']; ?>" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Valido hasta<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="vigencia" value="" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label>Sube una foto <br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input class="form-control" type="file" name="photo1" id="imagen" required/></span> </label>
-                                 </p>
-
-                                 
-
-                                <p><input type="submit" value="Registrar" onClick="validate()"/></p>
-                                
-                              </form>
+                        <div class="content">
+                           <ul class="sidebar_widget">
+                          
                               
+                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                                 <h2 class="widgettitle"><span>Escribe Una Historia</span></h2>
+                                 <ul class="posts blog withthumb ">
+                                     <form action="experiencia_logic.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
+                                    <label> Escribe una Historia para Contar</label>
+                                    <input type="text" name="titulo" value="<?php echo $row2['nombre']; ?>" size="27" maxlength="200" required/>
+                                    <br><br><span class="wpcf7-form-control-wrap your-name">
+                                    <textarea name="historia"></textarea><br><br>
+                                    <label>Sube una foto de esa historia <br />
+                                    <span class="wpcf7-form-control-wrap tel-729"><input class="form-control" type="file" name="photo1" id="imagen"></span> </label>
+                                    </p>
+                                    <input type="hidden" name="id_user" value="<?php echo $id?> ">
+                                    <input type="submit" value="Publicar">                        
+                                    </form>
+                                 </ul>
+                              </li>
 
-                             
-                           </div>
-                       
 
+
+                               <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                                 <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
+                                 <ul class="posts blog withthumb ">
+                                 <?php 
+                                 $rol=$_SESSION['ROL'];
+                                 
+                                 if($rol==1){
+                                    print "<img width='70px' src='imagenes/iconos/guia.png'>";
+                                 }
+                                 elseif ($rol==2) 
+                                 {
+                                    print "<img width='70px' src='imagenes/iconos/bike.png'>";
+                                 }
+                                 elseif ($rol==3) 
+                                 {
+                                    print "<img width='70px' src='imagenes/iconos/guia.png'>";
+
+
+                                    print "   <img width='70px' src='imagenes/iconos/bike.png'>";
+
+                                    print "<br>soy Guia y Presta Biker";
+                                 }
+
+                                   ?>
+                                 </ul>
+                              </li>
+
+
+
+                              <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                                 <h2 class="widgettitle"><span>Travel Tips</span></h2>
+                                 <ul class="posts blog withthumb ">
+                                    <li>
+                                       <div class="post_circle_thumb"><a href="../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>
+                                       <a href="../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Memorial Day to Someone Told Me to Travel</a>
+                                       <div class="post_attribute">December 10, 2016</div>
+                                    </li>
+                                    <li>
+                                       <div class="post_circle_thumb"><a href="../7-tips-for-nomads-on-a-budget/index.html"><img class="alignleft frame post_thumb" src="../wp-content/uploads/2016/12/pexels-photo-212388-150x150.jpeg" alt="" /></a></div>
+                                       <a href="../7-tips-for-nomads-on-a-budget/index.html">7 Tips For Nomads On A Budget Trips</a>
+                                       <div class="post_attribute">December 10, 2016</div>
+                                    </li>
+                                    <li>
+                                       <div class="post_circle_thumb"><a href="../taking-a-travel-blog-victory-lap/index.html"><img class="alignleft frame post_thumb" src="../wp-content/uploads/2016/12/pexels-photo-24484-150x150.jpg" alt="" /></a></div>
+                                       <a href="../taking-a-travel-blog-victory-lap/index.html">Taking A Travel Blog Victory Lap</a>
+                                       <div class="post_attribute">December 10, 2016</div>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li id="mc4wp_form_widget-6" class="widget widget_mc4wp_form_widget">
+                                 <h2 class="widgettitle">Newsletter</h2>
+                                 <script type="text/javascript">(function() {
+                                    if (!window.mc4wp) {
+                                    	window.mc4wp = {
+                                    		listeners: [],
+                                    		forms    : {
+                                    			on: function (event, callback) {
+                                    				window.mc4wp.listeners.push({
+                                    					event   : event,
+                                    					callback: callback
+                                    				});
+                                    			}
+                                    		}
+                                    	}
+                                    }
+                                    })();
+                                 </script><!-- MailChimp for WordPress v4.0.13 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                 <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-184" method="post" data-id="184" data-name="Newsletter" >
+                                    <div class="mc4wp-form-fields">
+                                       Don't miss a thing! Sign up to receive daily deals
+                                       <input type="email" name="EMAIL" placeholder="Your Email Address" required />
+                                       <br/>
+                                       <input type="submit" value="Subscribe" />
+                                       <div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></div>
+                                       <input type="hidden" name="_mc4wp_timestamp" value="1489293016" /><input type="hidden" name="_mc4wp_form_id" value="184" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+                                    </div>
+                                    <div class="mc4wp-response"></div>
+                                 </form>
+                                 <!-- / MailChimp for WordPress Plugin -->
+                              </li>
+                              <li id="grandtour_tour_posts-6" class="widget Grandtour_Tour_Posts">
+                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-26689-700x466.jpg');">
+                                    <a class="tour_image" href="../tour/colorful-singapore/index.html"></a>	
+                                    <div class="portfolio_info_wrapper">
+                                       <div class="tour_price has_discount">
+                                          <span class="normal_price">
+                                          $2,000									</span>
+                                          $1,700															
+                                       </div>
+                                       <h5>Colorful Singapore</h5>
+                                       <div class="tour_attribute_wrapper">
+                                          <div class="tour_attribute_rating">
+                                             <div class="br-theme-fontawesome-stars-o">
+                                                <div class="br-widget">
+                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <br class="clear"/>
+                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg');">
+                                    <a class="tour_image" href="../tour/hong-kong/index.html"></a>	
+                                    <div class="portfolio_info_wrapper">
+                                       <div class="tour_price has_discount">
+                                          <span class="normal_price">
+                                          $3,000									</span>
+                                          $2,400															
+                                       </div>
+                                       <h5>Hong Kong</h5>
+                                       <div class="tour_attribute_wrapper">
+                                          <div class="tour_attribute_rating">
+                                             <div class="br-theme-fontawesome-stars-o">
+                                                <div class="br-widget">
+                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a>											
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <br class="clear"/>
+                              </li>
+                           </ul>
+                        </div>
                      </div>
+                     <br class="clear"/>
+                     <div class="sidebar_bottom"></div>
                   </div>
                </div>
-            </div>
-            <div  class="one_half_bg withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-24377.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
-               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
-               <div class="page_content_wrapper">
-                  <div class="inner">
-                     <div style="margin:auto;width:100%">
-                        </p>
-                        <h2 style="color: #fff;">California</h2>
-                        <p>78 Collective Street<br />
-                           Manhattan<br />
-                           Kingston<br />
-                           United State
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div  class="one_half_bg last withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-1.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
-               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
-               <div class="page_content_wrapper">
-                  <div class="inner">
-                     <div style="margin:auto;width:100%">
-                        </p>
-                        <h2 style="color: #fff;">London</h2>
-                        <p>732/21 Second Street<br />
-                           King Street<br />
-                           Kingston<br />
-                           United Kingdom
-                        </p>
-                     </div>
-                  </div>
-               </div>
+               <!-- End main content -->
             </div>
          </div>
+         <br class="clear"/><br/>
          <br class="clear"/>
          <div class="tour_recently_view">
             <div class="standard_wrapper">
@@ -656,7 +751,7 @@
                </div>
             </div>
          </div>
-         <div id="footer" class=" ppb_wrapper">
+         <div id="footer" class=" ">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">
                   <h2 class="widgettitle">Our Awards</h2>
@@ -699,7 +794,7 @@
                </li>
             </ul>
          </div>
-         <div class="footer_bar  ppb_wrapper ">
+         <div class="footer_bar   ">
             <div class="footer_bar_wrapper ">
                <div class="menu-footer-menu-container">
                   <ul id="footer_menu" class="footer_nav">
@@ -715,10 +810,42 @@
             </div>
          </div>
       </div>
-      <div id="side_menu_wrapper" class="overlay_background">
-         <a id="close_share" href="javascript:;"><span class="ti-close"></span></a>
-      </div>
-      <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+      <script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+         if(element.addEventListener) {
+         	element.addEventListener(event,handler, false);
+         } else if(element.attachEvent){
+         	element.attachEvent('on'+event,handler);
+         }
+         }function maybePrefixUrlField() {
+         if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+         	this.value = "http://" + this.value;
+         }
+         }
+         
+         var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+         if( urlFields && urlFields.length > 0 ) {
+         for( var j=0; j < urlFields.length; j++ ) {
+         	addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+         }
+         }/* test if browser supports date fields */
+         var testInput = document.createElement('input');
+         testInput.setAttribute('type', 'date');
+         if( testInput.type !== 'date') {
+         
+         /* add placeholder & pattern to all date fields */
+         var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+         for(var i=0; i<dateFields.length; i++) {
+         	if(!dateFields[i].placeholder) {
+         		dateFields[i].placeholder = 'YYYY-MM-DD';
+         	}
+         	if(!dateFields[i].pattern) {
+         		dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+         	}
+         }
+         }
+         
+         })();
+      </script><script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
          var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
@@ -727,21 +854,21 @@
       <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/contact-us\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/page-left-sidebar\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/contact-us\/?wc-ajax=%%endpoint%%"};
+         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/page-left-sidebar\/?wc-ajax=%%endpoint%%"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/contact-us\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/page-left-sidebar\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
@@ -764,14 +891,22 @@
       <script type='text/javascript' src='../wp-content/themes/grandtour/js/custom_plugins.js'></script>
       <script type='text/javascript' src='../wp-content/themes/grandtour/js/custom.js'></script>
       <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
-      <script type='text/javascript' src='../wp-content/themes/grandtour/js/custom_onepage.js'></script>
       <script type='text/javascript' src='../wp-content/themes/grandtour/js/jquery.cookie.js'></script>
       <script type='text/javascript' src='../wp-admin/admin-ajax-action=grandtour_script_demo.php'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var mc4wp_forms_config = [];
+         /* ]]> */
+      </script>
+      <script type='text/javascript' src='../wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js'></script>
+      <!--[if lte IE 9]>
+      <script type='text/javascript' src='../wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js'></script>
+      <![endif]-->
    </body>
 </html>
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
-   Object Caching 7699/7753 objects using disk
+   Object Caching 7831/7878 objects using disk
    Page Caching using disk: enhanced
-   Database Caching 14/46 queries in 0.014 seconds using disk
+   Database Caching 13/42 queries in 0.014 seconds using disk
    
-    Served from: themes.themegoods2.com @ 2017-03-12 04:30:10 by W3 Total Cache -->
+    Served from: themes.themegoods2.com @ 2017-03-12 04:30:16 by W3 Total Cache -->

@@ -8,7 +8,7 @@
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../../wp-content/uploads/2016/12/TG-Thumb.png" />
-      <title>Mis Tours</title>
+      <title>Mis Bicis</title>
       <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
       <link rel='dns-prefetch' href='http://s.w.org' />
       <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; Feed" href="../../feed/index.html" />
@@ -532,9 +532,9 @@
                      <div class="standard_wrapper">
                         <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
                            
-                            <h4>Mis Tours </h4><br>
+                            <h4>Mis Bicis </h4><br>
                            <?php $id=$_SESSION['ID'];                           
-                           $query = "SELECT * FROM tour WHERE id_user = '$id'";
+                           $query = "SELECT * FROM bike WHERE id_user = '$id'";
                            $resultado2 = $link->query($query);
                            while($row2 = $resultado2->fetch_assoc())
                            {
@@ -550,11 +550,10 @@
                                  </a>
                                  <div class="portfolio_info_wrapper">
                                     <a class="tour_link" href="../colorful-singapore/index.html">
-                                       <h4><?php echo $row2['nombre']; ?></h4><br>
+                                       <h4 style="text-transform: capitalize;"><?php echo $row2['marca']." - ".$row2['color']; ?></h4><br>
                                     </a>
                                     <div class="tour_excerpt">
-                                       <?php echo "Fecha de Salida: ".$row2['fecha_salida']." - Desde: ".$row2['origen']; ?>
-                                       <?php echo "Fecha de Llegada: ".$row2['fecha_llegada']." - A: ".$row2['destino'];; ?>
+                                       
 
                                     </div>
                                     <div class="tour_attribute_wrapper">

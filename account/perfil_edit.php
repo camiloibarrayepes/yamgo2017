@@ -495,7 +495,7 @@
             <div class="page_title_wrapper">
                <div class="page_title_inner">
                   <div class="page_title_content">
-                     <h1 ><?php echo $_SESSION['NAME']; ?></h1>
+                     <h1 ><?php echo $_SESSION['USERNAME']; ?></h1>
                        
                      <?php
                      $id=$_SESSION['ID'];
@@ -555,7 +555,7 @@
                      </p>
                      <p><label> Email<br>
                         <span class="wpcf7-form-control-wrap your-name">
-                           <input type="email" name="email" value="<?php echo $row2['nombre']; ?>" size="78" required/>
+                           <input type="email" name="email" value="<?php echo $row2['email']; ?>" size="78" required/>
                            </span> </label>
                      </p>
                      <p><label> Telefono<br> 
@@ -629,8 +629,8 @@
                            <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                            <a href="../registro/newtour.php">Agregar un nuevo Tour</a><br>
                            <a href="tours_users/">Ver mis Tours</a><br><br>
-                           <a href="../registro/newtour.php">Ver mis Bicis</a><br>
-                           <a href="">Publicar una Bici</a>
+                           <a href="bikes_users/">Ver mis Bicis</a><br>
+                           <a href="new_bici.php">Agregar una Bici</a>
                            </li>
                               
                            <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
@@ -638,7 +638,7 @@
                                  <ul class="posts blog withthumb ">
                                      <form action="experiencia_logic.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
                                     <label> Escribe una Historia para Contar</label>
-                                    <input type="text" name="titulo" value="<?php echo $row2['nombre']; ?>" size="25" maxlength="200" required/>
+                                    <input type="text" name="titulo" value="<?php echo $row2['nombre']; ?>" size="27" maxlength="200" required/>
                                     <br><br><span class="wpcf7-form-control-wrap your-name">
                                     <textarea name="historia"></textarea><br><br>
                                     <label>Sube una foto de esa historia <br />

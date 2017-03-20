@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US"  data-menu="leftalign">
+   <?php
+      require_once('../../conexion.php');
+      session_start();
+      $id=$_REQUEST['id'];
+      $query = "SELECT * FROM tour WHERE id = '$id'";
+         $resultado2 = $link->query($query);
+         while($titulo = $resultado2->fetch_assoc())
+         {        
+      ?>
    <head>
-      <?php
-         require_once('../../conexion.php');
-          session_start();
-         ?>
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../../wp-content/uploads/2016/12/TG-Thumb.png" />
-      <title>Mis Tours</title>
+      <title><?php echo $titulo['nombre']; } ?></title>
       <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
       <link rel='dns-prefetch' href='http://s.w.org' />
       <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; Feed" href="../../feed/index.html" />
@@ -16,6 +21,12 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <meta name="format-detection" content="telephone=no">
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content="http://themes.themegoods2.com/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-211051-960x636.jpeg"/>
+      <meta property="og:title" content="French Autumn"/>
+      <meta property="og:url" content="http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/"/>
+      <meta property="og:description" content="City Tours, Urban"/>
+      <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; French Autumn Comments Feed" href="http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/feed/" />
       <script type="text/javascript">
          window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/wp-includes\/js\/wp-emoji-release.min.js"}};
          !function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -71,15 +82,16 @@
       <link rel='https://api.w.org/' href='../../wp-json/index.html' />
       <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php-rsd.xml" />
       <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+      <link rel='prev' title='Grand Switzerland' href='../grand-switzerland/index.html' />
       <meta name="generator" content="WordPress 4.7.3" />
       <meta name="generator" content="WooCommerce 2.6.14" />
       <link rel="canonical" href="index.html" />
       <link rel='shortlink' href='index.html' />
-      <link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ctour%7Ctour-2-columns-classic-left-sidebar%7C.json" />
-      <link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ctour%7Ctour-2-columns-classic-left-sidebar%7C&format=xml.xml" />
+      <link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ctour%7Cfrench-autumn%7C.json" />
+      <link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ctour%7Cfrench-autumn%7C&format=xml.xml" />
       <meta name="generator" content="Powered by Slider Revolution 5.3.1.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
    </head>
-   <body class="page-template page-template-tour-2-classic-l page-template-tour-2-classic-l-php page page-id-232 page-child parent-pageid-193">
+   <body class="tour-template-default single single-tour postid-180">
       <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="leftalign"/>
       <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="0"/>
       <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="0"/>
@@ -117,7 +129,7 @@
                         <li id="menu-item-3152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152"><a href="../../home-4-travel-site/index.html">Home 4 – Travel Site</a></li>
                      </ul>
                   </li>
-                  <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-12">
+                  <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
                      <a href="index.html#">Tours</a>
                      <ul class="sub-menu">
                         <li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-198">
@@ -128,11 +140,11 @@
                               <li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../tour-4-columns-classic/index.html">4 Columns</a></li>
                            </ul>
                         </li>
-                        <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-230">
+                        <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-230">
                            <a href="../tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
                            <ul class="sub-menu">
                               <li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
-                              <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-232 current_page_item menu-item-234"><a href="index.html">Left Sidebar</a></li>
+                              <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="../tour-2-columns-classic-left-sidebar/index.html">Left Sidebar</a></li>
                            </ul>
                         </li>
                         <li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-237">
@@ -166,14 +178,14 @@
                         </li>
                      </ul>
                   </li>
-                  <li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-has-children menu-item-200">
+                  <li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-tour current-menu-ancestor current-menu-parent menu-item-has-children menu-item-200">
                      <a href="../the-new-california/index.html">Booking</a>
                      <ul class="sub-menu">
                         <li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
                         <li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../niko-trip/index.html">Booking Form + Custom Date</a></li>
                         <li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
                         <li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
-                        <li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../french-autumn/index.html">Standard Background Header</a></li>
+                        <li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-tour current-menu-item menu-item-205"><a href="index.html">Standard Background Header</a></li>
                         <li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../great-britain-travel/index.html">Video Background Header</a></li>
                      </ul>
                   </li>
@@ -249,19 +261,19 @@
                         <ul class="sidebar_widget">
                            <li id="grandtour_tour_posts-10" class="widget Grandtour_Tour_Posts">
                               <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-26689-700x466.jpg');">
-                                 <a class="tour_image" href="../colorful-singapore/index.html"></a>	
+                                 <a class="tour_image" href="../colorful-singapore/index.html"></a>   
                                  <div class="portfolio_info_wrapper">
                                     <div class="tour_price has_discount">
                                        <span class="normal_price">
-                                       $2,000									</span>
-                                       $1,700															
+                                       $2,000                           </span>
+                                       $1,700                                             
                                     </div>
                                     <h5>Colorful Singapore</h5>
                                     <div class="tour_attribute_wrapper">
                                        <div class="tour_attribute_rating">
                                           <div class="br-theme-fontawesome-stars-o">
                                              <div class="br-widget">
-                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
+                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                               
                                              </div>
                                           </div>
                                        </div>
@@ -270,19 +282,19 @@
                               </div>
                               <br class="clear"/>
                               <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg');">
-                                 <a class="tour_image" href="../hong-kong/index.html"></a>	
+                                 <a class="tour_image" href="../hong-kong/index.html"></a>   
                                  <div class="portfolio_info_wrapper">
                                     <div class="tour_price has_discount">
                                        <span class="normal_price">
-                                       $3,000									</span>
-                                       $2,400															
+                                       $3,000                           </span>
+                                       $2,400                                             
                                     </div>
                                     <h5>Hong Kong</h5>
                                     <div class="tour_attribute_wrapper">
                                        <div class="tour_attribute_rating">
                                           <div class="br-theme-fontawesome-stars-o">
                                              <div class="br-widget">
-                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a>											
+                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a>                                 
                                              </div>
                                           </div>
                                        </div>
@@ -347,7 +359,7 @@
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152"><a href="../../home-4-travel-site/index.html">Home 4 – Travel Site</a></li>
                                           </ul>
                                        </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children arrow menu-item-12">
+                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-12">
                                           <a href="index.html#">Tours</a>
                                           <ul class="sub-menu">
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-198">
@@ -358,11 +370,11 @@
                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../tour-4-columns-classic/index.html">4 Columns</a></li>
                                                 </ul>
                                              </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children arrow menu-item-230">
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-230">
                                                 <a href="../tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
                                                 <ul class="sub-menu">
                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-232 current_page_item menu-item-234"><a href="index.html">Left Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="../tour-2-columns-classic-left-sidebar/index.html">Left Sidebar</a></li>
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-237">
@@ -396,14 +408,14 @@
                                              </li>
                                           </ul>
                                        </li>
-                                       <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-has-children arrow menu-item-200">
+                                       <li class="menu-item menu-item-type-post_type menu-item-object-tour current-menu-ancestor current-menu-parent menu-item-has-children arrow menu-item-200">
                                           <a href="../the-new-california/index.html">Booking</a>
                                           <ul class="sub-menu">
                                              <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../niko-trip/index.html">Booking Form + Custom Date</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../french-autumn/index.html">Standard Background Header</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour current-menu-item menu-item-205"><a href="index.html">Standard Background Header</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../great-britain-travel/index.html">Video Background Header</a></li>
                                           </ul>
                                        </li>
@@ -490,185 +502,597 @@
                </div>
             </div>
          </div>
-         <div id="page_caption" class="hasbg parallax" style="height:350px; background-image:url('../../wp-content/uploads/2016/12/venice-WBEUROCITIES16.jpg');" >
-            <div class="page_title_wrapper">
-               <div class="page_title_inner">
-                  <div class="page_title_content">
-                     <h1 ><?php echo $_SESSION['NAME']; ?></h1>
-                     <?php
-                        $id=$_SESSION['ID'];
-                        $query = "SELECT * FROM users WHERE id = '$id'";
-                           $resultado2 = $link->query($query);
-                           while($row2 = $resultado2->fetch_assoc())
-                         {
-                           $foto=$row2['foto'];
-                        
-                        if($foto==NULL)
-                        {?>
-                     <img width="160px" height="160px" src="../imagenes/usuarios/default.jpg"> <br>
-                     <a href="foto_upload.php"><button>Editar Foto</button></a><br>
-                     <?php
-                        }
-                        else
-                        {?>
-                     <img style="border-radius: 50%;" width="160px" height="160px" src="<?php echo "../".$foto; ?>"><br>
-                     <?php
-                        }
-                        }
-                           ?>
-                     <div class="page_tagline">
-                        soy de <?php  echo $_SESSION['CIUDAD']; ?>           
+         <div id="page_caption" class="hasbg parallax  "  style="height: 350px; background-image:url('../../wp-content/uploads/2016/12/pexels-photo-211051.jpeg');" >
+            <div class="single_tour_header_content">
+               <div class="standard_wrapper">
+                  <a href="../../wp-content/uploads/2016/12/pexels-photo-24377.jpg" id="single_tour_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>View Photos</a>
+                  <div style="display:none;">
+                     <a id="single_tour_gallery_image1" href="../../wp-content/uploads/2016/12/pexels-photo-96420.jpeg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                     <a id="single_tour_gallery_image2" href="../../wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy.jpg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                     <a id="single_tour_gallery_image3" href="../../wp-content/uploads/2016/12/venice-WBEUROCITIES16.jpg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                     <a id="single_tour_gallery_image4" href="../../wp-content/uploads/2016/12/pexels-photo-197657.jpeg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                     <a id="single_tour_gallery_image5" href="../../wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488.jpg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                     <a id="single_tour_gallery_image6" href="../../wp-content/uploads/2016/12/pexels-photo-24484.jpg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                     <a id="single_tour_gallery_image7" href="../../wp-content/uploads/2016/12/39267772-prague-wallpapers.jpg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
+                  </div>
+                  <a href="index.html#video_review180" id="single_tour_video_preview_open" class="button" data-type="inline"><span class="ti-control-play"></span>Video Preview</a>
+                  <div id="video_review180" class="tour_video_preview_wrapper" style="display:none;"><iframe width="1280" height="720" src="https://www.youtube.com/embed/UaF9otkOXXY" frameborder="0" allowfullscreen></iframe></div>
+                  <div class="single_tour_header_price">
+                     <div class="single_tour_price">
+                        $5,000                           
+                     </div>
+                     <div class="single_tour_per_person">
+                        Por Persona         
                      </div>
                   </div>
                </div>
             </div>
          </div>
          <!-- Begin content -->
-         <div id="page_content_wrapper" class="hasbg ">
-            <!-- Begin content -->
-            <div class="inner">
-               <div class="inner_wrapper nopadding">
-                  <div id="page_main_content" class="sidebar_content left_sidebar fixed_column">
-                     <div class="standard_wrapper">
-                        <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
-                           
-                            <h4>Mis Tours </h4><br>
-                           <?php $id=$_SESSION['ID'];                           
-                           $query = "SELECT * FROM tour WHERE id_user = '$id'";
-                           $resultado2 = $link->query($query);
-                           while($row2 = $resultado2->fetch_assoc())
-                           {
-                           ?>
-                           <div class="element grid classic2_cols animated13">
-                              <div class="one_half gallery2 classic static filterable portfolio_type themeborder" data-id="post-13">
-                                 <a class="tour_image" href="../colorful-singapore/index.html">
-                                    <img src="<?php echo "../../logic/".$row2['foto']; ?>" alt="Colorful Singapore" />
-                                    <div class="tour_price has_discount">
-                                       <span>Precio</span>
-                                       $1,700													
-                                    </div>
-                                 </a>
-                                 <div class="portfolio_info_wrapper">
-                                    <a class="tour_link" href="../colorful-singapore/index.html">
-                                       <h4><?php echo $row2['nombre']; ?></h4><br>
-                                    </a>
-                                    <div class="tour_excerpt">
-                                       <?php echo "Fecha de Salida: ".$row2['fecha_salida']." - Desde: ".$row2['origen']; ?>
-                                       <?php echo "Fecha de Llegada: ".$row2['fecha_llegada']." - A: ".$row2['destino'];; ?>
+         <!-- BD conexion START -->
+         <?php
 
+          
+                     $query = "SELECT * FROM tour WHERE id = '$id'";
+                        $resultado2 = $link->query($query);
+                        while($row2 = $resultado2->fetch_assoc())
+                      {
+                        
+                     
+
+         ?>
+
+         <!-- BD conexion FIN -->
+         <div id="page_content_wrapper" class="hasbg ">
+            <div class="inner">
+               <!-- Begin main content -->
+               <div class="inner_wrapper">
+                  <div class="sidebar_content">
+                     <h1><?php echo $row2['nombre']; ?></h1>
+                     <div class="page_tagline">
+                        <?php 
+                        function obtenerFechaEnLetra($fecha){
+                           $dia= conocerDiaSemanaFecha($fecha);
+                           $num = date("j", strtotime($fecha));
+                           $anno = date("Y", strtotime($fecha));
+                           $mes = array('enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre');
+                           $mes = $mes[(date('m', strtotime($fecha))*1)-1];
+                           return $dia.', '.$num.' de '.$mes.' del '.$anno;
+                        
+                        }
+                         
+                        function conocerDiaSemanaFecha($fecha) {
+                            $dias = array('Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado');
+                            $dia = $dias[date('w', strtotime($fecha))];
+                            return $dia;
+                        }
+
+                        $fecha = $row2['fecha_salida'];
+                        echo "Sale el ".obtenerFechaEnLetra($fecha);  
+
+
+                        echo " Desde: ".$row2['origen']." - Va a: ".$row2['destino'] ?>            
+                     </div>
+                     <div class="single_tour_attribute_wrapper themeborder">
+                        <div class="one_fourth">
+                           <div class="tour_attribute_icon ti-time"></div>
+                           <div class="tour_attribute_content">
+                           <?php echo "Faltan: "?>
+                           <?php 
+                           $timezone  = -5;
+                           $fecha_actual = gmdate("Y/m/j", time() + 3600*($timezone+date("I")));
+                           $fecha_salida_viaje = $row2['vigencia'];
+                           $dias = (strtotime($fecha_salida_viaje)-strtotime($fecha_actual))/86400;
+                           $dias    = abs($dias); $dias = floor($dias);    
+                           echo $dias." Días";
+                             ?>          
+                           </div>
+                        </div>
+                        <div class="one_fourth">
+                           <div class="tour_attribute_icon ti-id-badge"></div>
+                           <div class="tour_attribute_content">
+                              <?php echo $row2['hora_salida']; ?>                        
+                           </div>
+                        </div>
+                        <div class="one_fourth">
+                           <div class="tour_attribute_icon ti-calendar"></div>
+                           <div class="tour_attribute_content">
+                           <?php echo $row2['hora_salida']; ?> 
+                           </div>
+                        </div>
+                        <div class="one_fourth last">
+                           <div class="tour_attribute_icon ti-user"></div>
+                           <div class="tour_attribute_content">
+                              <?php echo "Cupos ".$row2['cupos']?>                           
+                           </div>
+                        </div>
+                     </div>
+                     <br class="clear"/>
+                     <div class="single_tour_content">
+                        <h4 class="p1">Day 1</h4>
+                        <p class="p1">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse.</p>
+                        
+                           <img style="border-radius: 2%;" class="wp-image-78 size-large" src="<?php echo "../../logic/".$row2['foto']; ?>" width="1024" height="576" />
+                           
+                        
+                        
+                     </div>
+                     <ul class="single_tour_departure_wrapper themeborder">
+                        <li>
+                           <div class="single_tour_departure_title">Sale desde</div>
+                           <div class="single_tour_departure_content"><?php echo $row2['origen']." a las ".$row2['hora_salida']; ?></div>
+                        </li>
+                        <li>
+                           <div class="single_tour_departure_title">Llega a</div>
+                           <div class="single_tour_departure_content"><?php echo $row2['destino']; if($row2['hora_llegada']==NULL){}else{echo " a las ".$row2['hora_llegada'];} ?></div>
+                        </li>
+                        <li>
+                           <div class="single_tour_departure_title">Duración</div>
+                           <div class="single_tour_departure_content">
+                              
+                              <?php 
+                           
+                           $fecha_salida = $row2['fecha_salida'];
+                           $fecha_llegada = $row2['fecha_llegada'];
+                           $dias = (strtotime($fecha_salida)-strtotime($fecha_llegada))/86400;
+                           $dias    = abs($dias); $dias = floor($dias);    
+                           echo $dias." Días";
+                             ?> 
+
+                           </div>
+                        </li>
+                        <li>
+                           <div class="single_tour_departure_title">Incluye</div>
+                           <div class="single_tour_departure_content">
+                              <div class="one_half ">
+                                 <span class="ti-check"></span>Airfare                    
+                              </div>
+                              <div class="one_half last">
+                                 <span class="ti-check"></span>Local transportation                   
+                              </div>
+                              <div class="one_half ">
+                                 <span class="ti-check"></span>5 Star Accomodation                    
+                              </div>
+                              <div class="one_half last">
+                                 <span class="ti-check"></span>Professional Guide                     
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="single_tour_departure_title">Not Incluye</div>
+                           <div class="single_tour_departure_content">
+                              <div class="one_half ">
+                                 <span class="ti-close"></span>Departure Taxes                     
+                              </div>
+                              <div class="one_half last">
+                                 <span class="ti-close"></span>Entry Fees                    
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="fullwidth_comment_wrapper sidebar">
+                        <br>
+                     <br><h3 class="comment_title">4 Reviews</span></h3>
+                        <div class="avg_comment_rating_wrapper themeborder">
+                           <div class="comment_rating_wrapper">
+                              <div class="comment_rating_label">Accomodation</div>
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                              </div>
+                           </div>
+                           <div class="comment_rating_wrapper">
+                              <div class="comment_rating_label">Destination</div>
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                              </div>
+                           </div>
+                           <div class="comment_rating_wrapper">
+                              <div class="comment_rating_label">Meals</div>
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                              </div>
+                           </div>
+                           <div class="comment_rating_wrapper">
+                              <div class="comment_rating_label">Transport</div>
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
+                              </div>
+                           </div>
+                           <div class="comment_rating_wrapper">
+                              <div class="comment_rating_label">Value For Money</div>
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                              </div>
+                           </div>
+                           <div class="comment_rating_wrapper">
+                              <div class="comment_rating_label">Overall</div>
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <a name="comments"></a>
+                          
+                           <div class="comment" id="comment-55">
+                              <div class="gravatar">
+                                 <img src="../../wp-content/uploads/2016/12/author2-100x100.jpg" width="60" height="60" alt="Jessica Medina" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" />        
+                              </div>
+                              <div class="right ">
+                                 <h7>Jessica Medina</h7>
+                                 <div class="comment_date">December 15, 2016 at 4:41 pm</div>
+                                 <a rel='nofollow' class='comment-reply-link' href='index-replytocom=55.html#respond' onclick='return addComment.moveForm( "comment-55", "55", "respond", "180" )' aria-label='Reply to Jessica Medina'>Reply</a>                 
+                                 <div class="comment_text"/>
+                                    <p>Foam padding in the insoles leather finest quality staple flat slip-on design pointed toe off-duty shoe. Black knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
+                                    <div class="comment_rating_wrapper">
+                                       <div class="comment_rating_label">Accomodation</div>
+                                       <div class="br-theme-fontawesome-stars-o">
+                                          <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                                       </div>
                                     </div>
-                                    <div class="tour_attribute_wrapper">
-                                       
-                                       
+                                    <div class="comment_rating_wrapper">
+                                       <div class="comment_rating_label">Destination</div>
+                                       <div class="br-theme-fontawesome-stars-o">
+                                          <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
+                                       </div>
                                     </div>
-                                    
+                                    <div class="comment_rating_wrapper">
+                                       <div class="comment_rating_label">Meals</div>
+                                       <div class="br-theme-fontawesome-stars-o">
+                                          <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
+                                       </div>
+                                    </div>
+                                    <div class="comment_rating_wrapper">
+                                       <div class="comment_rating_label">Transport</div>
+                                       <div class="br-theme-fontawesome-stars-o">
+                                          <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
+                                       </div>
+                                    </div>
+                                    <div class="comment_rating_wrapper">
+                                       <div class="comment_rating_label">Value For Money</div>
+                                       <div class="br-theme-fontawesome-stars-o">
+                                          <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                                       </div>
+                                    </div>
+                                    <div class="comment_rating_wrapper">
+                                       <div class="comment_rating_label">Overall</div>
+                                       <div class="br-theme-fontawesome-stars-o">
+                                          <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                            </div>
-                           <?php
-                           }
-                           ?>
+                           <br class="clear"/>
+                           </li><!-- #comment-## -->
                         </div>
-                        <br class="clear"/>
+                        <!-- End of thread -->  
+                        <div style="height:10px"></div>
+                        <div id="respond" class="comment-respond">
+                           <h3 id="reply-title" class="comment-reply-title">Escribe un comentario<small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
+                           <form action="http://themes.themegoods2.com/grandtour/demo/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                              <p class="comment-notes">
+                              <span id="email-notes">Your email address will not be published.</span> Required fields are marked 
+                              <span class="required">*</span></p>
+                              <p class="comment-form-comment">
+                              <label for="comment">Comment</label> 
+                              <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required">                                 
+                              </textarea></p>
+                              <p class="comment-form-author">
+                              <label for="author">Name <span class="required">*</span></label> 
+                              <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+                              <p class="comment-form-email">
+                              <label for="email">Email <span class="required">*</span></label> 
+                              <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+                              <p class="comment-form-url">
+                              <label for="url">Website</label> 
+                              <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+                              <p class="comment-form-rating">
+                                 <label for="accomodation_rating">Accomodation</label>
+                                 <span class="commentratingbox">
+                                 <select id="accomodation_rating" name="accomodation_rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </p>
+                              <p class="comment-form-rating">
+                                 <label for="destination_rating">Destination</label>
+                                 <span class="commentratingbox">
+                                 <select id="destination_rating" name="destination_rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </p>
+                              <p class="comment-form-rating">
+                                 <label for="meals_rating">Meals</label>
+                                 <span class="commentratingbox">
+                                 <select id="meals_rating" name="meals_rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </p>
+                              <p class="comment-form-rating">
+                                 <label for="transport_rating">Transport</label>
+                                 <span class="commentratingbox">
+                                 <select id="transport_rating" name="transport_rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </p>
+                              <p class="comment-form-rating">
+                                 <label for="value_rating">Value For Money</label>
+                                 <span class="commentratingbox">
+                                 <select id="value_rating" name="value_rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </p>
+                              <p class="comment-form-rating">
+                                 <label for="overall_rating">Overall</label>
+                                 <span class="commentratingbox">
+                                 <select id="overall_rating" name="overall_rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </p>
+                              <script>jQuery(function() {
+                                 jQuery("#accomodation_rating, #destination_rating, #meals_rating, #transport_rating, #value_rating, #overall_rating").barrating({
+                                    theme: "fontawesome-stars-o",
+                                    emptyValue: 0,
+                                    allowEmpty: true
+                                 });
+                                 
+                                 jQuery("#accomodation_rating, #destination_rating, #meals_rating, #transport_rating, #value_rating, #overall_rating").barrating("set", 0);
+                                 });
+                              </script>
+                              <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='180' id='comment_post_ID' />
+                                 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                              </p>
+                           </form>
+                        </div>
+                        <!-- #respond -->
                      </div>
                   </div>
-                  <div class="sidebar_wrapper left_sidebar">
+                 
+                  <div class="sidebar_wrapper">
+                     <div class="sidebar_top"></div>
                      <div class="sidebar">
                         <div class="content">
+                           <div class="single_tour_header_price">
+                              <div class="single_tour_price">
+                                 $5,000                                       
+                              </div>
+                              <div class="single_tour_per_person">
+                                 Por persona                 
+                              </div>
+                           </div>
+                           <div class="single_tour_booking_wrapper themeborder contact_form7">
+                              <div role="form"  id="wpcf7-f165-o1">
+                                 <?php
+                                 $consulta = mysqli_query($link,"SELECT * FROM viajeros WHERE id_tour='$id'");
+                                     $total = 0;
+                                     while($row = mysqli_fetch_array($consulta))
+                                     {
+                                       $total = $total + $row['cupos'];
+                                     }
+                                     
+                                     $cupos=$row2['cupos'];
+                                     $total2=$row2['cupos']-$total;
+                                     ?>
+
+                                 <form action="../logic.php" method="post" class="wpcf7-form">
+                                    
+                                    <p><label> Nombre<br />
+                                       <span class="wpcf7-form-control-wrap your-name"><input type="text" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" <?php if($total>=10)
+                                     {print"disabled='disabled'";}?>/></span> </label>
+                                    </p>
+                                    <p><label> Email <br />
+                                       <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"  <?php if($total>=10)
+                                     {print"disabled='disabled'";}?>/></span> </label>
+                                    </p>
+                                    <p><label> Teléfono<br />
+                                       <span class="wpcf7-form-control-wrap tel-729"><input type="tel" name="telefono" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"   <?php if($total>=10)
+                                     {print"disabled='disabled'";}?>/></span> </label>
+                                    </p>                  
+                                    <p><label> Numero de Personas<br>
+                                        <span class="wpcf7-form-control-wrap tel-729"><input type="number" name="cupos" value="0" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"   min="1" max="<?php echo $total2; ?>"  <?php if($total>=10)
+                                     {print"disabled='disabled'";}?>/></span> </label>
+                                    </p>
+                                     <?php
+                                     
+
+                                     if(($total2<=3)&&($total2>0))
+                                     {
+                                       echo "Quedan solo ".$total2." Cupos";
+                                     }
+
+                                     if($total>=10)
+                                     {
+                                       echo"Tour Cerrado, Ya no quedan cupos ";  
+                                     }
+                                     else
+                                     {
+                                       echo "Quedan ".$total2." Cupos";
+                                     }
+
+                                     ?>
+
+                                       
+                                     <input style="visibility: hidden; display: none" type="text" name="id_tour" value="<?php echo $_REQUEST['id']; ?>">
+
+                                    <p>
+                                    <input type="submit" value="Registrar" <?php if($total>=10)
+                                     {print"disabled='disabled'";}?>/>
+                                    </p>
+
+                     
+                                 </form>
+
+
+                              </div>
+
+
+                            
+                              <br class="clear"/>
+                           </div>
+                           <a id="single_tour_share_button" href="javascript:;" class="button ghost themeborder"><span class="ti-email"></span>Share this tour</a>
                            <ul class="sidebar_widget">
-                              <li id="grandtour_cat_posts-5" class="widget Grandtour_Cat_Posts">
-                                 <h2 class="widgettitle"><span>Mis Historias</span></h2>
-                                 <ul class="posts blog withthumb ">
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Memorial Day to Someone Told Me to Travel</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../7-tips-for-nomads-on-a-budget/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-212388-150x150.jpeg" alt="" /></a></div>
-                                       <a href="../../7-tips-for-nomads-on-a-budget/index.html">7 Tips For Nomads On A Budget Trips</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../taking-a-travel-blog-victory-lap/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-24484-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../taking-a-travel-blog-victory-lap/index.html">Taking A Travel Blog Victory Lap</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li id="grandtour_instagram-6" class="widget Grandtour_Instagram">
-                                 <h2 class="widgettitle">Recent Trips</h2>
-                                 <ul class="flickr">
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRYn2YXBttX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125477_337451106650656_7516217094694764544_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRWDLtvh7vb/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17076229_257140138075403_4619417127063912448_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRTeTR-hMus/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125985_183374232163594_1946321832420311040_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BROVWFIBoRG/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125543_273774926379985_565758286507278336_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRJLJiMB1sY/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/16906327_385140918510638_797076635135246336_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRHdP9fhAN1/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17075846_180135339150337_5818033664906231808_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRE5PyCh6vU/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17076669_467646333625226_6620182540453937152_n.jpg" width="75" height="75" alt="" /></a></li>
-                                 </ul>
-                                 <br class="clear"/>
-                              </li>
-                              <li id="grandtour_social_profiles_posts-5" class="widget Grandtour_Social_Profiles_Posts">
-                                 <h2 class="widgettitle">Connect to Us</h2>
-                                 <div class="social_wrapper shortcode light small">
-                                    <ul>
-                                       <li class="facebook"><a target="_blank" title="Facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                                       <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                                       <li class="youtube"><a target="_blank" title="Youtube" href="index.html#"><i class="fa fa-youtube"></i></a></li>
-                                       <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                                       <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
+                              <li id="text-3" class="widget widget_text">
+                                 <h2 class="widgettitle">For More Informations</h2>
+                                 <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227
+                                    <br/>
+                                    <span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00
                                  </div>
-                              </li>
-                              <li id="grandtour_tour_posts-2" class="widget Grandtour_Tour_Posts">
-                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg');">
-                                    <a class="tour_image" href="../french-autumn/index.html"></a>	
-                                    <div class="portfolio_info_wrapper">
-                                       <div class="tour_price ">
-                                          $5,000															
-                                       </div>
-                                       <h5>French Autumn</h5>
-                                       <div class="tour_attribute_wrapper">
-                                          <div class="tour_attribute_rating">
-                                             <div class="br-theme-fontawesome-stars-o">
-                                                <div class="br-widget">
-                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
-                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-197657-700x466.jpeg');">
-                                    <a class="tour_image" href="../grand-switzerland/index.html"></a>	
-                                    <div class="portfolio_info_wrapper">
-                                       <div class="tour_price ">
-                                          $6,000															
-                                       </div>
-                                       <h5>Grand Switzerland</h5>
-                                       <div class="tour_attribute_wrapper">
-                                          <div class="tour_attribute_rating">
-                                             <div class="br-theme-fontawesome-stars-o">
-                                                <div class="br-widget">
-                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
                               </li>
                            </ul>
+                           
+                        </div>
+                     </div>
+                     <br class="clear"/>
+                     <div class="sidebar_bottom"></div>
+                  </div>
+               </div>
+                <?php }
+                  ?>
+               <!-- End main content -->
+               <br class="clear"/>
+               <div class="tour_related">
+                  <h3 class="sub_title">Similar Tours</h3>
+                  <div id="portfolio_filter_wrapper" class="gallery classic three_cols portfolio-content section content clearfix" data-columns="3">
+                     <div class="element grid classic3_cols animated2">
+                        <div class="one_third gallery3 classic static filterable portfolio_type themeborder" data-id="post-2">
+                           <a class="tour_image" href="../5-lake-of-fuji-san/index.html">
+                              <img src="../../wp-content/uploads/2016/12/pexels-photo-225630-700x466.jpeg" alt="5 Lake of Fuji San" />
+                              <div class="tour_price has_discount">
+                                 <span class="normal_price">
+                                 $4,900                           </span>
+                                 $4,200                                             
+                              </div>
+                           </a>
+                           <div class="portfolio_info_wrapper">
+                              <a class="tour_link" href="../5-lake-of-fuji-san/index.html">
+                                 <h4>5 Lake of Fuji San</h4>
+                              </a>
+                              <div class="tour_excerpt">
+                                 <p>Mountain, Rural, Urban</p>
+                              </div>
+                              <div class="tour_attribute_wrapper">
+                                 <div class="tour_attribute_rating">
+                                    <div class="br-theme-fontawesome-stars-o">
+                                       <div class="br-widget">
+                                          <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                               
+                                       </div>
+                                    </div>
+                                    <div class="tour_attribute_rating_count">
+                                       4&nbsp;
+                                       reviews                             
+                                    </div>
+                                 </div>
+                                 <div class="tour_attribute_days">
+                                    <span class="ti-time"></span>
+                                    3&nbsp;days                          
+                                 </div>
+                              </div>
+                              <br class="clear"/>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="element grid classic3_cols animated2">
+                        <div class="one_third gallery3 classic static filterable portfolio_type themeborder" data-id="post-2">
+                           <a class="tour_image" href="../grand-switzerland/index.html">
+                              <img src="../../wp-content/uploads/2016/12/pexels-photo-197657-700x466.jpeg" alt="Grand Switzerland" />
+                              <div class="tour_price ">
+                                 $6,000                                             
+                              </div>
+                           </a>
+                           <div class="portfolio_info_wrapper">
+                              <a class="tour_link" href="../grand-switzerland/index.html">
+                                 <h4>Grand Switzerland</h4>
+                              </a>
+                              <div class="tour_excerpt">
+                                 <p>Shopping, Mountain, Snow &#038; Ice</p>
+                              </div>
+                              <div class="tour_attribute_wrapper">
+                                 <div class="tour_attribute_rating">
+                                    <div class="br-theme-fontawesome-stars-o">
+                                       <div class="br-widget">
+                                          <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                               
+                                       </div>
+                                    </div>
+                                    <div class="tour_attribute_rating_count">
+                                       4&nbsp;
+                                       reviews                             
+                                    </div>
+                                 </div>
+                                 <div class="tour_attribute_days">
+                                    <span class="ti-time"></span>
+                                    6&nbsp;days                          
+                                 </div>
+                              </div>
+                              <br class="clear"/>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="element grid classic3_cols animated2">
+                        <div class="one_third gallery3 classic static filterable portfolio_type themeborder" data-id="post-2">
+                           <a class="tour_image" href="../discover-japan/index.html">
+                              <img src="../../wp-content/uploads/2016/12/pexels-photo-96420-700x466.jpeg" alt="Discover Japan" />
+                              <div class="tour_price has_discount">
+                                 <span class="normal_price">
+                                 $3,000                           </span>
+                                 $2,500                                             
+                              </div>
+                           </a>
+                           <div class="portfolio_info_wrapper">
+                              <a class="tour_link" href="../discover-japan/index.html">
+                                 <h4>Discover Japan</h4>
+                              </a>
+                              <div class="tour_excerpt">
+                                 <p>City Tours, Iconic</p>
+                              </div>
+                              <div class="tour_attribute_wrapper">
+                                 <div class="tour_attribute_rating">
+                                    <div class="br-theme-fontawesome-stars-o">
+                                       <div class="br-widget">
+                                          <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                               
+                                       </div>
+                                    </div>
+                                    <div class="tour_attribute_rating_count">
+                                       4&nbsp;
+                                       reviews                             
+                                    </div>
+                                 </div>
+                                 <div class="tour_attribute_days">
+                                    <span class="ti-time"></span>
+                                    5&nbsp;days                          
+                                 </div>
+                              </div>
+                              <br class="clear"/>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
+            <br class="clear"/>
          </div>
          <div id="footer" class=" ">
             <ul class="sidebar_widget three">
@@ -724,15 +1148,30 @@
                   </ul>
                </div>
                <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
-               <br class="clear"/>	    
+               <br class="clear"/>      
                <a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
             </div>
          </div>
       </div>
       <div id="side_menu_wrapper" class="overlay_background">
          <a id="close_share" href="javascript:;"><span class="ti-close"></span></a>
+         <div id="fullscreen_share_wrapper">
+            <div class="fullscreen_share_content">
+               <h2>Share</h2>
+               <div class="page_tagline">French Autumn</div>
+               <div id="social_share_wrapper">
+                  <ul>
+                     <li><a class="facebook" title="Share On Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/"><span class="ti-facebook"></span></a></li>
+                     <li><a class="twitter" title="Share On Twitter" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/&url=http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/"><span class="ti-twitter"></span></a></li>
+                     <li><a class="pinterest" title="Share On Pinterest" target="_blank" href="http://www.pinterest.com/pin/create/button/?url=http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/&media=http://themes.themegoods2.com/grandtour/demo/wp-includes/images/media/default.png"><span class="ti-pinterest"></span></a></li>
+                     <li><a class="google" title="Share On Google+" target="_blank" href="https://plus.google.com/share?url=http://themes.themegoods2.com/grandtour/demo/tour/french-autumn/"><span class="ti-google"></span></a></li>
+                     <li><a class="mail" title="Share by Email" href="mailto:someone@example.com?Subject=French%20Autumn&amp;Body=http%3A%2F%2Fthemes.themegoods2.com%2Fgrandtour%2Fdemo%2Ftour%2Ffrench-autumn%2F"><span class="ti-email"></span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
       </div>
-      <div id="option_wrapper">
+      <script type='text/javascript' src='../../wp-includes/js/comment-reply.min.js'></script>
       <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
@@ -742,21 +1181,21 @@
       <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/tour-2-columns-classic-left-sidebar\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/french-autumn\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/tour-2-columns-classic-left-sidebar\/?wc-ajax=%%endpoint%%"};
+         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/french-autumn\/?wc-ajax=%%endpoint%%"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/tour-2-columns-classic-left-sidebar\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/french-autumn\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
@@ -779,15 +1218,16 @@
       <script type='text/javascript' src='../../wp-content/themes/grandtour/js/custom_plugins.js'></script>
       <script type='text/javascript' src='../../wp-content/themes/grandtour/js/custom.js'></script>
       <script type='text/javascript' src='../../wp-includes/js/wp-embed.min.js'></script>
-      <script type='text/javascript' src='../../wp-admin/admin-ajax-action=grandtour_ajax_search&id=keyword&form=tour_search_form&result=autocomplete.php'></script>
+      <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js'></script>
+      <script type='text/javascript' src='../../wp-content/themes/grandtour/js/jquery.simplegmaps.min.js'></script>
+      <script type='text/javascript' src='../../wp-admin/admin-ajax-action=grandtour_script_map_shortcode&data=a_3_%7Bs_2__id__s_23__map14892930051249731428__s_4__zoom__s_2__13__s_4__type__s_0____%7D.php'></script>
       <script type='text/javascript' src='../../wp-content/themes/grandtour/js/jquery.cookie.js'></script>
       <script type='text/javascript' src='../../wp-admin/admin-ajax-action=grandtour_script_demo.php'></script>
    </body>
 </html>
-<!-- End content -->
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
-   Object Caching 8533/8890 objects using disk
+   Object Caching 8419/8507 objects using disk
    Page Caching using disk: enhanced
-   Database Caching 12/107 queries in 0.024 seconds using disk
+   Database Caching 7/59 queries in 0.016 seconds using disk
    
-    Served from: themes.themegoods2.com @ 2017-03-12 04:08:27 by W3 Total Cache -->
+    Served from: themes.themegoods2.com @ 2017-03-12 04:30:05 by W3 Total Cache -->

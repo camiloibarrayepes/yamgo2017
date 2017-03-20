@@ -499,23 +499,28 @@
             <div class="page_title_wrapper">
                <div class="page_title_inner">
                   <div class="page_title_content">
-                     <h1 style="text-transform: capitalize;" ><?php echo $_SESSION['NAME']; ?></h1>
+                     <h1><?php echo $_SESSION['USERNAME']; ?></h1>
                        
-                  <?php
+                     <?php
+                     $id=$_SESSION['ID'];
+                     $query = "SELECT * FROM users WHERE id = '$id'";
+                        $resultado2 = $link->query($query);
+                        while($row2 = $resultado2->fetch_assoc())
+                      {
+                        $foto=$row2['foto'];
 
-                     $foto=$_SESSION['FOTO'];
-
-                     if($foto="default.jpg")
+                     if($foto==NULL)
                      {?>
                          <img width="160px" height="160px" src="imagenes/usuarios/default.jpg"> <br>
-                         
+                         <a href="foto_upload.php"><button>Editar Foto</button></a><br>
                      <?php
                      }
                      else
                      {?>
-                        <img width="160px" height="160px" src="imagenes/usuarios/<?php echo $foto; ?>">
+                        <img style="border-radius: 50%;" width="160px" height="160px" src="<?php echo $foto; ?>"><br>
                      <?php
                   }
+               }
                      ?>
                      
                      <div class="page_tagline">
@@ -550,7 +555,7 @@
 
 
                      <div class="sidebar"><center>
-                        <div class="button">Editar mi Perfíl</div><br><br></center>
+                        <a href="perfil_edit.php"><div class="button">Editar mi Perfíl</div></a><br><br></center>
                         <div class="content">
                            <ul class="sidebar_widget">
                               <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">

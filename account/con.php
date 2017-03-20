@@ -51,6 +51,7 @@
          $_SESSION['FOTO'] = $member['foto'];
          $_SESSION['ROL'] = $member['rol'];
          $_SESSION['TEL'] = $member['telefono'];
+         $_SESSION['USERNAME'] = $member['username'];
 
            
             
