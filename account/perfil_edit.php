@@ -492,8 +492,11 @@
             </div>
          </div>
          <div id="page_caption" class="hasbg parallax" style="height:350px; background-image:url('../wp-content/uploads/2016/12/venice-WBEUROCITIES16.jpg');" >
+
             <div class="page_title_wrapper">
+
                <div class="page_title_inner">
+
                   <div class="page_title_content">
                      <h1 ><?php echo $_SESSION['USERNAME']; ?></h1>
                        
@@ -514,6 +517,7 @@
                      else
                      {?>
                         <img style="border-radius: 50%;" width="160px" height="160px" src="<?php echo $foto; ?>"><br>
+                        <a href="foto_upload.php"><button>Editar Foto</button></a><br>
                      <?php
                   }
                }
@@ -522,17 +526,21 @@
 
                      <div class="page_tagline">
 
-                        soy de <?php  echo $_SESSION['CIUDAD']; ?>           
+                        Soy de <?php  echo $_SESSION['CIUDAD']; ?>  
+
                      </div>
 
                   </div>
                </div>
             </div>
          </div>
+
+
          <!-- Begin content -->
          <!-- Base de datos -->
         
          <div id="page_content_wrapper" class="hasbg ">
+
             <div class="inner">
                <!-- Begin main content -->
                <div class="inner_wrapper">
@@ -547,7 +555,29 @@
 
          ?>
 
+
+                  <form action="update_profile.php" method="post">
+                  <?php 
+                  if(isset($_REQUEST['edit']))
+                  {
+                     ?>
+                     <div id="148929302253306086" class="alert_box success">
+                              <i class="fa fa-flag alert_icon"></i>
+                              
+                              <div class="alert_box_msg">Datos Actualizados...!!!</div>
+                              <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
+                           </div>
+                     <?php
+                  }
+                  ?>
+                     <br>
                      <h4 class="p1">Edita la Información de tu Perfil</h4>
+                     <p><label> Username<br />
+                        <span class="wpcf7-form-control-wrap your-name">
+                           <input type="text" name="username" value="<?php echo $row2['username']; ?>" size="78" required/>
+                           </span> </label>
+                     </p>
+
                      <p><label> Nombre<br />
                         <span class="wpcf7-form-control-wrap your-name">
                            <input type="text" name="nombre" value="<?php echo $row2['nombre']; ?>" size="78" required/>
@@ -575,6 +605,9 @@
                           <textarea rows="3" cols="88" name="perfil"><?php echo $row2['perfil']; ?></textarea>
                            </span> </label>
                      </p>
+                     <input type="submit" name="login" value="Actualizar Datos">
+
+                     </form><br><br>
 
                      <h4>Mis historias</h4><hr><br>
                      <?php
@@ -625,15 +658,71 @@
                      <div class="sidebar">
 
                         <div class="content">
+
                            <ul class="sidebar_widget">
-                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
-                           <a href="../registro/newtour.php">Agregar un nuevo Tour</a><br>
-                           <a href="tours_users/">Ver mis Tours</a><br><br>
-                           <a href="bikes_users/">Ver mis Bicis</a><br>
-                           <a href="new_bici.php">Agregar una Bici</a>
+
+                            <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                                 <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
+                                 <ul class="posts blog withthumb ">
+                                 <?php     
+                                 $rol=$_SESSION['ROL'];                             
+                                 
+                                 if($rol==1){
+                                    print "<img width='60px' src='imagenes/iconos/guia.png'>";
+                                    print "<br>Soy Guia <hr><br>";
+                                    print "<a href='perfil_edit_guia.php'>Editar Perfil de Guía</a><hr>";
+                                    print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Presta Biker
+                                    </b></a><hr>";
+                                    print "<a href=''>Desactivar perfil <b>Guía</b></a><hr>";
+
+
+                                 }
+                                 elseif ($rol==2) 
+                                 {
+                                    print "<img width='70px' src='imagenes/iconos/bike.png'>";
+                                    print "<br>soy Presta Biker<hr>";
+                                    print "<br><a href=''>Editar Perfil de Presta Biker</a><hr>";
+                                    print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Guía
+                                    </b></a><hr>";
+                                    print "<a href=''>Desactivar perfil <b>Presta Biker</b></a><hr>";
+                                    
+
+                                 }
+                                 elseif ($rol==3) 
+                                 {
+                                    print "<img width='70px' src='imagenes/iconos/guia.png'>";
+                                    print "  <img width='70px' src='imagenes/iconos/bike.png'>";
+
+                                    print "<br>soy Guia y Presta Biker<hr>";
+                                    print "<br><a href=''>Editar Perfil de Presta Biker</a><hr>";
+                                    print "<a href='perfil_edit_guia.php'>Editar Perfil de Guía</a><hr>";
+                                    print "<a href='activar_perfil/logic.php?est=1'>Desactivar perfil <b>Presta Biker</b></a><hr>";
+                                    print "<a href='activar_perfil/logic.php?est=2'>Desactivar perfil <b>Guía</b></a><hr>";
+
+                                 }
+
+                                   ?>
+                                 </ul>
+                              </li>
+
+                           <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                           
+                           <a href="../registro/newtour.php">Agregar un nuevo Tour<hr></a>
+                           <a href="tours_users/">Ver mis Tours<hr></a>
+                           <?php 
+                           
+                           if($rol==2 or $rol==3)
+                           {
+                              ?>
+                              <a href="bikes_users/">Ver mis Bicis<hr></a>
+                              <a href="new_bici.php">Agregar una Bici<hr></a>
+                              <?php
+                           }
+                           ?>
+                           
                            </li>
                               
-                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                           <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Escribe Una Historia</span></h2>
                                  <ul class="posts blog withthumb ">
                                      <form action="experiencia_logic.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
@@ -652,32 +741,7 @@
 
 
 
-                               <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
-                                 <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
-                                 <ul class="posts blog withthumb ">
-                                 <?php 
-                                 $rol=$_SESSION['ROL'];
-                                 
-                                 if($rol==1){
-                                    print "<img width='70px' src='imagenes/iconos/guia.png'>";
-                                 }
-                                 elseif ($rol==2) 
-                                 {
-                                    print "<img width='70px' src='imagenes/iconos/bike.png'>";
-                                 }
-                                 elseif ($rol==3) 
-                                 {
-                                    print "<img width='70px' src='imagenes/iconos/guia.png'>";
-
-
-                                    print "   <img width='70px' src='imagenes/iconos/bike.png'>";
-
-                                    print "<br>soy Guia y Presta Biker";
-                                 }
-
-                                   ?>
-                                 </ul>
-                              </li>
+                              
 
 
 

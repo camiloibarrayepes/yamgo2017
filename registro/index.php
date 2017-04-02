@@ -1,11 +1,7 @@
 <!DOCTYPE html>
- <?php
-      require_once('../conexion.php');
-      session_start();
-?>
 <html lang="en-US"  data-menu="leftalign">
    <head>
-      
+     
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../wp-content/uploads/2016/12/TG-Thumb.png" />
@@ -80,7 +76,7 @@
       <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ccontact-us%7C&format=xml.xml" />
       <meta name="generator" content="Powered by Slider Revolution 5.3.1.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
    </head>
-   <body onload="nobackbutton();" class="page-template-default page page-id-3090 ppb_enable">
+   <body class="page-template-default page page-id-3090 ppb_enable">
       <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="leftalign"/>
       <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="0"/>
       <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="0"/>
@@ -250,19 +246,19 @@
                         <ul class="sidebar_widget">
                            <li id="grandtour_tour_posts-10" class="widget Grandtour_Tour_Posts">
                               <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-26689-700x466.jpg');">
-                                 <a class="tour_image" href="../tour/colorful-singapore/index.html"></a>  
+                                 <a class="tour_image" href="../tour/colorful-singapore/index.html"></a>	
                                  <div class="portfolio_info_wrapper">
                                     <div class="tour_price has_discount">
                                        <span class="normal_price">
-                                       $2,000                 </span>
-                                       $1,700                             
+                                       $2,000									</span>
+                                       $1,700															
                                     </div>
                                     <h5>Colorful Singapore</h5>
                                     <div class="tour_attribute_wrapper">
                                        <div class="tour_attribute_rating">
                                           <div class="br-theme-fontawesome-stars-o">
                                              <div class="br-widget">
-                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                     
+                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
                                              </div>
                                           </div>
                                        </div>
@@ -271,19 +267,19 @@
                               </div>
                               <br class="clear"/>
                               <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg');">
-                                 <a class="tour_image" href="../tour/hong-kong/index.html"></a> 
+                                 <a class="tour_image" href="../tour/hong-kong/index.html"></a>	
                                  <div class="portfolio_info_wrapper">
                                     <div class="tour_price has_discount">
                                        <span class="normal_price">
-                                       $3,000                 </span>
-                                       $2,400                             
+                                       $3,000									</span>
+                                       $2,400															
                                     </div>
                                     <h5>Hong Kong</h5>
                                     <div class="tour_attribute_wrapper">
                                        <div class="tour_attribute_rating">
                                           <div class="br-theme-fontawesome-stars-o">
                                              <div class="br-widget">
-                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a>                     
+                                                <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a>											
                                              </div>
                                           </div>
                                        </div>
@@ -495,80 +491,36 @@
             <div class="page_title_wrapper">
                <div class="page_title_inner">
                   <div class="page_title_content">
-                     <h1 >Registrate  </h1>
+                     <h1 >Registrate	</h1>
                      <div class="page_tagline">
-                        This is sample of page tagline and you can set it up using page option            
+                        This is sample of page tagline and you can set it up using page option			    	
                      </div>
                   </div>
                </div>
             </div>
          </div>
          <div class="ppb_wrapper hasbg ">
-            <div  class="one withsmallpadding ppb_text" style="text-align:center;padding:0px 0 0px 0;margin-top:20px;" >
+            
+            <div  class="one withsmallpadding ppb_text" style="text-align:left;padding:0px 0 0px 0;margin-bottom:60px;" >
                <div class="standard_wrapper">
                   <div class="page_content_wrapper">
                      <div class="inner">
-                        <div style="margin:auto;width:80%">
-                           </p>
-                           <h4 class="p1"><span class="s1">
-                           <?php
-
-
-
-$nombre= $_POST['nombre'];
-$telefono = $_POST['telefono'];
-$email= $_POST['email'];
-$cupos = $_POST['cupos'];
-$id_tour = $_POST['id_tour'];
-
-
-$query = "INSERT INTO viajeros (`id_tour`, `nombre`, `email`, `telefono`, `cupos`) VALUES('$id_tour', '$nombre','$email', '$telefono', '$cupos')";
-$resultado = $link->query($query);
-
-if($resultado)
-{
-?>
-   <?php echo $cupos." Cupos Separados" ?><BR>
-   <?php echo "Revisa tu Email ".$email." Para confirmar tu(s) cupo(s) <br> Mira mas Tours Aquí" ?>
-    
-<?php
-   
-}
-else
-{ 
-echo "no";
-}
-
-?>
-
-<?php
-
-$destino = "camilo.ibarray@gmail.com";
-$nombre = $_POST['nombre'];
-$correo = $_POST['email'];
-$telefono = $_POST['telefono'];
-$cupos = $_POST['cupos'];
-$contenido = "Nombre: ".$nombre. "\nCorreo: ".$correo."\nTelefono: ".$telefono."\nMensaje: ".$cupos;
-$id_tour=$_POST['id_tour'];
-
-mail($destino,"Tour ".$id_tour,$contenido);
-
-?>
-
-
-
+                              <div class="one_half " style="">
+                              <h5>Registrate como Persona</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.</p>
+                           </div>
+                           <div class="one_half last " style="">
+                              <h5>Registrate como Empresa</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.</p>
+                           </div>
+                              
                            
+                       
 
-<BR><BR><BR><BR><BR><BR><BR><BR><BR>  
-                           </span></h4>
-                          
-                           <p>
-                        </div>
                      </div>
                   </div>
                </div>
             </div>
-            
             <div  class="one_half_bg withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-24377.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
                <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
                <div class="page_content_wrapper">
@@ -609,29 +561,29 @@ mail($destino,"Tour ".$id_tour,$contenido);
                <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
                   <div class="element grid classic4_cols animated1">
                      <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
-                        <a class="tour_image" href="../tour/great-britain-travel/index.html"></a> 
+                        <a class="tour_image" href="../tour/great-britain-travel/index.html"></a>	
                         <div class="portfolio_info_wrapper">
                            <div class="tour_price has_discount">
                               <span class="normal_price">
-                              $6,000            </span>
-                              $5,900                  
+                              $6,000						</span>
+                              $5,900									
                            </div>
                            <h5>Great Britain Travel</h5>
                            <div class="tour_attribute_wrapper">
                               <div class="tour_attribute_rating">
                                  <div class="br-theme-fontawesome-stars-o">
                                     <div class="br-widget">
-                                       <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                
+                                       <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>								
                                     </div>
                                  </div>
                                  <div class="tour_attribute_rating_count">
                                     4&nbsp;
-                                    reviews             
+                                    reviews							
                                  </div>
                               </div>
                               <div class="tour_attribute_days">
                                  <span class="ti-time"></span>
-                                 5&nbsp;days                
+                                 5&nbsp;days		    		    
                               </div>
                            </div>
                            <br class="clear"/>
@@ -695,7 +647,7 @@ mail($destino,"Tour ".$id_tour,$contenido);
                   </ul>
                </div>
                <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
-               <br class="clear"/>      
+               <br class="clear"/>	    
                <a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
             </div>
          </div>

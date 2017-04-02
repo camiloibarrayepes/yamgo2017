@@ -3,6 +3,7 @@
    <head>
 <?php
 require_once('conexion.php');
+session_start();
 ?>
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
@@ -335,90 +336,7 @@ require_once('conexion.php');
                         <div id="nav_wrapper">
                            <div class="nav_wrapper_inner">
                               <div id="menu_border_wrapper">
-                                 <div class="menu-main-menu-container">
-                                    <ul id="main_menu" class="nav">
-                                       <li>
-                                          <a href="account/login.php">Iniciar Sesión</a>
-                                         
-                                       </li>
-                                       <li>
-                                       <a href="registro/registrate.php">Registrate</a>
-                                       </li>
-                                       <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-has-children arrow menu-item-200">
-                                          <a href="tour/the-new-california/index.html">Booking</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="tour/the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="tour/niko-trip/index.html">Booking Form + Custom Date</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="tour/swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="tour/5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="tour/french-autumn/index.html">Standard Background Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="tour/great-britain-travel/index.html">Video Background Header</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-13">
-                                          <a href="index.html#">Destinations</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="destination-fullwidth/index.html">Destination Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311"><a href="destination-video-header/index.html">Destination + Video Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="destination-right-sidebar/index.html">Destination Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="destination-left-sidebar/index.html">Destination Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-destination menu-item-286"><a href="destination/venice/index.html">Single Destination</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-destination menu-item-283"><a href="destination/paris/index.html">Single Destination + Video</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-14">
-                                          <a href="index.html#">Pages</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="about-us/index.html">About Us</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="contact-us/index.html">Contact Us</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="faqs/index.html">FAQs</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-galleries menu-item-313"><a href="galleries/gallery/index.html">Gallery</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="page-fullwidth/index.html">Page Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2460"><a href="page-video-header/index.html">Page + Video Background Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2455"><a href="page-right-sidebar/index.html">Page Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2454"><a href="page-left-sidebar/index.html">Page Left Sidebar</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-15">
-                                          <a href="index.html#">Blog</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="blog/blog-right-sidebar/index.html">Blog Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="blog/blog-left-sidebar/index.html">Blog Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="blog/blog-fullwidth/index.html">Blog Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="blog/blog-grid-right-sidebar/index.html">Blog Grid Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="blog/blog-grid-left-sidebar/index.html">Blog Grid Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="blog/blog-grid-fullwidth/index.html">Blog Grid Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="blog/blog-full-grid-right-sidebar/index.html">Blog Full + Grid Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="blog/blog-full-grid-left-sidebar/index.html">Blog Full + Grid Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="blog/blog-full-grid-fullwidth/index.html">Blog Full + Grid Fullwidth</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-16">
-                                          <a href="index.html#">Shortcodes</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="shortcodes/accordion-toggles/index.html">Accordion &#038; Toggles</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="shortcodes/alert-boxes/index.html">Alert Boxes</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="shortcodes/animated-content/index.html">Animated Content</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="shortcodes/buttons-social-icons/index.html">Buttons &#038; Social Icons</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="shortcodes/columns/index.html">Columns</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="shortcodes/google-maps/index.html">Google Maps</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="shortcodes/image-frame-animation/index.html">Image Frame &#038; Animation</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="shortcodes/image-teasers/index.html">Image Teasers</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="shortcodes/pricing-tables/index.html">Pricing Tables</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="shortcodes/tabs/index.html">Tabs</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-2442">
-                                          <a href="shop/index.html">Shop</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2443"><a href="shop/index.html">Shop Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2444"><a href="shop/index-sidebar=1.html">Shop Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-2445"><a href="shop/beach-shoe/index.html">Single Product Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2462"><a href="shop/safety-set/index-sidebar=1.html">Single Product With Sidebar</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </div>
+                                 <?php include('includes/menu.php'); ?>
                               </div>
                            </div>
                            <!-- Begin right corner buttons -->
@@ -459,7 +377,7 @@ require_once('conexion.php');
                   <div class="page_content_wrapper">
                      <div class="inner">
                         <div style="margin:auto;width:100%">
-                           <h2 class="ppb_title" style="">Proximos Tours</h2>
+                           <h2 class="ppb_title" style="">Próximos Tours</h2>
                            <div class="page_tagline" style="">Conoce nuestras próximas salidas</div>
                         </div>
                      </div>
@@ -488,10 +406,8 @@ require_once('conexion.php');
                            {
                            ?>
                               <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" style="background-image:url('<?php echo "logic/".$row['foto']; ?>');">
-                           <?php
-                        }
-                           ?>
-                              <a class="tour_image" href="destination/tokyo/index.html"></a>
+                          
+                              <a class="tour_image" href="tours/users_tours/ver.php?id=<?php echo $row['id'];?>"></a>
                               <div class="portfolio_info_wrapper">
                                  <h3><?php echo $row['nombre']; ?></h3>
                                  <h5><?php echo "Salida: ".$row['fecha_salida']; ?></h5>
@@ -500,12 +416,13 @@ require_once('conexion.php');
                         
                         </div>   
                         <?php
-                        }
+                        }}
                         ?>                     
                      </div>
                   </div>
                </div>
             </div>
+            
             <div  class="one withsmallpadding ppb_header " style="text-align:center;padding:0px 0 0px 0;margin-top:10px;margin-bottom:50px;" >
                <div class="standard_wrapper">
                   <div class="page_content_wrapper">
@@ -518,119 +435,51 @@ require_once('conexion.php');
                   </div>
                </div>
             </div>
+
+
             <div  class="one withsmallpadding ppb_team_column" >
                <div class="page_content_wrapper page_main_content sidebar_content full_width fixed_column photoframe">
                   <div class="standard_wrapper">
                      <div id="1489293011252654310" class="portfolio_filter_wrapper gallery five_cols" data-columns="5">
+                     <?php
+
+                     $qry2=mysqli_query($link,"SELECT * FROM guias");     
+                        while($row1 = mysqli_fetch_array($qry2))                        
+                        {
+                           $id_user=$row1['id_user'];
+                                                 
+                        $qry=mysqli_query($link,"SELECT * FROM users WHERE id='$id_user' ORDER BY id DESC LIMIT 5 ");     
+                        while($row = mysqli_fetch_array($qry))                        
+                        {
+                           $username=$row['username'];
+                     ?>
                         <div class="element grid photoframe fixed_columns classic5_cols animated1">
                            <div class="one_fifth gallery5 classic filterable">
                               <div class="post_img">
-                                 <img class="team_pic" src="wp-content/uploads/2014/02/pexels-photo-62365-500x500.jpeg" alt=""/>
-                                 <ul class="social_wrapper team">
-                                    <li><a title="Jessica Lee on Twitter" target="_blank" class="tooltip" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a title="Jessica Lee on Facebook" target="_blank" class="tooltip" href="https://facebook.com/#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a title="Jessica Lee on Google+" target="_blank" class="tooltip" href="index.html#">
-                                       <i class="fa fa-google-plus"></i></a>
-                                    </li>
-                                    <li><a title="Jessica Lee on Linkedin" target="_blank" class="tooltip" href="index.html#"><i class="fa fa-linkedin"></i></a></li>
-                                 </ul>
+
+                              <ul class="social_wrapper team">
+                                    <li><a href="users/guias/perfil.php?usr=<?php echo $username ?>" title="Contactar" target="_blank" class="tooltip" href="#"><i class="fa fa-hand-o-right"></i></a></li>
+                                    
+                              </ul>
+
+                              <img  class="team_pic" src="<?php echo "account/".$row['foto']; ?>" alt=""/>                              
                               </div>
                               <div class="portfolio_info_wrapper center">
-                                 <h4>Jessica Lee</h4>
-                                 <div class="page_tagline">$14000 Hora</div>
+                                 <h4 ><?php echo $row['nombre']; ?></h4>
+                                 <div class="page_tagline">$<?php echo $row1['precio']." ".$row1['tiempo'];?></div>
                               </div>
                            </div>
                         </div>
-                        <div class="element grid photoframe fixed_columns classic5_cols animated2">
-                           <div class="one_fifth gallery5 classic filterable">
-                              <div class="post_img">
-                                 <img class="team_pic" src="wp-content/uploads/2014/02/pexels-photo-57759-500x500.jpeg" alt=""/>
-                                 <ul class="social_wrapper team">
-                                    <li><a title="John Bennett on Twitter" target="_blank" class="tooltip" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a title="John Bennett on Facebook" target="_blank" class="tooltip" href="https://facebook.com/#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a title="John Bennett on Google+" target="_blank" class="tooltip" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a title="John Bennett on Linkedin" target="_blank" class="tooltip" href="index.html#"><i class="fa fa-linkedin"></i></a></li>
-                                 </ul>
-                              </div>
-                              <div class="portfolio_info_wrapper center">
-                                 <h4>John Bennett</h4>
-                                 <div class="page_tagline">$15000</div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="element grid photoframe fixed_columns classic5_cols animated3">
-                           <div class="one_fifth gallery5 classic filterable">
-                              <div class="post_img">
-                                 <img class="team_pic" src="wp-content/uploads/2014/02/pexels-photo-176045-500x500.jpeg" alt=""/>
-                                 <ul class="social_wrapper team">
-                                    <li>
-                                       <a title="Christina Hardy on Twitter" target="_blank" class="tooltip" href="https://twitter.com/#">
-                                       <i class="fa fa-twitter">
-                                       </i></a>
-                                    </li>
-                                    <li><a title="Christina Hardy on Facebook" target="_blank" class="tooltip" href="https://facebook.com/#">
-                                       <i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a title="Christina Hardy on Google+" target="_blank" class="tooltip" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a title="Christina Hardy on Linkedin" target="_blank" class="tooltip" href="index.html#">
-                                       <i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="portfolio_info_wrapper center">
-                                 <h4>Christina</h4>
-                                 <div class="page_tagline">$16000</div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="element grid photoframe fixed_columns classic5_cols animated4">
-                           <div class="one_fifth gallery5 classic filterable">
-                              <div class="post_img">
-                                 <img class="team_pic" src="wp-content/uploads/2014/02/pexels-photo-167471-500x500.jpeg" alt=""/>
-                                 <ul class="social_wrapper team">
-                                    <li><a title="Oliver Doe on Twitter" target="_blank" class="tooltip" href="https://twitter.com/#">
-                                       <i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a title="Oliver Doe on Facebook" target="_blank" class="tooltip" href="https://facebook.com/#">
-                                       <i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a title="Oliver Doe on Google+" target="_blank" class="tooltip" href="index.html#">
-                                       <i class="fa fa-google-plus"></i></a>
-                                    </li>
-                                    <li><a title="Oliver Doe on Linkedin" target="_blank" class="tooltip" href="index.html#">
-                                       <i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="portfolio_info_wrapper center">
-                                 <h4>Oliver Doe</h4>
-                                 <div class="page_tagline">$14000</div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="element grid photoframe fixed_columns classic5_cols animated5">
-                           <div class="one_fifth gallery5 classic filterable">
-                              <div class="post_img">
-                                 <img class="team_pic" src="wp-content/uploads/2014/02/pexels-photo-48646-1-500x500.jpeg" alt=""/>
-                                 <ul class="social_wrapper team">
-                                    <li>
-                                       <a title="Jane Bennett on Twitter" target="_blank" class="tooltip" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a title="Jane Bennett on Facebook" target="_blank" class="tooltip" href="https://facebook.com/#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a title="Jane Bennett on Google+" target="_blank" class="tooltip" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a title="Jane Bennett on Linkedin" target="_blank" class="tooltip" href="index.html#"><i class="fa fa-linkedin"></i></a></li>
-                                 </ul>
-                              </div>
-                              <div class="portfolio_info_wrapper center">
-                                 <h4>Jane</h4>
-                                 <div class="page_tagline">$12000</div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     <?php
+                        }
+                     }
+                     ?>
+                    </div>
                   </div>
                </div>
+               
             </div>
+            
          </div>
          
          <div  class="one withsmallpadding ppb_header " style="text-align:center;padding:0px 0 0px 0;margin-top:10px;margin-bottom:50px;" >
@@ -648,86 +497,55 @@ require_once('conexion.php');
             <div  class="ppb_tour_classic one nopadding " style="margin-bottom:50px;" >
                <div class="page_content_wrapper page_main_content sidebar_content full_width fixed_column">
                   <div class="standard_wrapper">
-                     <div id="14892910211173941457" class="portfolio_filter_wrapper gallery classic three_cols" data-columns="3">
-                        <div class="element grid classic3_cols animated1">
-                           <div class="one_third gallery3 classic static filterable portfolio_type themeborder">
-                              <a class="tour_image" href="tour/french-autumn/index.html">
-                                 <img style="height: 230px" src="assets/images/bici1.jpg" alt="French Autumn" />
-                                 <div class="tour_price ">$5,000</div>
-                              </a>
-                              <div class="portfolio_info_wrapper">
-                                 <a class="tour_link" href="tour/french-autumn/index.html">
-                                    <h4>GW Negra</h4>
-                                 </a>
-                                 <div class="tour_excerpt">
-                                    <p>Popayán, Cauca</p>
-                                 </div>
-                                 <div class="tour_attribute_wrapper">
-                                    <div class="tour_attribute_rating">                                       
-                                       <div class="tour_attribute_rating_count">4&nbsp;reviews</div>
-                                    </div>
-                                    <div class="tour_attribute_days">
-                                       <span class="ti-time"></span>5&nbsp;days
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="element grid classic3_cols animated2">
-                           <div class="one_third gallery3 classic static filterable portfolio_type themeborder">
-                              <a class="tour_image" href="tour/grand-switzerland/index.html">
-                                 <img style="height: 230px" src="assets/images/bici2.jpg" alt="Grand Switzerland" />
-                                 <div class="tour_price ">$6,000</div>
-                              </a>
-                              <div class="portfolio_info_wrapper">
-                                 <a class="tour_link" href="tour/grand-switzerland/index.html">
-                                    <h4>Index Blanca Montaña</h4>
-                                 </a>
-                                 <div class="tour_excerpt">
-                                    <p>Piendamo, Cauca</p>
-                                 </div>
-                                 <div class="tour_attribute_wrapper">
-                                    <div class="tour_attribute_rating">
-                                       <div class="tour_attribute_rating_count">4&nbsp;reviews</div>
-                                    </div>
-                                    <div class="tour_attribute_days">
-                                       <span class="ti-time"></span>6&nbsp;days
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
-                              </div>
-                           </div>
-                        </div>
+                     <div id="14892910211173941457" class="portfolio_filter_wrapper gallery classic three_cols" data-columns="3">   
+                        <?php
+
+                     $qry2=mysqli_query($link,"SELECT * FROM users");     
+                        while($row1 = mysqli_fetch_array($qry2))                        
+                        {
+                           $id_user=$row1['id'];
+                                                 
+                        $qry=mysqli_query($link,"SELECT * FROM bike WHERE id_user='$id_user' ORDER BY id_user DESC LIMIT 3 ");     
+                        while($bikes12 = mysqli_fetch_array($qry))                        
+                        {
+                                                  
+                     
+                     ?>            
+                        
                         <div class="element grid classic3_cols animated3">
                            <div class="one_third gallery3 classic static filterable portfolio_type themeborder">
-                              <a class="tour_image" href="tour/discover-japan/index.html">
-                                 <img style="height: 230px" src="assets/images/bici3.jpg" alt="Discover Japan" />
+                              <a class="tour_image" href="users/bikes/ver.php?id=<?php echo $bikes12['id']; ?>">
+                                 <img style="height: 230px" src="<?php echo "logic/".$bikes12['foto'];?>" alt="Discover Japan" />
                                  <div class="tour_price has_discount">
                                     <span class="normal_price">  
-                                    </span>$2,500
+                                    </span>$<?php echo $bikes12['precio_dia']." Por día"; ?>
                                  </div>
                               </a>
                               <div class="portfolio_info_wrapper">
-                                 <a class="tour_link" href="tour/discover-japan/index.html">
-                                    <h4>Discover Japan</h4>
+                                 <a class="tour_link" href="users/bikes/ver.php?id=<?php echo $bikes12['id']; ?>">
+                                    <h4 style="text-transform: capitalize;"><?php echo $bikes12['marca']; ?></h4>
                                  </a>
                                  <div class="tour_excerpt">
-                                    <p>City Tours, Iconic</p>
+                                    <p><?php echo "Propietario ".$row1['username']; ?>
+                                    <?php echo "<br>Esta en ".$row1['ciudad']; ?></p>
                                  </div>
                                  <div class="tour_attribute_wrapper">
                                     <div class="tour_attribute_rating">
                                        
-                                       <div class="tour_attribute_rating_count">4&nbsp;reviews</div>
+                                       <!--<div class="tour_attribute_rating_count">4&nbsp;reviews</div>-->
                                     </div>
                                     <div class="tour_attribute_days">
-                                       <span class="ti-time"></span>5&nbsp;days
+                                       <span class="ti-time"></span>Hace 5 días
                                     </div>
                                  </div>
                                  <br class="clear"/>
                               </div>
                            </div>
                         </div>
+                        <?php
+                        }}
+                        ?>
+                        
                      </div>
                   </div>
                </div>
@@ -789,7 +607,7 @@ require_once('conexion.php');
                </div>
             </div>
          </div>
-         <div  class="parallax" data-jarallax-video="https://www.youtube.com/watch?v=JPe2mwq96cw" style="height:40vh; "></div>
+         <div  class="parallax" data-jarallax-video="https://www.youtube.com/watch?v=ckpwSAv5we8" style="height:40vh; "></div>
          <div  class="one withsmallpadding ppb_header " style="text-align:center;padding:0px 0 0px 0;margin-top:70px;margin-bottom:50px;" >
             <div class="standard_wrapper">
                <div class="page_content_wrapper">
@@ -885,6 +703,7 @@ require_once('conexion.php');
          </div>
       </div>
       <br class="clear"/>
+      <!--
       <div class="tour_recently_view">
          <div class="standard_wrapper">
             <h3 class="sub_title">Recently View Tours</h3>
@@ -921,64 +740,8 @@ require_once('conexion.php');
             </div>
          </div>
       </div>
-      <div id="footer" class=" ppb_wrapper">
-         <ul class="sidebar_widget three">
-            <li id="text-2" class="widget widget_text">
-               <h2 class="widgettitle">Our Awards</h2>
-               <div class="textwidget">
-                  <p>London is a megalopolis of people, ideas and frenetic energy. The capital and largest city of the United Kingdom.<br />
-                     <img src="wp-content/uploads/2016/12/awards.png" width="246" height="113" style="margin-top:30px;" alt=""/>
-                  </p>
-               </div>
-            </li>
-            <li id="text-4" class="widget widget_text">
-               <h2 class="widgettitle">Contact Info</h2>
-               <div class="textwidget">
-                  <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
-                  <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
-                  <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
-                  <div style="margin-top:20px;">
-                     <div class="social_wrapper shortcode dark ">
-                        <ul>
-                           <li class="facebook"><a target="_blank" title="Facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                           <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                           <li class="youtube"><a target="_blank" title="Youtube" href="index.html#"><i class="fa fa-youtube"></i></a></li>
-                           <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                           <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
-               <h2 class="widgettitle">Recent Trips</h2>
-               <ul class="flickr">
-                  <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
-                  <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
-                  <li><a target="_blank" href="https://www.instagram.com/p/BRYn2YXBttX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125477_337451106650656_7516217094694764544_n.jpg" width="75" height="75" alt="" /></a></li>
-                  <li><a target="_blank" href="https://www.instagram.com/p/BRWDLtvh7vb/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17076229_257140138075403_4619417127063912448_n.jpg" width="75" height="75" alt="" /></a></li>
-                  <li><a target="_blank" href="https://www.instagram.com/p/BRTeTR-hMus/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125985_183374232163594_1946321832420311040_n.jpg" width="75" height="75" alt="" /></a></li>
-                  <li><a target="_blank" href="https://www.instagram.com/p/BROVWFIBoRG/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125543_273774926379985_565758286507278336_n.jpg" width="75" height="75" alt="" /></a></li>
-               </ul>
-               <br class="clear"/>
-            </li>
-         </ul>
-      </div>
-      <div class="footer_bar  ppb_wrapper ">
-         <div class="footer_bar_wrapper ">
-            <div class="menu-footer-menu-container">
-               <ul id="footer_menu" class="footer_nav">
-                  <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-215"><a href="index.html">Home</a></li>
-                  <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="tour/index.html">Tour</a></li>
-                  <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="blog/index.html">Blog</a></li>
-                  <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
-               </ul>
-            </div>
-            <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
-            <br class="clear"/>      
-            <a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
-         </div>
-      </div>
+      -->
+      <?php include('includes/footer.php') ?>
       </div>
       <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>

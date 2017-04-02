@@ -563,7 +563,7 @@
                                  <ul class="posts blog withthumb ">
                                      <form action="experiencia_logic.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
                                     <label> Escribe una Historia para Contar</label>
-                                    <input type="text" name="titulo" value="<?php echo $row2['nombre']; ?>" size="27" maxlength="200" required/>
+                                    <input type="text" name="titulo" size="27" maxlength="200" required/>
                                     <br><br><span class="wpcf7-form-control-wrap your-name">
                                     <textarea name="historia"></textarea><br><br>
                                     <label>Sube una foto de esa historia <br />

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US"  data-menu="leftalign">
+<?php
+   require_once('../../conexion.php');
+    session_start();
+   ?>
    <head>
-      <?php
-         require_once('../../conexion.php');
-          session_start();
-         ?>
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../../wp-content/uploads/2016/12/TG-Thumb.png" />
-      <title>Mis Tours</title>
+      <title>Activar Perfil</title>
       <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
       <link rel='dns-prefetch' href='http://s.w.org' />
       <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; Feed" href="../../feed/index.html" />
@@ -75,11 +75,11 @@
       <meta name="generator" content="WooCommerce 2.6.14" />
       <link rel="canonical" href="index.html" />
       <link rel='shortlink' href='index.html' />
-      <link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ctour%7Ctour-2-columns-classic-left-sidebar%7C.json" />
-      <link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ctour%7Ctour-2-columns-classic-left-sidebar%7C&format=xml.xml" />
+      <link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Cshortcodes%7Calert-boxes%7C.json" />
+      <link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Cshortcodes%7Calert-boxes%7C&format=xml.xml" />
       <meta name="generator" content="Powered by Slider Revolution 5.3.1.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
    </head>
-   <body class="page-template page-template-tour-2-classic-l page-template-tour-2-classic-l-php page page-id-232 page-child parent-pageid-193">
+   <body class="page-template-default page page-id-343 page-child parent-pageid-315 ppb_enable">
       <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="leftalign"/>
       <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="0"/>
       <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="0"/>
@@ -117,64 +117,64 @@
                         <li id="menu-item-3152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152"><a href="../../home-4-travel-site/index.html">Home 4 – Travel Site</a></li>
                      </ul>
                   </li>
-                  <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-12">
+                  <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
                      <a href="index.html#">Tours</a>
                      <ul class="sub-menu">
                         <li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-198">
-                           <a href="../tour-3-columns-classic/index.html">Tour Classic Fullwidth</a>
+                           <a href="../../tour/tour-3-columns-classic/index.html">Tour Classic Fullwidth</a>
                            <ul class="sub-menu">
-                              <li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="../tour-2-columns-classic/index.html">2 Columns</a></li>
-                              <li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="../tour-3-columns-classic/index.html">3 Columns</a></li>
-                              <li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../tour-4-columns-classic/index.html">4 Columns</a></li>
+                              <li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="../../tour/tour-2-columns-classic/index.html">2 Columns</a></li>
+                              <li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="../../tour/tour-3-columns-classic/index.html">3 Columns</a></li>
+                              <li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../../tour/tour-4-columns-classic/index.html">4 Columns</a></li>
                            </ul>
                         </li>
-                        <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-230">
-                           <a href="../tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
+                        <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-230">
+                           <a href="../../tour/tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
                            <ul class="sub-menu">
-                              <li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
-                              <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-232 current_page_item menu-item-234"><a href="index.html">Left Sidebar</a></li>
+                              <li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../../tour/tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
+                              <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="../../tour/tour-2-columns-classic-left-sidebar/index.html">Left Sidebar</a></li>
                            </ul>
                         </li>
                         <li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-237">
-                           <a href="../tour-3-columns-grid/index.html">Tour Grid Fullwidth</a>
+                           <a href="../../tour/tour-3-columns-grid/index.html">Tour Grid Fullwidth</a>
                            <ul class="sub-menu">
-                              <li id="menu-item-241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="../tour-2-columns-grid/index.html">2 Columns</a></li>
-                              <li id="menu-item-238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="../tour-3-columns-grid/index.html">3 Columns</a></li>
-                              <li id="menu-item-244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../tour-4-columns-grid/index.html">4 Columns</a></li>
+                              <li id="menu-item-241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="../../tour/tour-2-columns-grid/index.html">2 Columns</a></li>
+                              <li id="menu-item-238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="../../tour/tour-3-columns-grid/index.html">3 Columns</a></li>
+                              <li id="menu-item-244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../../tour/tour-4-columns-grid/index.html">4 Columns</a></li>
                            </ul>
                         </li>
                         <li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-247">
-                           <a href="../tour-grid-right-sidebar/index.html">Tour Grid Sidebar</a>
+                           <a href="../../tour/tour-grid-right-sidebar/index.html">Tour Grid Sidebar</a>
                            <ul class="sub-menu">
-                              <li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="../tour-grid-right-sidebar/index.html">Right Sidebar</a></li>
-                              <li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="../tour-grid-left-sidebar/index.html">Left Sidebar</a></li>
+                              <li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="../../tour/tour-grid-right-sidebar/index.html">Right Sidebar</a></li>
+                              <li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="../../tour/tour-grid-left-sidebar/index.html">Left Sidebar</a></li>
                            </ul>
                         </li>
                         <li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-256">
-                           <a href="../tour-list-right-sidebar/index.html">Tour List Sidebar</a>
+                           <a href="../../tour/tour-list-right-sidebar/index.html">Tour List Sidebar</a>
                            <ul class="sub-menu">
-                              <li id="menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="../tour-list-right-sidebar/index.html">Right Sidebar</a></li>
-                              <li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../tour-list-left-sidebar/index.html">Left Sidebar</a></li>
+                              <li id="menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="../../tour/tour-list-right-sidebar/index.html">Right Sidebar</a></li>
+                              <li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../../tour/tour-list-left-sidebar/index.html">Left Sidebar</a></li>
                            </ul>
                         </li>
                         <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-261">
-                           <a href="../tour-3-columns-grid/index.html">Tour Header Type</a>
+                           <a href="../../tour/tour-3-columns-grid/index.html">Tour Header Type</a>
                            <ul class="sub-menu">
-                              <li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../tour-3-columns-grid/index.html">Featured Image</a></li>
-                              <li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="../tour-3-columns-video-header/index.html">Video</a></li>
+                              <li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../../tour/tour-3-columns-grid/index.html">Featured Image</a></li>
+                              <li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="../../tour/tour-3-columns-video-header/index.html">Video</a></li>
                            </ul>
                         </li>
                      </ul>
                   </li>
                   <li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-has-children menu-item-200">
-                     <a href="../the-new-california/index.html">Booking</a>
+                     <a href="../../tour/the-new-california/index.html">Booking</a>
                      <ul class="sub-menu">
-                        <li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
-                        <li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../niko-trip/index.html">Booking Form + Custom Date</a></li>
-                        <li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
-                        <li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
-                        <li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../french-autumn/index.html">Standard Background Header</a></li>
-                        <li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../great-britain-travel/index.html">Video Background Header</a></li>
+                        <li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../../tour/the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
+                        <li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../../tour/niko-trip/index.html">Booking Form + Custom Date</a></li>
+                        <li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../../tour/swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
+                        <li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../../tour/5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
+                        <li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../../tour/french-autumn/index.html">Standard Background Header</a></li>
+                        <li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../../tour/great-britain-travel/index.html">Video Background Header</a></li>
                      </ul>
                   </li>
                   <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13">
@@ -215,19 +215,19 @@
                         <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="../../blog/blog-full-grid-fullwidth/index.html">Blog Full + Grid Fullwidth</a></li>
                      </ul>
                   </li>
-                  <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16">
+                  <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-16">
                      <a href="index.html#">Shortcodes</a>
                      <ul class="sub-menu">
-                        <li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="../../shortcodes/accordion-toggles/index.html">Accordion &#038; Toggles</a></li>
-                        <li id="menu-item-348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="../../shortcodes/alert-boxes/index.html">Alert Boxes</a></li>
-                        <li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="../../shortcodes/animated-content/index.html">Animated Content</a></li>
-                        <li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../../shortcodes/buttons-social-icons/index.html">Buttons &#038; Social Icons</a></li>
-                        <li id="menu-item-366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="../../shortcodes/columns/index.html">Columns</a></li>
-                        <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="../../shortcodes/google-maps/index.html">Google Maps</a></li>
-                        <li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="../../shortcodes/image-frame-animation/index.html">Image Frame &#038; Animation</a></li>
-                        <li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="../../shortcodes/image-teasers/index.html">Image Teasers</a></li>
-                        <li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="../../shortcodes/pricing-tables/index.html">Pricing Tables</a></li>
-                        <li id="menu-item-2421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="../../shortcodes/tabs/index.html">Tabs</a></li>
+                        <li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="../accordion-toggles/index.html">Accordion &#038; Toggles</a></li>
+                        <li id="menu-item-348" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-343 current_page_item menu-item-348"><a href="index.html">Alert Boxes</a></li>
+                        <li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="../animated-content/index.html">Animated Content</a></li>
+                        <li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../buttons-social-icons/index.html">Buttons &#038; Social Icons</a></li>
+                        <li id="menu-item-366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="../columns/index.html">Columns</a></li>
+                        <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="../google-maps/index.html">Google Maps</a></li>
+                        <li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="../image-frame-animation/index.html">Image Frame &#038; Animation</a></li>
+                        <li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="../image-teasers/index.html">Image Teasers</a></li>
+                        <li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="../pricing-tables/index.html">Pricing Tables</a></li>
+                        <li id="menu-item-2421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="../tabs/index.html">Tabs</a></li>
                      </ul>
                   </li>
                   <li id="menu-item-2442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2442">
@@ -249,7 +249,7 @@
                         <ul class="sidebar_widget">
                            <li id="grandtour_tour_posts-10" class="widget Grandtour_Tour_Posts">
                               <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-26689-700x466.jpg');">
-                                 <a class="tour_image" href="../colorful-singapore/index.html"></a>	
+                                 <a class="tour_image" href="../../tour/colorful-singapore/index.html"></a>	
                                  <div class="portfolio_info_wrapper">
                                     <div class="tour_price has_discount">
                                        <span class="normal_price">
@@ -270,7 +270,7 @@
                               </div>
                               <br class="clear"/>
                               <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg');">
-                                 <a class="tour_image" href="../hong-kong/index.html"></a>	
+                                 <a class="tour_image" href="../../tour/hong-kong/index.html"></a>	
                                  <div class="portfolio_info_wrapper">
                                     <div class="tour_price has_discount">
                                        <span class="normal_price">
@@ -347,64 +347,64 @@
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152"><a href="../../home-4-travel-site/index.html">Home 4 – Travel Site</a></li>
                                           </ul>
                                        </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children arrow menu-item-12">
+                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-12">
                                           <a href="index.html#">Tours</a>
                                           <ul class="sub-menu">
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-198">
-                                                <a href="../tour-3-columns-classic/index.html">Tour Classic Fullwidth</a>
+                                                <a href="../../tour/tour-3-columns-classic/index.html">Tour Classic Fullwidth</a>
                                                 <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="../tour-2-columns-classic/index.html">2 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="../tour-3-columns-classic/index.html">3 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../tour-4-columns-classic/index.html">4 Columns</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="../../tour/tour-2-columns-classic/index.html">2 Columns</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="../../tour/tour-3-columns-classic/index.html">3 Columns</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../../tour/tour-4-columns-classic/index.html">4 Columns</a></li>
                                                 </ul>
                                              </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children arrow menu-item-230">
-                                                <a href="../tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-230">
+                                                <a href="../../tour/tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
                                                 <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-232 current_page_item menu-item-234"><a href="index.html">Left Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../../tour/tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="../../tour/tour-2-columns-classic-left-sidebar/index.html">Left Sidebar</a></li>
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-237">
-                                                <a href="../tour-3-columns-grid/index.html">Tour Grid Fullwidth</a>
+                                                <a href="../../tour/tour-3-columns-grid/index.html">Tour Grid Fullwidth</a>
                                                 <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="../tour-2-columns-grid/index.html">2 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="../tour-3-columns-grid/index.html">3 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../tour-4-columns-grid/index.html">4 Columns</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="../../tour/tour-2-columns-grid/index.html">2 Columns</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="../../tour/tour-3-columns-grid/index.html">3 Columns</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../../tour/tour-4-columns-grid/index.html">4 Columns</a></li>
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-247">
-                                                <a href="../tour-grid-right-sidebar/index.html">Tour Grid Sidebar</a>
+                                                <a href="../../tour/tour-grid-right-sidebar/index.html">Tour Grid Sidebar</a>
                                                 <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="../tour-grid-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="../tour-grid-left-sidebar/index.html">Left Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="../../tour/tour-grid-right-sidebar/index.html">Right Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="../../tour/tour-grid-left-sidebar/index.html">Left Sidebar</a></li>
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-256">
-                                                <a href="../tour-list-right-sidebar/index.html">Tour List Sidebar</a>
+                                                <a href="../../tour/tour-list-right-sidebar/index.html">Tour List Sidebar</a>
                                                 <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="../tour-list-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../tour-list-left-sidebar/index.html">Left Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="../../tour/tour-list-right-sidebar/index.html">Right Sidebar</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../../tour/tour-list-left-sidebar/index.html">Left Sidebar</a></li>
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-261">
-                                                <a href="../tour-3-columns-grid/index.html">Tour Header Type</a>
+                                                <a href="../../tour/tour-3-columns-grid/index.html">Tour Header Type</a>
                                                 <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../tour-3-columns-grid/index.html">Featured Image</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="../tour-3-columns-video-header/index.html">Video</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../../tour/tour-3-columns-grid/index.html">Featured Image</a></li>
+                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="../../tour/tour-3-columns-video-header/index.html">Video</a></li>
                                                 </ul>
                                              </li>
                                           </ul>
                                        </li>
                                        <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-has-children arrow menu-item-200">
-                                          <a href="../the-new-california/index.html">Booking</a>
+                                          <a href="../../tour/the-new-california/index.html">Booking</a>
                                           <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../niko-trip/index.html">Booking Form + Custom Date</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../french-autumn/index.html">Standard Background Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../great-britain-travel/index.html">Video Background Header</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../../tour/the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../../tour/niko-trip/index.html">Booking Form + Custom Date</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../../tour/swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../../tour/5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../../tour/french-autumn/index.html">Standard Background Header</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../../tour/great-britain-travel/index.html">Video Background Header</a></li>
                                           </ul>
                                        </li>
                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-13">
@@ -445,19 +445,19 @@
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="../../blog/blog-full-grid-fullwidth/index.html">Blog Full + Grid Fullwidth</a></li>
                                           </ul>
                                        </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-16">
+                                       <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children arrow menu-item-16">
                                           <a href="index.html#">Shortcodes</a>
                                           <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="../../shortcodes/accordion-toggles/index.html">Accordion &#038; Toggles</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="../../shortcodes/alert-boxes/index.html">Alert Boxes</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="../../shortcodes/animated-content/index.html">Animated Content</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../../shortcodes/buttons-social-icons/index.html">Buttons &#038; Social Icons</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="../../shortcodes/columns/index.html">Columns</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="../../shortcodes/google-maps/index.html">Google Maps</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="../../shortcodes/image-frame-animation/index.html">Image Frame &#038; Animation</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="../../shortcodes/image-teasers/index.html">Image Teasers</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="../../shortcodes/pricing-tables/index.html">Pricing Tables</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="../../shortcodes/tabs/index.html">Tabs</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="../accordion-toggles/index.html">Accordion &#038; Toggles</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-343 current_page_item menu-item-348"><a href="index.html">Alert Boxes</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="../animated-content/index.html">Animated Content</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../buttons-social-icons/index.html">Buttons &#038; Social Icons</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="../columns/index.html">Columns</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="../google-maps/index.html">Google Maps</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="../image-frame-animation/index.html">Image Frame &#038; Animation</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="../image-teasers/index.html">Image Teasers</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="../pricing-tables/index.html">Pricing Tables</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="../tabs/index.html">Tabs</a></li>
                                           </ul>
                                        </li>
                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-2442">
@@ -490,203 +490,113 @@
                </div>
             </div>
          </div>
-         <div id="page_caption" class="hasbg parallax" style="height:350px; background-image:url('../../wp-content/uploads/2016/12/venice-WBEUROCITIES16.jpg');" >
+        <div id="page_caption" class="hasbg parallax" style="height:350px; background-image:url('../../wp-content/uploads/2016/12/venice-WBEUROCITIES16.jpg');" >
+
             <div class="page_title_wrapper">
+
                <div class="page_title_inner">
+
                   <div class="page_title_content">
-                     <h1 ><?php echo $_SESSION['NAME']; ?></h1>
+                     <h1 ><?php echo $_SESSION['USERNAME']; ?></h1>
+                       
                      <?php
-                        $id=$_SESSION['ID'];
-                        $query = "SELECT * FROM users WHERE id = '$id'";
-                           $resultado2 = $link->query($query);
-                           while($row2 = $resultado2->fetch_assoc())
-                         {
-                           $foto=$row2['foto'];
-                        
-                        if($foto==NULL)
-                        {?>
-                     <img width="160px" height="160px" src="../imagenes/usuarios/default.jpg"> <br>
-                     <a href="foto_upload.php"><button>Editar Foto</button></a><br>
+                     $id=$_SESSION['ID'];
+                     $query = "SELECT * FROM users WHERE id = '$id'";
+                        $resultado2 = $link->query($query);
+                        while($row2 = $resultado2->fetch_assoc())
+                      {
+                        $foto=$row2['foto'];
+
+                     if($foto==NULL)
+                     {?>
+                         <img width="160px" height="160px" src="../imagenes/usuarios/default.jpg"> 
                      <?php
-                        }
-                        else
-                        {?>
-                     <img style="border-radius: 50%;" width="160px" height="160px" src="<?php echo "../".$foto; ?>"><br>
+                     }
+                     else
+                     {?>
+                        <img style="border-radius: 50%;" width="160px" height="160px" src="<?php echo "../".$foto; ?>"><br>
                      <?php
-                        }
-                        }
-                           ?>
+                  }
+               }
+                     ?>
+                      
+
                      <div class="page_tagline">
-                        soy de <?php  echo $_SESSION['CIUDAD']; ?>           
+
+                        Soy de <?php  echo $_SESSION['CIUDAD']; ?>  
+
                      </div>
+
                   </div>
                </div>
             </div>
          </div>
-         <!-- Begin content -->
-         <div id="page_content_wrapper" class="hasbg ">
-            <!-- Begin content -->
-            <div class="inner">
-               <div class="inner_wrapper nopadding">
-                  <div id="page_main_content" class="sidebar_content left_sidebar fixed_column">
-                     <div class="standard_wrapper">
-                        <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
+         <div class="ppb_wrapper hasbg ">
+            <div  class="one withsmallpadding ppb_text" style="text-align:left;padding:40px 0 40px 0;" >
+               <div class="standard_wrapper">
+                  <div class="page_content_wrapper">
+                     <div class="inner">
+                        <div style="margin:auto;width:100%">
+                           <p>
+                          
+                           <div id="148929302253306086" class="alert_box success">
+                              <i class="fa fa-flag alert_icon"></i>
+                              
+                              <div class="alert_box_msg">Tu Rol en Yamgo ha sido modificado...!!!</div>
+                              <a href="index.html#" class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
+                           </div>
+                           <br />
+                           <center><a href="../perfil_edit.php">Volver a mi perfil</a></center>
                            
-                            <h4>Mis Tours </h4><br>
-                           <?php $id=$_SESSION['ID'];                           
-                           $query = "SELECT * FROM tour WHERE id_user = '$id'";
-                           $resultado2 = $link->query($query);
-                           while($row2 = $resultado2->fetch_assoc())
-                           {
-                           ?>
-                           <div class="element grid classic2_cols animated13">
-                              <div class="one_half gallery2 classic static filterable portfolio_type themeborder" data-id="post-13">
-                                 <a class="tour_image" href="../colorful-singapore/index.html">
-                                    <img style="height: 230px" src="<?php echo "../../logic/".$row2['foto']; ?>" alt="Colorful Singapore" />
-                                    <div class="tour_price has_discount">
-                                       <span>Precio</span>
-                                       $1,700													
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="divider one">&nbsp;</div>
+            <div class="divider one">&nbsp;</div>
+         </div>
+         <br class="clear"/>
+         <div class="tour_recently_view">
+            <div class="standard_wrapper">
+               <h3 class="sub_title">Recently View Tours</h3>
+               <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
+                  <div class="element grid classic4_cols animated1">
+                     <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
+                        <a class="tour_image" href="../../tour/great-britain-travel/index.html"></a>	
+                        <div class="portfolio_info_wrapper">
+                           <div class="tour_price has_discount">
+                              <span class="normal_price">
+                              $6,000						</span>
+                              $5,900									
+                           </div>
+                           <h5>Great Britain Travel</h5>
+                           <div class="tour_attribute_wrapper">
+                              <div class="tour_attribute_rating">
+                                 <div class="br-theme-fontawesome-stars-o">
+                                    <div class="br-widget">
+                                       <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>								
                                     </div>
-                                 </a>
-                                 <div class="portfolio_info_wrapper">
-                                    <a class="tour_link" href="../colorful-singapore/index.html">
-                                       <h4><?php echo $row2['nombre']; ?></h4><br>
-                                    </a>
-                                    <div class="tour_excerpt">
-                                       <?php echo "Fecha de Salida: ".$row2['fecha_salida']." - Desde: ".$row2['origen']; ?>
-                                       <?php echo "Fecha de Llegada: ".$row2['fecha_llegada']." - A: ".$row2['destino'];; ?>
-
-                                    </div>
-                                    <div class="tour_attribute_wrapper">
-                                       
-                                    <style>
-                                    .button {
-                                        background-color: #4CAF50; /* Green */
-                                        border: none;
-                                        color: white;
-                                        padding: 8px 16px;
-                                        text-align: center;
-                                        text-decoration: none;
-                                        display: inline-block;
-                                        font-size: 15px;
-                                        margin: 4px 2px;
-                                        cursor: pointer;
-                                        -webkit-transition-duration: 0.4s; /* Safari */
-                                        transition-duration: 0.4s;
-                                    }
-
-                                    .button1 {
-                                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-                                    }
-
-                                    .button2:hover {
-                                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-                                    }
-                                    </style>
-
-                                    </div>
-                                    <br>
-                                    <a href="admintour.php?id=<?php echo $row2['id']; ?>"><button class="button button1">Vista Admin</button></a>
-                                    <a href="../../tours/users_tours/ver.php?id=<?php echo $row2['id']; ?>"><button style="float: right;" class="button button1">Vista Previa</button></a>
-                                     
                                  </div>
-
+                                 <div class="tour_attribute_rating_count">
+                                    4&nbsp;
+                                    reviews							
+                                 </div>
+                              </div>
+                              <div class="tour_attribute_days">
+                                 <span class="ti-time"></span>
+                                 5&nbsp;days		    		    
                               </div>
                            </div>
-                           <?php
-                           }
-                           ?>
-                        </div>
-                        <br class="clear"/>
-                     </div>
-                  </div>
-                  <div class="sidebar_wrapper left_sidebar">
-                     <div class="sidebar">
-                        <div class="content">
-                           <ul class="sidebar_widget">
-                              <li id="grandtour_cat_posts-5" class="widget Grandtour_Cat_Posts">
-                                 <h2 class="widgettitle"><span>Mis Historias</span></h2>
-                                 <ul class="posts blog withthumb ">
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Memorial Day to Someone Told Me to Travel</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../7-tips-for-nomads-on-a-budget/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-212388-150x150.jpeg" alt="" /></a></div>
-                                       <a href="../../7-tips-for-nomads-on-a-budget/index.html">7 Tips For Nomads On A Budget Trips</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../taking-a-travel-blog-victory-lap/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-24484-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../taking-a-travel-blog-victory-lap/index.html">Taking A Travel Blog Victory Lap</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li id="grandtour_instagram-6" class="widget Grandtour_Instagram">
-                                 <h2 class="widgettitle">Recent Trips</h2>
-                                 <ul class="flickr">
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRYn2YXBttX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125477_337451106650656_7516217094694764544_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRWDLtvh7vb/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17076229_257140138075403_4619417127063912448_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRTeTR-hMus/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125985_183374232163594_1946321832420311040_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BROVWFIBoRG/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125543_273774926379985_565758286507278336_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRJLJiMB1sY/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/16906327_385140918510638_797076635135246336_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRHdP9fhAN1/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17075846_180135339150337_5818033664906231808_n.jpg" width="75" height="75" alt="" /></a></li>
-                                    <li><a target="_blank" href="https://www.instagram.com/p/BRE5PyCh6vU/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17076669_467646333625226_6620182540453937152_n.jpg" width="75" height="75" alt="" /></a></li>
-                                 </ul>
-                                 <br class="clear"/>
-                              </li>
-                              <li id="grandtour_tour_posts-2" class="widget Grandtour_Tour_Posts">
-                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg');">
-                                    <a class="tour_image" href="../french-autumn/index.html"></a>	
-                                    <div class="portfolio_info_wrapper">
-                                       <div class="tour_price ">
-                                          $5,000															
-                                       </div>
-                                       <h5>French Autumn</h5>
-                                       <div class="tour_attribute_wrapper">
-                                          <div class="tour_attribute_rating">
-                                             <div class="br-theme-fontawesome-stars-o">
-                                                <div class="br-widget">
-                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
-                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-197657-700x466.jpeg');">
-                                    <a class="tour_image" href="../grand-switzerland/index.html"></a>	
-                                    <div class="portfolio_info_wrapper">
-                                       <div class="tour_price ">
-                                          $6,000															
-                                       </div>
-                                       <h5>Grand Switzerland</h5>
-                                       <div class="tour_attribute_wrapper">
-                                          <div class="tour_attribute_rating">
-                                             <div class="br-theme-fontawesome-stars-o">
-                                                <div class="br-widget">
-                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
-                              </li>
-                           </ul>
+                           <br class="clear"/>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-         <div id="footer" class=" ">
+         <div id="footer" class=" ppb_wrapper">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">
                   <h2 class="widgettitle">Our Awards</h2>
@@ -729,12 +639,12 @@
                </li>
             </ul>
          </div>
-         <div class="footer_bar   ">
+         <div class="footer_bar  ppb_wrapper ">
             <div class="footer_bar_wrapper ">
                <div class="menu-footer-menu-container">
                   <ul id="footer_menu" class="footer_nav">
                      <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Home</a></li>
-                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../index.html">Tour</a></li>
+                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../../tour/index.html">Tour</a></li>
                      <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../../blog/index.html">Blog</a></li>
                      <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
                   </ul>
@@ -749,6 +659,188 @@
          <a id="close_share" href="javascript:;"><span class="ti-close"></span></a>
       </div>
       <div id="option_wrapper">
+         <div class="inner">
+            <div style="text-align:center">
+               <h6>Predefined Colors</h6>
+               <p>
+                  Here are predefined colors stylings that can be imported in one click and you can also customised yours.
+               </p>
+               <ul class="demo_color_list">
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=red.html">
+                              <div class="item_thumb" style="background:#FF4A52"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=orange.html">
+                              <div class="item_thumb" style="background:#FF9500"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=yellow.html">
+                              <div class="item_thumb" style="background:#FFCC00"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=green.html">
+                              <div class="item_thumb" style="background:#4CD964"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=teal_blue.html">
+                              <div class="item_thumb" style="background:#5AC8FA"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=blue.html">
+                              <div class="item_thumb" style="background:#007AFF"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=purple.html">
+                              <div class="item_thumb" style="background:#5856D6"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../../index-styling=pink.html">
+                              <div class="item_thumb" style="background:#FF2D55"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <h6>Predefined Stylings</h6>
+               <p>
+                  Here are example styling that can be imported with one click.
+               </p>
+               <ul class="demo_list">
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling1.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Left Align Menu</h6>
+                              <a href="../../index.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling2.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Center Align</h6>
+                              <a href="../../index-menulayout=centeralign.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling3.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Center Logo + 2 Menus</h6>
+                              <a href="../../index-menulayout=centeralogo.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling4.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Fullscreen Menu</h6>
+                              <a href="../../index-menulayout=hammenufull.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling5.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Side Menu</h6>
+                              <a href="../../index-menulayout=hammenuside.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling6.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>With Frame</h6>
+                              <a href="../../index-frame=1.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling7.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Boxed Layout</h6>
+                              <a href="../../index-boxed=1.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling8.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>With Top Bar</h6>
+                              <a href="../../index-topbar=1.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="option_btn">
+         <a href="javascript:;" class="demotip" title="Choose Theme Styling"><span class="ti-settings"></span></a>
+         <a href="../../../doc/index.html" class="demotip" title="Theme Documentation" target="_blank"><span class="ti-book"></span></a>
+         <a href="https://themeforest.net/item/grand-tour-tour-travel-wordpress/19264426?ref=ThemeGoods&license=regular&open_purchase_for_item_id=19264426&purchasable=source&ref=ThemeGoods" title="Purchase Theme" class="demotip" target="_blank"><span class="ti-shopping-cart"></span></a>
+      </div>
       <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
@@ -758,21 +850,21 @@
       <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/tour-2-columns-classic-left-sidebar\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/shortcodes\/alert-boxes\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/tour-2-columns-classic-left-sidebar\/?wc-ajax=%%endpoint%%"};
+         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/shortcodes\/alert-boxes\/?wc-ajax=%%endpoint%%"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/tour\/tour-2-columns-classic-left-sidebar\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/shortcodes\/alert-boxes\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
@@ -795,15 +887,14 @@
       <script type='text/javascript' src='../../wp-content/themes/grandtour/js/custom_plugins.js'></script>
       <script type='text/javascript' src='../../wp-content/themes/grandtour/js/custom.js'></script>
       <script type='text/javascript' src='../../wp-includes/js/wp-embed.min.js'></script>
-      <script type='text/javascript' src='../../wp-admin/admin-ajax-action=grandtour_ajax_search&id=keyword&form=tour_search_form&result=autocomplete.php'></script>
+      <script type='text/javascript' src='../../wp-content/themes/grandtour/js/custom_onepage.js'></script>
       <script type='text/javascript' src='../../wp-content/themes/grandtour/js/jquery.cookie.js'></script>
       <script type='text/javascript' src='../../wp-admin/admin-ajax-action=grandtour_script_demo.php'></script>
    </body>
 </html>
-<!-- End content -->
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
-   Object Caching 8533/8890 objects using disk
+   Object Caching 7792/7844 objects using disk
    Page Caching using disk: enhanced
-   Database Caching 12/107 queries in 0.024 seconds using disk
+   Database Caching 12/45 queries in 0.015 seconds using disk
    
-    Served from: themes.themegoods2.com @ 2017-03-12 04:08:27 by W3 Total Cache -->
+    Served from: themes.themegoods2.com @ 2017-03-12 04:30:22 by W3 Total Cache -->

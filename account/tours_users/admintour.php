@@ -531,71 +531,78 @@
                   <div id="page_main_content" class="sidebar_content left_sidebar fixed_column">
                      <div class="standard_wrapper">
                         <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
+                           <?php $id=$_REQUEST['id']; ?>
+                           <?php  
                            
-                            <h4>Mis Tours </h4><br>
-                           <?php $id=$_SESSION['ID'];                           
-                           $query = "SELECT * FROM tour WHERE id_user = '$id'";
-                           $resultado2 = $link->query($query);
-                           while($row2 = $resultado2->fetch_assoc())
+                           $consulta = mysqli_query($link,"SELECT * FROM viajeros WHERE id_tour='$id'");
+                           $total = 0;
+                           while($row = mysqli_fetch_array($consulta))
+                           {
+                              $total = $total + $row['cupos'];
+                           }
+                                     
+                           $cupos=$row2['cupos'];
+                           $total2=$row2['cupos']-$total;
+                                     
+
+                           $qry=mysqli_query($link,"SELECT * FROM tour WHERE id='$id'");   
+                           while($tour = mysqli_fetch_array($qry))                        
                            {
                            ?>
-                           <div class="element grid classic2_cols animated13">
-                              <div class="one_half gallery2 classic static filterable portfolio_type themeborder" data-id="post-13">
-                                 <a class="tour_image" href="../colorful-singapore/index.html">
-                                    <img style="height: 230px" src="<?php echo "../../logic/".$row2['foto']; ?>" alt="Colorful Singapore" />
-                                    <div class="tour_price has_discount">
-                                       <span>Precio</span>
-                                       $1,700													
-                                    </div>
-                                 </a>
-                                 <div class="portfolio_info_wrapper">
-                                    <a class="tour_link" href="../colorful-singapore/index.html">
-                                       <h4><?php echo $row2['nombre']; ?></h4><br>
-                                    </a>
-                                    <div class="tour_excerpt">
-                                       <?php echo "Fecha de Salida: ".$row2['fecha_salida']." - Desde: ".$row2['origen']; ?>
-                                       <?php echo "Fecha de Llegada: ".$row2['fecha_llegada']." - A: ".$row2['destino'];; ?>
+                           <?php if(($tour['cupos']+$total2)<0){ ?>
+                            <h5>Tour <strong><i><? echo $tour['nombre']." - Cupos Asignados ".$tour['cupos']." - No quedan Cupos Disponibles" ?></i></strong><h5><br>
+                            <? } 
+                            else
+                              {?>
+                           <h5>Tour <strong><i><? echo $tour['nombre']." - Cupos Asignados ".$tour['cupos']." - Cupos disponibles ".($tour['cupos']+$total2);?></i></strong><h5><br>
+                           <?php }?>
 
-                                    </div>
-                                    <div class="tour_attribute_wrapper">
-                                       
-                                    <style>
-                                    .button {
-                                        background-color: #4CAF50; /* Green */
-                                        border: none;
-                                        color: white;
-                                        padding: 8px 16px;
-                                        text-align: center;
-                                        text-decoration: none;
-                                        display: inline-block;
-                                        font-size: 15px;
-                                        margin: 4px 2px;
-                                        cursor: pointer;
-                                        -webkit-transition-duration: 0.4s; /* Safari */
-                                        transition-duration: 0.4s;
-                                    }
 
-                                    .button1 {
-                                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-                                    }
+                           <style>
+                           table {
+                               border-collapse: collapse;
+                               width: 100%;
+                           }
 
-                                    .button2:hover {
-                                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-                                    }
-                                    </style>
+                           th, td {
+                               padding: 8px;
+                               text-align: left;
+                               border-bottom: 1px solid #ddd;
+                           }
 
-                                    </div>
-                                    <br>
-                                    <a href="admintour.php?id=<?php echo $row2['id']; ?>"><button class="button button1">Vista Admin</button></a>
-                                    <a href="../../tours/users_tours/ver.php?id=<?php echo $row2['id']; ?>"><button style="float: right;" class="button button1">Vista Previa</button></a>
-                                     
-                                 </div>
+                           tr:hover{background-color:#f5f5f5}
+                           </style>
+                           <img style="border-radius: 3%" src="../../logic/<? echo $tour['foto']; ?>">
+                           <br><br>
 
-                              </div>
-                           </div>
-                           <?php
+                           <h5>Cupos separados</h5>
+                           <table style="font-family: Poppins, Helvetica, Arial, sans-serif">
+                           
+                              <tr>
+                               <th>Nombre</th>
+                               <th>Email</th>
+                               <th>Telefono</th>
+                               <th>Cupos</th>
+                             </tr>
+                             <?php  
+                           $id_tour=$_REQUEST['id'];                          
+                           $qry=mysqli_query($link,"SELECT * FROM viajeros WHERE id_tour='$id_tour' ");
+                           while($tour = mysqli_fetch_array($qry))                        
+                           {
+                           ?>
+                             <tr>
+                               <td><? echo $tour['nombre']; ?></td>
+                               <td><? echo $tour['email']; ?></td>
+                               <td><? echo $tour['telefono']; ?></td>
+                               <td><? echo $tour['cupos']; ?></td>
+                             </tr>
+                           <?php 
                            }
                            ?>
+                           </table>
+                           <?php
+                            }
+                             ?>
                         </div>
                         <br class="clear"/>
                      </div>
@@ -605,26 +612,29 @@
                         <div class="content">
                            <ul class="sidebar_widget">
                               <li id="grandtour_cat_posts-5" class="widget Grandtour_Cat_Posts">
-                                 <h2 class="widgettitle"><span>Mis Historias</span></h2>
+                                 <h2 class="widgettitle"><span>Bicis Disponibles</span></h2>
                                  <ul class="posts blog withthumb ">
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Memorial Day to Someone Told Me to Travel</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../7-tips-for-nomads-on-a-budget/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-212388-150x150.jpeg" alt="" /></a></div>
-                                       <a href="../../7-tips-for-nomads-on-a-budget/index.html">7 Tips For Nomads On A Budget Trips</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../taking-a-travel-blog-victory-lap/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-24484-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../taking-a-travel-blog-victory-lap/index.html">Taking A Travel Blog Victory Lap</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                 </ul>
+                                    <?php
+                                       $qry2=mysqli_query($link,"SELECT * FROM bike ORDER BY id ASC LIMIT 3"); 
+                                       while($row1 = mysqli_fetch_array($qry2))                        
+                                       {
+                                          $id_user=$row1['id_user'];
+                                          $qry=mysqli_query($link,"SELECT * FROM users WHERE id='$id_user'"); 
+                                          while($row = mysqli_fetch_array($qry))                        
+                                       {
+                                       ?>
+                                       <li>
+                                          <div class="post_circle_thumb"><a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>"><img style="width: 70px; height: 70px;" class="alignleft frame post_thumb" src="../../logic/<?php echo $row1['foto']; ?>" alt="" /></a></div>
+                                          <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>"><? echo $row1['marca']." ".$row1['color']; ?></a>
+                                          <div style="text-transform: capitalize;" class="post_attribute"><? echo $row['ciudad']."<br> Hace 5 días" ?></div>
+
+                                       </li>
+                                       <?php
+                                       }}
+                                       ?>
+                                    </ul>
                               </li>
-                              <li id="grandtour_instagram-6" class="widget Grandtour_Instagram">
+                              <!--<li id="grandtour_instagram-6" class="widget Grandtour_Instagram">
                                  <h2 class="widgettitle">Recent Trips</h2>
                                  <ul class="flickr">
                                     <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
@@ -636,36 +646,22 @@
                                     <li><a target="_blank" href="https://www.instagram.com/p/BRJLJiMB1sY/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/16906327_385140918510638_797076635135246336_n.jpg" width="75" height="75" alt="" /></a></li>
                                     <li><a target="_blank" href="https://www.instagram.com/p/BRHdP9fhAN1/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17075846_180135339150337_5818033664906231808_n.jpg" width="75" height="75" alt="" /></a></li>
                                     <li><a target="_blank" href="https://www.instagram.com/p/BRE5PyCh6vU/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17076669_467646333625226_6620182540453937152_n.jpg" width="75" height="75" alt="" /></a></li>
-                                 </ul>
+                                 </ul>-->
                                  <br class="clear"/>
                               </li>
                               <li id="grandtour_tour_posts-2" class="widget Grandtour_Tour_Posts">
-                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg');">
-                                    <a class="tour_image" href="../french-autumn/index.html"></a>	
-                                    <div class="portfolio_info_wrapper">
-                                       <div class="tour_price ">
-                                          $5,000															
-                                       </div>
-                                       <h5>French Autumn</h5>
-                                       <div class="tour_attribute_wrapper">
-                                          <div class="tour_attribute_rating">
-                                             <div class="br-theme-fontawesome-stars-o">
-                                                <div class="br-widget">
-                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>											
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <br class="clear"/>
-                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-197657-700x466.jpeg');">
-                                    <a class="tour_image" href="../grand-switzerland/index.html"></a>	
+                                 <?php                            
+                                 $qry=mysqli_query($link,"SELECT * FROM tour ORDER BY id DESC LIMIT 3 ");     
+                                 while($row = mysqli_fetch_array($qry))                        
+                                 {
+                                  ?> 
+                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../logic/<? echo $row['foto']; ?>');">
+                                    <a class="tour_image" href="../../tours/users_tours/ver.php?id=<?php echo $row['id'];?>"></a>	
                                     <div class="portfolio_info_wrapper">
                                        <div class="tour_price ">
                                           $6,000															
                                        </div>
-                                       <h5>Grand Switzerland</h5>
+                                       <h5><? echo $row['nombre']; ?></h5>
                                        <div class="tour_attribute_wrapper">
                                           <div class="tour_attribute_rating">
                                              <div class="br-theme-fontawesome-stars-o">
@@ -677,6 +673,8 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <?php
+                                 }?>
                                  <br class="clear"/>
                               </li>
                            </ul>

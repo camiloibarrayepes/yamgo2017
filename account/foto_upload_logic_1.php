@@ -36,9 +36,8 @@ $resultado = $link->query($query);
 
 if($resultado)
 {
-?>
-   <b> Registro Exitoso, Tour Añadido. <BR>
-<?php
+
+echo"<script language='javascript'>window.location='perfil_edit.php'</script>";
    
 }
 else

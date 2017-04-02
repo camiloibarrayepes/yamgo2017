@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US"  data-menu="leftalign">
+<? require_once('../conexion.php'); ?>
    <head>
-     
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../wp-content/uploads/2016/12/TG-Thumb.png" />
-      <title>Registrate</title>
+      <title>Guías</title>
       <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
       <link rel='dns-prefetch' href='http://s.w.org' />
       <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; Feed" href="../feed/index.html" />
@@ -72,11 +72,11 @@
       <meta name="generator" content="WooCommerce 2.6.14" />
       <link rel="canonical" href="index.html" />
       <link rel='shortlink' href='index.html' />
-      <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ccontact-us%7C.json" />
-      <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Ccontact-us%7C&format=xml.xml" />
+      <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Cabout-us%7C.json" />
+      <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http_%7C%7Cthemes.themegoods2.com%7Cgrandtour%7Cdemo%7Cabout-us%7C&format=xml.xml" />
       <meta name="generator" content="Powered by Slider Revolution 5.3.1.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
    </head>
-   <body class="page-template-default page page-id-3090 ppb_enable">
+   <body class="page-template-default page page-id-2465 ppb_enable">
       <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="leftalign"/>
       <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="0"/>
       <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="0"/>
@@ -188,8 +188,8 @@
                   <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-14">
                      <a href="index.html#">Pages</a>
                      <ul class="sub-menu">
-                        <li id="menu-item-2468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="../about-us/index.html">About Us</a></li>
-                        <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3090 current_page_item menu-item-3093"><a href="index.html">Contact Us</a></li>
+                        <li id="menu-item-2468" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2465 current_page_item menu-item-2468"><a href="index.html">About Us</a></li>
+                        <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="../contact-us/index.html">Contact Us</a></li>
                         <li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../faqs/index.html">FAQs</a></li>
                         <li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-galleries menu-item-313"><a href="../galleries/gallery/index.html">Gallery</a></li>
                         <li id="menu-item-2456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="../page-fullwidth/index.html">Page Fullwidth</a></li>
@@ -418,8 +418,8 @@
                                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children arrow menu-item-14">
                                           <a href="index.html#">Pages</a>
                                           <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="../about-us/index.html">About Us</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3090 current_page_item menu-item-3093"><a href="index.html">Contact Us</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2465 current_page_item menu-item-2468"><a href="index.html">About Us</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="../contact-us/index.html">Contact Us</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../faqs/index.html">FAQs</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-galleries menu-item-313"><a href="../galleries/gallery/index.html">Gallery</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="../page-fullwidth/index.html">Page Fullwidth</a></li>
@@ -487,238 +487,351 @@
                </div>
             </div>
          </div>
-         <div id="page_caption" class="hasbg parallax    " style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-115070.jpeg'); height: 300px;" >
-            <div class="page_title_wrapper">
-               <div class="page_title_inner">
-                  <div class="page_title_content">
-                     <h1 >Registrate	</h1>
-                     <div class="page_tagline">
-                        This is sample of page tagline and you can set it up using page option			    	
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="ppb_wrapper hasbg ">
-            <div  class="one withsmallpadding ppb_text" style="text-align:center;padding:0px 0 0px 0;margin-top:20px;" >
+         <div class="ppb_wrapper  ">
+            <div  class="one withsmallpadding ppb_header_youtube withbg parallax" data-jarallax-video="https://www.youtube.com/watch?v=JPe2mwq96cw"  style="height: 300px; text-align:center;padding:240px 0 240px 0;color:#ffffff;" >
+               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
                <div class="standard_wrapper">
                   <div class="page_content_wrapper">
                      <div class="inner">
-                        <div style="margin:auto;width:80%">
-                           </p>
-                           <h4 class="p1"><span class="s1"><b>Just over a month into my trip and I wonder how I’ve changed, if at all. Certainly the experiences I’ve had and things I’ve seen have shaped me in someway. </b></span></h4>
-                           <div style="margin-top: 30px;">
-                              <div class="social_wrapper shortcode dark ">
-                                 <ul>
-                                    <li class="facebook"><a target="_blank" title="Facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="youtube"><a target="_blank" title="Youtube" href="index.html#"><i class="fa fa-youtube"></i></a></li>
-                                    <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <p>
+                        <div style="margin:auto;width:100%">
+                           <h2 class="ppb_title" style="color:#ffffff;">Consigue el mejor guía en la ciudad donde estes</h2>
+                           <div class="page_tagline" style="color:#ffffff;">Mira por ciudad los guías registrados en Yamgo para brindarte la mejor experiencia.</div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div  class="one withsmallpadding ppb_text" style="text-align:left;padding:0px 0 0px 0;margin-bottom:60px;" >
-               <div class="standard_wrapper">
-                  <div class="page_content_wrapper">
-                     <div class="inner">
-                        <div style="margin:auto;width:60%">
-                           
+            
+            
+        <div  class="one withsmallpadding ppb_team_column" >
+               <div class="page_content_wrapper page_main_content sidebar_content full_width fixed_column photoframe">
+                  <div class="standard_wrapper">
+                     <div id="1489293011252654310" class="portfolio_filter_wrapper gallery five_cols" data-columns="5">
+                     <?php
 
-                              <div class="screen-reader-response"></div>
+                     $qry2=mysqli_query($link,"SELECT * FROM guias");     
+                        while($row1 = mysqli_fetch_array($qry2))                        
+                        {
+                           $id_user=$row1['id_user'];
+                                                 
+                        $qry=mysqli_query($link,"SELECT * FROM users WHERE id='$id_user' ORDER BY id DESC LIMIT 5 ");     
+                        while($row = mysqli_fetch_array($qry))                        
+                        {
+                           $username=$row['username'];
+                     ?>
+                        <div class="element grid photoframe fixed_columns classic5_cols animated1">
+                           <div class="one_fifth gallery5 classic filterable">
+                              <div class="post_img">
 
-                              <form action="../logic/logic_registro_user.php" method="post" class="wpcf7-form">
-                                 
-                                 <p><label> Nombre Completo<br />
-                                    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="nombre" value="" size="70" required/></span> </label>
-                                 </p>
-                                 <p><label> Email <br />
-                                    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="70" required/></span> </label>
-                                 </p>
-                                 <p><label> Telefono<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="telefono" value="" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Ciudad<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="ciudad" value="" size="70" 
-                                     placeholder="De que Ciudad eres o donde estas?" required/></span> </label>
-                                 </p>
-                                 <p>
-                                    <label>
-                                       Quiero ser...<br />
-                                       <span class="wpcf7-form-control-wrap menu-607">
-                                          <select name="rol" >
-                                             <option value="1">Guía</option>
-                                             <option value="2">Presta Biker</option>
-                                             <option value="3">Guía y Presta Biker</option>
-                                          </select>
-                                       </span>
-                                    </label>
-                                 </p>
-                                 <p><label> Código Invitación<br />
-                                    <span class="wpcf7-form-control-wrap text-237"><input type="text" name="cod_inv" value="" size="70"  placeholder="Ejemplo: YC34F" /></span> </label>
-                                 </p>
-                                 <p><label> Username<br />
-                                    <span class="wpcf7-form-control-wrap text-237"><input type="text" name="username" value="" size="70"  placeholder="" /></span> </label>
-                                 </p>
-                                 <p><label> Contraseña<br />
-                                    <span class="wpcf7-form-control-wrap text-237"><input type="password" name="pass" value="" size="70"  required /></span> </label>
-                                 </p>
-                                 <!--
-                                 <p><label>Sube una foto <br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input class="form-control" type="file" name="photo1" id="imagen"></span> </label>
-                                 </p>
-                                 -->
-                                <p><input type="submit" value="Registrar" /></p>
-                                
-                              </form>
-                             
+                              <ul class="social_wrapper team">
+                                    <li><a href="../users/guias/perfil.php?usr=<?php echo $username ?>" title="Contactar" target="_blank" class="tooltip" href="#"><i class="fa fa-hand-o-right"></i></a></li>
+                                    
+                              </ul>
+
+                              <img  class="team_pic" src="../<?php echo "account/".$row['foto']; ?>" alt=""/>                              
+                              </div>
+                              <div class="portfolio_info_wrapper center">
+                                 <h4 ><?php echo $row['nombre']; ?></h4>
+                                 <div class="page_tagline">$<?php echo $row1['precio']." ".$row1['tiempo'];?></div>
+                              </div>
                            </div>
-                       
+                        </div>
+                     <?php
+                        }
+                     }
+                     ?>
+                    </div>
+                  </div>
+               </div>
+               
+            </div>
 
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div  class="one_half_bg withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-24377.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
-               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
-               <div class="page_content_wrapper">
-                  <div class="inner">
-                     <div style="margin:auto;width:100%">
-                        </p>
-                        <h2 style="color: #fff;">California</h2>
-                        <p>78 Collective Street<br />
-                           Manhattan<br />
-                           Kingston<br />
-                           United State
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div  class="one_half_bg last withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-1.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
-               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
-               <div class="page_content_wrapper">
-                  <div class="inner">
-                     <div style="margin:auto;width:100%">
-                        </p>
-                        <h2 style="color: #fff;">London</h2>
-                        <p>732/21 Second Street<br />
-                           King Street<br />
-                           Kingston<br />
-                           United Kingdom
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <br class="clear"/>
-         <div class="tour_recently_view">
-            <div class="standard_wrapper">
-               <h3 class="sub_title">Recently View Tours</h3>
-               <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
-                  <div class="element grid classic4_cols animated1">
-                     <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
-                        <a class="tour_image" href="../tour/great-britain-travel/index.html"></a>	
-                        <div class="portfolio_info_wrapper">
-                           <div class="tour_price has_discount">
-                              <span class="normal_price">
-                              $6,000						</span>
-                              $5,900									
-                           </div>
-                           <h5>Great Britain Travel</h5>
-                           <div class="tour_attribute_wrapper">
-                              <div class="tour_attribute_rating">
-                                 <div class="br-theme-fontawesome-stars-o">
-                                    <div class="br-widget">
-                                       <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>								
-                                    </div>
-                                 </div>
-                                 <div class="tour_attribute_rating_count">
-                                    4&nbsp;
-                                    reviews							
+      </div>
+      <br class="clear"/>
+      <div class="tour_recently_view">
+         <div class="standard_wrapper">
+            <h3 class="sub_title">Recently View Tours</h3>
+            <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
+               <div class="element grid classic4_cols animated1">
+                  <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
+                     <a class="tour_image" href="../tour/great-britain-travel/index.html"></a>	
+                     <div class="portfolio_info_wrapper">
+                        <div class="tour_price has_discount">
+                           <span class="normal_price">
+                           $6,000						</span>
+                           $5,900									
+                        </div>
+                        <h5>Great Britain Travel</h5>
+                        <div class="tour_attribute_wrapper">
+                           <div class="tour_attribute_rating">
+                              <div class="br-theme-fontawesome-stars-o">
+                                 <div class="br-widget">
+                                    <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>								
                                  </div>
                               </div>
-                              <div class="tour_attribute_days">
-                                 <span class="ti-time"></span>
-                                 5&nbsp;days		    		    
+                              <div class="tour_attribute_rating_count">
+                                 4&nbsp;
+                                 reviews							
                               </div>
                            </div>
-                           <br class="clear"/>
+                           <div class="tour_attribute_days">
+                              <span class="ti-time"></span>
+                              5&nbsp;days		    		    
+                           </div>
                         </div>
+                        <br class="clear"/>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-         <div id="footer" class=" ppb_wrapper">
-            <ul class="sidebar_widget three">
-               <li id="text-2" class="widget widget_text">
-                  <h2 class="widgettitle">Our Awards</h2>
-                  <div class="textwidget">
-                     <p>London is a megalopolis of people, ideas and frenetic energy. The capital and largest city of the United Kingdom.<br />
-                        <img src="../wp-content/uploads/2016/12/awards.png" width="246" height="113" style="margin-top:30px;" alt=""/>
-                     </p>
-                  </div>
-               </li>
-               <li id="text-4" class="widget widget_text">
-                  <h2 class="widgettitle">Contact Info</h2>
-                  <div class="textwidget">
-                     <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
-                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
-                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
-                     <div style="margin-top:20px;">
-                        <div class="social_wrapper shortcode dark ">
-                           <ul>
-                              <li class="facebook"><a target="_blank" title="Facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                              <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                              <li class="youtube"><a target="_blank" title="Youtube" href="index.html#"><i class="fa fa-youtube"></i></a></li>
-                              <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                              <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
-                           </ul>
-                        </div>
+      </div>
+      <div id="footer" class=" ppb_wrapper">
+         <ul class="sidebar_widget three">
+            <li id="text-2" class="widget widget_text">
+               <h2 class="widgettitle">Our Awards</h2>
+               <div class="textwidget">
+                  <p>London is a megalopolis of people, ideas and frenetic energy. The capital and largest city of the United Kingdom.<br />
+                     <img src="../wp-content/uploads/2016/12/awards.png" width="246" height="113" style="margin-top:30px;" alt=""/>
+                  </p>
+               </div>
+            </li>
+            <li id="text-4" class="widget widget_text">
+               <h2 class="widgettitle">Contact Info</h2>
+               <div class="textwidget">
+                  <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
+                  <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
+                  <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+                  <div style="margin-top:20px;">
+                     <div class="social_wrapper shortcode dark ">
+                        <ul>
+                           <li class="facebook"><a target="_blank" title="Facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
+                           <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
+                           <li class="youtube"><a target="_blank" title="Youtube" href="index.html#"><i class="fa fa-youtube"></i></a></li>
+                           <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
+                           <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
                      </div>
                   </div>
-               </li>
-               <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
-                  <h2 class="widgettitle">Recent Trips</h2>
-                  <ul class="flickr">
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRYn2YXBttX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125477_337451106650656_7516217094694764544_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRWDLtvh7vb/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17076229_257140138075403_4619417127063912448_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRTeTR-hMus/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125985_183374232163594_1946321832420311040_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BROVWFIBoRG/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125543_273774926379985_565758286507278336_n.jpg" width="75" height="75" alt="" /></a></li>
-                  </ul>
-                  <br class="clear"/>
-               </li>
-            </ul>
-         </div>
-         <div class="footer_bar  ppb_wrapper ">
-            <div class="footer_bar_wrapper ">
-               <div class="menu-footer-menu-container">
-                  <ul id="footer_menu" class="footer_nav">
-                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../index.html">Home</a></li>
-                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../tour/index.html">Tour</a></li>
-                     <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../blog/index.html">Blog</a></li>
-                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
-                  </ul>
                </div>
-               <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
-               <br class="clear"/>	    
-               <a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
+            </li>
+            <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
+               <h2 class="widgettitle">Recent Trips</h2>
+               <ul class="flickr">
+                  <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/p/BRYn2YXBttX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125477_337451106650656_7516217094694764544_n.jpg" width="75" height="75" alt="" /></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/p/BRWDLtvh7vb/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17076229_257140138075403_4619417127063912448_n.jpg" width="75" height="75" alt="" /></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/p/BRTeTR-hMus/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125985_183374232163594_1946321832420311040_n.jpg" width="75" height="75" alt="" /></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/p/BROVWFIBoRG/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125543_273774926379985_565758286507278336_n.jpg" width="75" height="75" alt="" /></a></li>
+               </ul>
+               <br class="clear"/>
+            </li>
+         </ul>
+      </div>
+      <div class="footer_bar  ppb_wrapper ">
+         <div class="footer_bar_wrapper ">
+            <div class="menu-footer-menu-container">
+               <ul id="footer_menu" class="footer_nav">
+                  <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../index.html">Home</a></li>
+                  <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../tour/index.html">Tour</a></li>
+                  <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../blog/index.html">Blog</a></li>
+                  <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
+               </ul>
             </div>
+            <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
+            <br class="clear"/>	    
+            <a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
          </div>
+      </div>
       </div>
       <div id="side_menu_wrapper" class="overlay_background">
          <a id="close_share" href="javascript:;"><span class="ti-close"></span></a>
       </div>
+      <div id="option_wrapper">
+         <div class="inner">
+            <div style="text-align:center">
+               <h6>Predefined Colors</h6>
+               <p>
+                  Here are predefined colors stylings that can be imported in one click and you can also customised yours.
+               </p>
+               <ul class="demo_color_list">
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=red.html">
+                              <div class="item_thumb" style="background:#FF4A52"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=orange.html">
+                              <div class="item_thumb" style="background:#FF9500"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=yellow.html">
+                              <div class="item_thumb" style="background:#FFCC00"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=green.html">
+                              <div class="item_thumb" style="background:#4CD964"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=teal_blue.html">
+                              <div class="item_thumb" style="background:#5AC8FA"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=blue.html">
+                              <div class="item_thumb" style="background:#007AFF"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=purple.html">
+                              <div class="item_thumb" style="background:#5856D6"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="item_content_wrapper">
+                        <div class="item_content">
+                           <a href="../index-styling=pink.html">
+                              <div class="item_thumb" style="background:#FF2D55"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <h6>Predefined Stylings</h6>
+               <p>
+                  Here are example styling that can be imported with one click.
+               </p>
+               <ul class="demo_list">
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling1.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Left Align Menu</h6>
+                              <a href="../index.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling2.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Center Align</h6>
+                              <a href="../index-menulayout=centeralign.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling3.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Center Logo + 2 Menus</h6>
+                              <a href="../index-menulayout=centeralogo.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling4.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Fullscreen Menu</h6>
+                              <a href="../index-menulayout=hammenufull.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling5.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Side Menu</h6>
+                              <a href="../index-menulayout=hammenuside.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling6.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>With Frame</h6>
+                              <a href="../index-frame=1.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling7.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>Boxed Layout</h6>
+                              <a href="../index-boxed=1.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <img src="../wp-content/themes/grandtour/cache/demos/customizer/screenshots/styling8.jpg" alt=""/>
+                     <div class="demo_thumb_hover_wrapper">
+                        <div class="demo_thumb_hover_inner">
+                           <div class="demo_thumb_desc">
+                              <h6>With Top Bar</h6>
+                              <a href="../index-topbar=1.html" target="_blank" class="button white">Launch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="option_btn">
+         <a href="javascript:;" class="demotip" title="Choose Theme Styling"><span class="ti-settings"></span></a>
+         <a href="../../doc/index.html" class="demotip" title="Theme Documentation" target="_blank"><span class="ti-book"></span></a>
+         <a href="https://themeforest.net/item/grand-tour-tour-travel-wordpress/19264426?ref=ThemeGoods&license=regular&open_purchase_for_item_id=19264426&purchasable=source&ref=ThemeGoods" title="Purchase Theme" class="demotip" target="_blank"><span class="ti-shopping-cart"></span></a>
+      </div>
+      <link rel='stylesheet' id='odometer-css'  href='../wp-content/themes/grandtour/css/odometer-theme-minimal.css' type='text/css' media='all' />
       <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
@@ -728,21 +841,21 @@
       <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/contact-us\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+         var wc_add_to_cart_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/about-us\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/contact-us\/?wc-ajax=%%endpoint%%"};
+         var woocommerce_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/about-us\/?wc-ajax=%%endpoint%%"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */
-         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/contact-us\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+         var wc_cart_fragments_params = {"ajax_url":"\/grandtour\/demo\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/grandtour\/demo\/about-us\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
          /* ]]> */
       </script>
       <script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
@@ -766,13 +879,17 @@
       <script type='text/javascript' src='../wp-content/themes/grandtour/js/custom.js'></script>
       <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
       <script type='text/javascript' src='../wp-content/themes/grandtour/js/custom_onepage.js'></script>
+      <script type='text/javascript' src='../wp-content/themes/grandtour/js/jarallax-video.js'></script>
+      <script type='text/javascript' src='../wp-content/themes/grandtour/js/odometer.min.js'></script>
+      <script type='text/javascript' src='../wp-admin/admin-ajax-action=grandtour_script_animate_counter_shortcode&id=14892930111081093003&start=0&end=1109&fontsize=60.php'></script>
+      <script type='text/javascript' src='../wp-admin/admin-ajax-action=grandtour_script_animate_counter_shortcode&id=1489293011861474898&start=0&end=7010&fontsize=60.php'></script>
       <script type='text/javascript' src='../wp-content/themes/grandtour/js/jquery.cookie.js'></script>
       <script type='text/javascript' src='../wp-admin/admin-ajax-action=grandtour_script_demo.php'></script>
    </body>
 </html>
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
-   Object Caching 7699/7753 objects using disk
+   Object Caching 7770/7879 objects using disk
    Page Caching using disk: enhanced
-   Database Caching 14/46 queries in 0.014 seconds using disk
+   Database Caching 12/59 queries in 0.023 seconds using disk
    
-    Served from: themes.themegoods2.com @ 2017-03-12 04:30:10 by W3 Total Cache -->
+    Served from: themes.themegoods2.com @ 2017-03-12 04:30:11 by W3 Total Cache -->
