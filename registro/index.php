@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US"  data-menu="leftalign">
    <head>
+   <?php
+   require_once('../conexion.php');
+   ?>
      
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
@@ -487,13 +490,13 @@
                </div>
             </div>
          </div>
-         <div id="page_caption" class="hasbg parallax    " style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-115070.jpeg'); height: 300px;" >
+         <div id="page_caption" class="hasbg parallax    " style="background-image:url('http://www.moneysense.ca/wp-content/uploads/2016/03/Traveling-solo.jpg'); height: 300px;" >
             <div class="page_title_wrapper">
                <div class="page_title_inner">
                   <div class="page_title_content">
                      <h1 >Registrate	</h1>
                      <div class="page_tagline">
-                        This is sample of page tagline and you can set it up using page option			    	
+                        Mira los beneficios de ser parte de la Familia Yamgo			    	
                      </div>
                   </div>
                </div>
@@ -503,72 +506,59 @@
             
             <div  class="one withsmallpadding ppb_text" style="text-align:left;padding:0px 0 0px 0;margin-bottom:60px;" >
                <div class="standard_wrapper">
+              
                   <div class="page_content_wrapper">
                      <div class="inner">
                               <div class="one_half " style="">
-                              <h5>Registrate como Persona</h5>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.</p>
+                              <h5>Registrate como Persona</h5><br>
+                              <h6 style="color: gray">Obtén los siguientes beneficios</h6><br>
+                              <li>Ofrece tus servicios de guianza</li>
+                              <li>Alquila tu bicicleta a un turista (PrestaBiker)</li>
+                              <br>
+                              <a href="registropersona.php"><input class="button" type="button" value="Registrarme"></a>
+                              <br><br><br> 
                            </div>
+
                            <div class="one_half last " style="">
-                              <h5>Registrate como Empresa</h5>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.</p>
+                              <h5>Registrate como Empresa</h5><br>
+                              <h6 style="color: gray">Obtén los siguientes beneficios</h6><br>
+                              <li>Ofrece tus tours y llega a mas gente por medio de Yamgo</li>
+                              <li>Alquila Bicicletas a turistas</li>
+                              <br>
+                              <a href="registroempresa.php"><input class="button" type="button" value="Registrarme"></a>
                            </div>
                               
-                           
+                           <br><br><br>  
                        
 
                      </div>
                   </div>
                </div>
             </div>
-            <div  class="one_half_bg withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-24377.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
-               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
-               <div class="page_content_wrapper">
-                  <div class="inner">
-                     <div style="margin:auto;width:100%">
-                        </p>
-                        <h2 style="color: #fff;">California</h2>
-                        <p>78 Collective Street<br />
-                           Manhattan<br />
-                           Kingston<br />
-                           United State
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div  class="one_half_bg last withsmallpadding ppb_text_image withbg parallax " style="font-size:18px;background-image:url('../wp-content/uploads/2016/12/pexels-photo-1.jpg');background-position: center center;text-align:center;padding:100px 0 100px 0;color:#ffffff !important;" >
-               <div class="overlay_background" style="background:#000000;background:rgb(0,0,0,0.3);background:rgba(0,0,0,0.3);"></div>
-               <div class="page_content_wrapper">
-                  <div class="inner">
-                     <div style="margin:auto;width:100%">
-                        </p>
-                        <h2 style="color: #fff;">London</h2>
-                        <p>732/21 Second Street<br />
-                           King Street<br />
-                           Kingston<br />
-                           United Kingdom
-                        </p>
-                     </div>
-                  </div>
-               </div>
+
+           
             </div>
          </div>
          <br class="clear"/>
          <div class="tour_recently_view">
             <div class="standard_wrapper">
-               <h3 class="sub_title">Recently View Tours</h3>
+               <h3 class="sub_title">Ultimos Tours Agregados</h3>
+                
                <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
+               <?php                            
+                        $qry=mysqli_query($link,"SELECT * FROM tour ORDER BY id DESC LIMIT 4 ");     
+                        while($row = mysqli_fetch_array($qry))                        
+                        {
+                        ?>
                   <div class="element grid classic4_cols animated1">
-                     <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
-                        <a class="tour_image" href="../tour/great-britain-travel/index.html"></a>	
+
+                     <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../logic/<?php echo $row['foto']; ?>');">
+                        <a class="tour_image" href="../logic/<?php echo $row['foto']; ?>"></a>	
                         <div class="portfolio_info_wrapper">
-                           <div class="tour_price has_discount">
-                              <span class="normal_price">
-                              $6,000						</span>
+                           <div class="tour_price has_discount">                              
                               $5,900									
                            </div>
-                           <h5>Great Britain Travel</h5>
+                           <h5><?php echo $row['nombre']; ?></h5>
                            <div class="tour_attribute_wrapper">
                               <div class="tour_attribute_rating">
                                  <div class="br-theme-fontawesome-stars-o">
@@ -583,13 +573,14 @@
                               </div>
                               <div class="tour_attribute_days">
                                  <span class="ti-time"></span>
-                                 5&nbsp;days		    		    
+                                 5&nbsp;días		    		    
                               </div>
                            </div>
                            <br class="clear"/>
                         </div>
                      </div>
-                  </div>
+                     
+                  </div><?php } ?>
                </div>
             </div>
          </div>
