@@ -526,7 +526,9 @@ $telefono = $_POST['telefono'];
 $ciudad = $_POST['ciudad'];
 $cod_inv = $_POST['cod_inv'];
 $rol = $_POST['rol'];
+$tipo = $_POST['tipo'];
 $pass = $_POST['pass'];
+$nit = $_POST['nit'];
 
 
 
@@ -538,7 +540,7 @@ if(mysqli_num_rows($nuevo_usuario)>0)
 { 
   ?>
     <b> El email que tratas de registrar, ya esta en uso<BR>
-    <h3>Intenta con otro dando click <a href="../registro/registrate.php">Aquí</a></h3><br>
+    <h3>Intenta con otro dando click <a href="../registro/registropersona.php">Aquí</a></h3><br>
 
 <?php
 
@@ -579,13 +581,14 @@ if (move_uploaded_file($_FILES['photo1']['tmp_name'], $direccionimagen)) {
 }
 */
 
-$query = "INSERT INTO users (`username`, `nombre`, `email`, `telefono`, `ciudad`, `rol`, `cod_inv`, `password`, `foto`, `perfil`) VALUES('$username', '$nombre','$email', '$telefono', '$ciudad', '$rol', '$cod_inv', '$pass', NULL, NULL)";
+$query = "INSERT INTO users (`username`, `nombre`, `email`, `telefono`, `ciudad`, `rol`, `tipo`, `nit`, `cod_inv`, `password`, `foto`, `perfil`) VALUES('$username', '$nombre','$email', '$telefono', '$ciudad', '$rol', '$tipo', '$nit', '$cod_inv', '$pass', NULL, NULL)";
 $resultado = $link->query($query);
 
 if($resultado)
 {
 ?>
-	<b> Registro Exitoso, por favor revisa tu Email. <BR>
+	<!--<b> Registro Exitoso, por favor revisa tu Email. <BR>-->
+   <h5>Registro Exitoso</h5><br> 
     <a href="../account/login.php">Inicia Sesión Aquí</a></b>
 <?php
 	

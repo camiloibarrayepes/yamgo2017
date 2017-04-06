@@ -498,7 +498,7 @@
                <div class="page_title_inner">
 
                   <div class="page_title_content">
-                     <h1 ><?php echo $_SESSION['USERNAME']; ?></h1>
+                     <h1 ><?php echo $_SESSION['NAME']; ?></h1>
                        
                      <?php
                      $id=$_SESSION['ID'];
@@ -570,9 +570,33 @@
                      <?php
                   }
                   ?>
-                     <br>
+                     <?php 
+
+                     ?>
+                     <!-- Verificar si tiene 2 o menos tours -->
+                     <?php $id=$_SESSION['ID'];    
+                                           
+                           $sql = "SELECT * FROM tour WHERE id_user = '$id'";  // sentencia sql
+                           $result = mysqli_query($link, $sql);
+                           $numero = mysqli_num_rows($result);
+                     if($numero==0)
+                     {
+                     ?>
+                     <a href=""><h6 class="float:left;">Aún no tienes Tours Agregados, agrega uno haciendo <div style="color: red;"> click aquí</div></h6></a><br>
+                     <?php 
+                     }
+                     else if(($numero==1)or($numero==2))
+                     {
+                     ?>
+                     <a href=""><h6 class="float:left;">Tienes pocos Tours, puedes agregar mas Tours cuando quieras</h6></a><br>
+                     <?php
+                     }
+                     ?>
+                     <img src="http://www.freetourssydney.com.au/images/i-am-free-tours-guide.jpg">
+                     <br><br>
                      <h4 class="p1">Edita la Información de tu Perfil</h4>
-                     <p><label> Username<br />
+                     <p>
+                        <label> Username<br />
                         <span class="wpcf7-form-control-wrap your-name">
                            <input type="text" name="username" value="<?php echo $row2['username']; ?>" size="78" required/>
                            </span> </label>
@@ -659,13 +683,47 @@
 
                         <div class="content">
 
-                           <ul class="sidebar_widget">
-
-                            <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                           <ul class="sidebar_widget">   
+                           <!-- es persona o empresa -->
+                           <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                           <?php
+                           $tipo=$_SESSION['TIPO'];
+                           if($tipo==1)
+                           {
+                           ?>
+                                 <h2 class="widgettitle">Yamgo Personas</h2>
+                                 <p>
+                                 
+                                    - Con tu perfil personal puedes publicar Bicis para alquilar, con el precio adecuado por hora o por día.
+                                   <br> - Tambien puedes ser Guía y ofrecer tus servicios a turistas para que conozcan tu ciudad.
+                                 </p>
+                           <?php 
+                           } 
+                           else
+                           {
+                           ?>
+                           <h2 class="widgettitle">Yamgo Empresas</h2>
+                                 <p>
+                                 
+                                    - Publica Tours, asigna cupos, cuentale a tus usuarios que incluye cada tour.
+                                   <br> - Publica Bicis que tengas disponibles 
+                                 </p>
+                           <?php
+                           }
+                           ?>
+                           </li>
+                           <?php
+                           $rol=$_SESSION['ROL'];       
+                           if($rol==0)
+                           {}
+                           else
+                           {
+                           ?>
+                           <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
                                  <ul class="posts blog withthumb ">
                                  <?php     
-                                 $rol=$_SESSION['ROL'];                             
+                                                       
                                  
                                  if($rol==1){
                                     print "<img width='60px' src='imagenes/iconos/guia.png'>";
@@ -681,7 +739,7 @@
                                  {
                                     print "<img width='70px' src='imagenes/iconos/bike.png'>";
                                     print "<br>soy Presta Biker<hr>";
-                                    print "<br><a href=''>Editar Perfil de Presta Biker</a><hr>";
+                                   
                                     print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Guía
                                     </b></a><hr>";
                                     print "<a href=''>Desactivar perfil <b>Presta Biker</b></a><hr>";
@@ -693,8 +751,8 @@
                                     print "<img width='70px' src='imagenes/iconos/guia.png'>";
                                     print "  <img width='70px' src='imagenes/iconos/bike.png'>";
 
-                                    print "<br>soy Guia y Presta Biker<hr>";
-                                    print "<br><a href=''>Editar Perfil de Presta Biker</a><hr>";
+                                    print "<br>soy Guia y Presta Biker<hr><br>";
+                                    
                                     print "<a href='perfil_edit_guia.php'>Editar Perfil de Guía</a><hr>";
                                     print "<a href='activar_perfil/logic.php?est=1'>Desactivar perfil <b>Presta Biker</b></a><hr>";
                                     print "<a href='activar_perfil/logic.php?est=2'>Desactivar perfil <b>Guía</b></a><hr>";
@@ -704,6 +762,7 @@
                                    ?>
                                  </ul>
                               </li>
+                              <?php } ?>
 
                            <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                            
@@ -854,39 +913,45 @@
          <br class="clear"/>
          <div class="tour_recently_view">
             <div class="standard_wrapper">
-               <h3 class="sub_title">Recently View Tours</h3>
+               <h3 class="sub_title">Ultimos Tours Agregados</h3>
+                
                <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
+               <?php                            
+                        $qry=mysqli_query($link,"SELECT * FROM tour ORDER BY id DESC LIMIT 4 ");     
+                        while($row = mysqli_fetch_array($qry))                        
+                        {
+                        ?>
                   <div class="element grid classic4_cols animated1">
-                     <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
-                        <a class="tour_image" href="../tour/great-britain-travel/index.html"></a>	
+
+                     <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../logic/<?php echo $row['foto']; ?>');">
+                        <a class="tour_image" href="../logic/<?php echo $row['foto']; ?>"></a>  
                         <div class="portfolio_info_wrapper">
-                           <div class="tour_price has_discount">
-                              <span class="normal_price">
-                              $6,000						</span>
-                              $5,900									
+                           <div class="tour_price has_discount">                              
+                              $5,900                           
                            </div>
-                           <h5>Great Britain Travel</h5>
+                           <h5><?php echo $row['nombre']; ?></h5>
                            <div class="tour_attribute_wrapper">
                               <div class="tour_attribute_rating">
                                  <div class="br-theme-fontawesome-stars-o">
                                     <div class="br-widget">
-                                       <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>								
+                                       <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                      
                                     </div>
                                  </div>
                                  <div class="tour_attribute_rating_count">
                                     4&nbsp;
-                                    reviews							
+                                    reviews                    
                                  </div>
                               </div>
                               <div class="tour_attribute_days">
                                  <span class="ti-time"></span>
-                                 5&nbsp;days		    		    
+                                 5&nbsp;días                 
                               </div>
                            </div>
                            <br class="clear"/>
                         </div>
                      </div>
-                  </div>
+                     
+                  </div><?php } ?>
                </div>
             </div>
          </div>
@@ -920,17 +985,20 @@
                   </div>
                </li>
                <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
-                  <h2 class="widgettitle">Recent Trips</h2>
-                  <ul class="flickr">
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRYn2YXBttX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125477_337451106650656_7516217094694764544_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRWDLtvh7vb/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17076229_257140138075403_4619417127063912448_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BRTeTR-hMus/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125985_183374232163594_1946321832420311040_n.jpg" width="75" height="75" alt="" /></a></li>
-                     <li><a target="_blank" href="https://www.instagram.com/p/BROVWFIBoRG/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/17125543_273774926379985_565758286507278336_n.jpg" width="75" height="75" alt="" /></a></li>
-                  </ul>
-                  <br class="clear"/>
-               </li>
+               <h2 class="widgettitle">Ultimos Tours</h2>
+               <ul class="flickr">
+               <?php                            
+               $qry=mysqli_query($link,"SELECT * FROM tour ORDER BY id DESC LIMIT 6 ");     
+               while($tour = mysqli_fetch_array($qry))                        
+               {
+               ?>
+                  <li><center><a target="_blank" href="../tours/users_tours/ver.php?id=<? echo $tour['id']; ?>"><img style="height: 80px; width: 85px; padding-bottom: 10px;" src="../logic/<? echo $tour['foto']; ?>" alt="" /></a></center></li>
+               <? 
+               }
+               ?>
+               </ul>
+               <br class="clear"/>
+            </li>
             </ul>
          </div>
          <div class="footer_bar   ">

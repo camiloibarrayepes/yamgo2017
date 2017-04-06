@@ -52,6 +52,7 @@
          $_SESSION['ROL'] = $member['rol'];
          $_SESSION['TEL'] = $member['telefono'];
          $_SESSION['USERNAME'] = $member['username'];
+         $_SESSION['TIPO'] = $member['tipo'];
 
            
             
@@ -60,7 +61,7 @@
          exit();
       }else {
          //Login failed
-         header("location: mal.php");
+         header("location: error.php");
          exit();
       }
    }else {

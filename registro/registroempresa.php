@@ -10,7 +10,7 @@
       <link rel="profile" href="http://gmpg.org/xfn/11" />
       <link rel="pingback" href="http://themes.themegoods2.com/grandtour/demo/xmlrpc.php" />
       <link rel="shortcut icon" href="../wp-content/uploads/2016/12/TG-Thumb.png" />
-      <title>Registrate</title>
+      <title>Registrate como empresa</title>
       <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
       <link rel='dns-prefetch' href='http://s.w.org' />
       <link rel="alternate" type="application/rss+xml" title="Grand Tour | Booking Travel WordPress &raquo; Feed" href="../feed/index.html" />
@@ -492,13 +492,13 @@
                </div>
             </div>
          </div>
-         <div id="page_caption" class="hasbg parallax    " style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-115070.jpeg'); height: 300px;" >
+         <div id="page_caption" class="hasbg parallax    " style="background-image:url('http://www.swatiholidays.com/wp-content/uploads/2012/09/Andaman-Beach.jpg'); height: 300px;" >
             <div class="page_title_wrapper">
                <div class="page_title_inner">
                   <div class="page_title_content">
-                     <h1 >Registrate Como persona</h1>
+                     <h1 >Registrate Como Empresa</h1>
                      <div class="page_tagline">
-                        Se parte de Yamgo y obtén maravillosos beneficios			    	
+                        Se parte de Yamgo y potencializa tu empresa al máximo			    	
                      </div>
                   </div>
                </div>
@@ -517,8 +517,12 @@
 
                               <form action="../logic/logic_registro_user.php" method="post" class="wpcf7-form">
                                  
-                                 <p><label> Nombre Completo<br />
+                                 <p><label> Nombre de la Empresa<br />
                                     <span class="wpcf7-form-control-wrap your-name"><input type="text" name="nombre" value="" size="70" required/></span> </label>
+                                 </p>
+                                 <p><label> Nit<br />
+                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="nit" value="" size="70" 
+                                     placeholder="Nit o RNT" required/></span> </label>
                                  </p>
                                  <p><label> Email <br />
                                     <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="70" required/></span> </label>
@@ -530,18 +534,8 @@
                                     <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="ciudad" value="" size="70" 
                                      placeholder="Ciudad donde resides" required/></span> </label>
                                  </p>
-                                 <p>
-                                    <label>
-                                       Quiero ser...<br />
-                                       <span class="wpcf7-form-control-wrap menu-607">
-                                          <select name="rol" >
-                                             <option value="1">Guía</option>
-                                             <option value="2">Presta Biker</option>
-                                             <option value="3">Guía y Presta Biker</option>
-                                          </select>
-                                       </span>
-                                    </label>
-                                 </p>
+
+                                 
                                  <p><label> Código Invitación<br />
                                     <span class="wpcf7-form-control-wrap text-237"><input type="text" name="cod_inv" value="" size="70"  placeholder="Actualmente no disponible" readonly="readonly"/></span> </label>
                                  </p>
@@ -554,8 +548,8 @@
                                     <span class="wpcf7-form-control-wrap text-237"><input type="password" name="pass" value="" size="70"  required /></span> </label>
                                  </p>
                                  <!-- 1 si es persona, 2 si es empresa -->
-                                 <input style="visibility: none;" type="hidden" name="tipo" value="1">
-                                 <input style="visibility: none;" type="hidden" name="nit" value="0">                                 
+                                 <input style="visibility: none;" type="hidden" name="tipo" value="2">
+                                 <input style="visibility: none;" type="hidden" name="rol" value="0">                                 
                                  <!--
                                  <p><label>Sube una foto <br />
                                     <span class="wpcf7-form-control-wrap tel-729"><input class="form-control" type="file" name="photo1" id="imagen"></span> </label>
