@@ -650,7 +650,6 @@
                                     print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Guía
                                     </b></a><hr>";
                                     
-                                    
 
                                  }
                                  else
