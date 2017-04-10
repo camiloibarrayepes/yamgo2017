@@ -336,142 +336,7 @@
                         <div id="nav_wrapper">
                            <div class="nav_wrapper_inner">
                               <div id="menu_border_wrapper">
-                                 <div class="menu-main-menu-container">
-                                    <ul id="main_menu" class="nav">
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children arrow menu-item-11">
-                                          <a href="../index.html">Home</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3125"><a href="../index.html">Home 1 – Background Image</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3124"><a href="../home-2/index.html">Home 2 – Youtube Video</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3148"><a href="../home-3-google-inspired/index.html">Home 3 – Google Inspired</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152"><a href="../home-4-travel-site/index.html">Home 4 – Travel Site</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-12">
-                                          <a href="index.html#">Tours</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-198">
-                                                <a href="../tour/tour-3-columns-classic/index.html">Tour Classic Fullwidth</a>
-                                                <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="../tour/tour-2-columns-classic/index.html">2 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="../tour/tour-3-columns-classic/index.html">3 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../tour/tour-4-columns-classic/index.html">4 Columns</a></li>
-                                                </ul>
-                                             </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-230">
-                                                <a href="../tour/tour-2-columns-classic-right-sidebar/index.html">Tour Classic Sidebar</a>
-                                                <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="../tour/tour-2-columns-classic-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="../tour/tour-2-columns-classic-left-sidebar/index.html">Left Sidebar</a></li>
-                                                </ul>
-                                             </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-237">
-                                                <a href="../tour/tour-3-columns-grid/index.html">Tour Grid Fullwidth</a>
-                                                <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="../tour/tour-2-columns-grid/index.html">2 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="../tour/tour-3-columns-grid/index.html">3 Columns</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../tour/tour-4-columns-grid/index.html">4 Columns</a></li>
-                                                </ul>
-                                             </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-247">
-                                                <a href="../tour/tour-grid-right-sidebar/index.html">Tour Grid Sidebar</a>
-                                                <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="../tour/tour-grid-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="../tour/tour-grid-left-sidebar/index.html">Left Sidebar</a></li>
-                                                </ul>
-                                             </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-256">
-                                                <a href="../tour/tour-list-right-sidebar/index.html">Tour List Sidebar</a>
-                                                <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="../tour/tour-list-right-sidebar/index.html">Right Sidebar</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../tour/tour-list-left-sidebar/index.html">Left Sidebar</a></li>
-                                                </ul>
-                                             </li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-261">
-                                                <a href="../tour/tour-3-columns-grid/index.html">Tour Header Type</a>
-                                                <ul class="sub-menu">
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../tour/tour-3-columns-grid/index.html">Featured Image</a></li>
-                                                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="../tour/tour-3-columns-video-header/index.html">Video</a></li>
-                                                </ul>
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-has-children arrow menu-item-200">
-                                          <a href="../tour/the-new-california/index.html">Booking</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-202"><a href="../tour/the-new-california/index.html">Booking Form + Sub Tour Date</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-314"><a href="../tour/niko-trip/index.html">Booking Form + Custom Date</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-204"><a href="../tour/swiss-alps-trip/index.html">Booking + Online Payment Support</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-276"><a href="../tour/5-lake-of-fuji-san/index.html">Booking + Affiliate Tour</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-205"><a href="../tour/french-autumn/index.html">Standard Background Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-tour menu-item-201"><a href="../tour/great-britain-travel/index.html">Video Background Header</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-13">
-                                          <a href="index.html#">Destinations</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="../destination-fullwidth/index.html">Destination Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311"><a href="../destination-video-header/index.html">Destination + Video Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="../destination-right-sidebar/index.html">Destination Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="../destination-left-sidebar/index.html">Destination Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-destination menu-item-286"><a href="../destination/venice/index.html">Single Destination</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-destination menu-item-283"><a href="../destination/paris/index.html">Single Destination + Video</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children arrow menu-item-14">
-                                          <a href="index.html#">Pages</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2468"><a href="../about-us/index.html">About Us</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="../contact-us/index.html">Contact Us</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../faqs/index.html">FAQs</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-galleries menu-item-313"><a href="../galleries/gallery/index.html">Gallery</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2456"><a href="../page-fullwidth/index.html">Page Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2460"><a href="../page-video-header/index.html">Page + Video Background Header</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2455"><a href="../page-right-sidebar/index.html">Page Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2452 current_page_item menu-item-2454"><a href="index.html">Page Left Sidebar</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-15">
-                                          <a href="index.html#">Blog</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="../blog/blog-right-sidebar/index.html">Blog Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="../blog/blog-left-sidebar/index.html">Blog Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="../blog/blog-fullwidth/index.html">Blog Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="../blog/blog-grid-right-sidebar/index.html">Blog Grid Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="../blog/blog-grid-left-sidebar/index.html">Blog Grid Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="../blog/blog-grid-fullwidth/index.html">Blog Grid Fullwidth</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="../blog/blog-full-grid-right-sidebar/index.html">Blog Full + Grid Right Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="../blog/blog-full-grid-left-sidebar/index.html">Blog Full + Grid Left Sidebar</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="../blog/blog-full-grid-fullwidth/index.html">Blog Full + Grid Fullwidth</a></li>
-                                          </ul>
-                                       </li>
-                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-16">
-                                          <a href="index.html#">Shortcodes</a>
-                                          <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="../shortcodes/accordion-toggles/index.html">Accordion &#038; Toggles</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="../shortcodes/alert-boxes/index.html">Alert Boxes</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="../shortcodes/animated-content/index.html">Animated Content</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../shortcodes/buttons-social-icons/index.html">Buttons &#038; Social Icons</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="../shortcodes/columns/index.html">Columns</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="../shortcodes/google-maps/index.html">Google Maps</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="../shortcodes/image-frame-animation/index.html">Image Frame &#038; Animation</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="../shortcodes/image-teasers/index.html">Image Teasers</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="../shortcodes/pricing-tables/index.html">Pricing Tables</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="../shortcodes/tabs/index.html">Tabs</a></li>
-                                          </ul>
-                                       </li>
-                                       <li>
-                                        <?php
-               if(isset($_SESSION['EMAIL'])){
-                  ?> <a href="logout.php">Cerrar Sesión</a> <?PHP
-               }
-               else{
-                  ?> <a href="../shop/index.html">Iniciar Sesión</a> <?PHP
-               }              
-               ?>
-                                       </li>
-                                    </ul>
-                                 </div>
+                                 <?php include('../includes/menu2.php'); ?>
                               </div>
                            </div>
                            <!-- Begin right corner buttons -->
@@ -636,11 +501,44 @@
                      </p>
                      <input type="hidden" name="id" value="<?php echo $id ?>">
                      <input type="submit" name="login" value="Actualizar Datos">
-
+                     <br>
+                     <br>
+                     <hr>
                      </form><br><br>
+                     <!-- actualizar foto -->
+                     <img width="160px" height="160px" src="<?php echo $foto; ?>">
+                     <form action="foto_actualizar.php" method="POST" enctype="multipart/form-data">
+                     <p>
+                     <label>Tu foto actual, selecciona una foto para actualizar <br />
+                     <span class="wpcf7-form-control-wrap tel-729"><input class="form-control" type="file" name="photo1" id="imagen"></span> </label>
 
-                     <h4>Mis historias</h4><hr><br>
+                     </p>
+                     <input type="submit" value="Actualizar Foto" />
+                     </form>
+                     <br>
+                     <hr>
+                     <br>
+                     <!-- actualizar foto fin -->
+
+                     <?php 
+
+                     $sql = "SELECT * FROM experiencias WHERE id_user = '$id'";  // sentencia sql
+                           $result = mysqli_query($link, $sql);
+                           $numero = mysqli_num_rows($result);
+                     if($numero==0)
+                     {
+                     ?>
+
+                     <h5> No tienes historias que mostrar </h5>
                      <?php
+                     }
+                     else
+                     {
+                     ?>
+                     <h4>Mis historias</h4><hr><br>
+                     
+                     <?php
+
                      $qry=mysqli_query($link,"SELECT * FROM experiencias WHERE id_user = '$id'");     
                         while($historias = mysqli_fetch_array($qry))                        
                         {echo "<br>";
@@ -669,7 +567,7 @@
 
                            <?php
                            
-                        }
+                        }}
                      ?>
 
 
@@ -691,6 +589,7 @@
 
                            <ul class="sidebar_widget">   
                            <!-- es persona o empresa -->
+
                            <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                            <?php
                            $tipo=$_SESSION['TIPO'];
@@ -701,7 +600,7 @@
                                  <p>
                                  
                                     - Con tu perfil personal puedes publicar Bicis para alquilar, con el precio adecuado por hora o por día.
-                                   <br> - Tambien puedes ser Guía y ofrecer tus servicios a turistas para que conozcan tu ciudad.
+                                   <br> <br>- Tambien puedes ser Guía y ofrecer tus servicios a turistas para que conozcan tu ciudad.
                                  </p>
                            <?php 
                            } 
@@ -725,6 +624,8 @@
                            else
                            {
                            ?>
+
+
                            <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
                                  <ul class="posts blog withthumb ">
@@ -737,7 +638,7 @@
                                     print "<a href='perfil_edit_guia.php'>Editar Perfil de Guía</a><hr>";
                                     print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Presta Biker
                                     </b></a><hr>";
-                                    print "<a href=''>Desactivar perfil <b>Guía</b></a><hr>";
+                                    
 
 
                                  }
@@ -748,7 +649,7 @@
                                    
                                     print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Guía
                                     </b></a><hr>";
-                                    print "<a href=''>Desactivar perfil <b>Presta Biker</b></a><hr>";
+                                    
                                     
 
                                  }
@@ -766,6 +667,15 @@
                                  }
 
                                    ?>
+                                    <?php
+                                 if($rol==2 or $rol==3)
+                                 {
+                                    ?>
+                                    <a href="bikes_users/">Ver mis Bicis<hr></a>
+                                    <a href="new_bici.php">Agregar una Bici<hr></a>
+                                    <?php
+                                 }
+                                 ?>
                                  </ul>
                               </li>
                               <?php } ?>
@@ -784,16 +694,11 @@
 
                            <?php 
                            }
-                           if($rol==2 or $rol==3)
-                           {
-                              ?>
-                              <a href="bikes_users/">Ver mis Bicis<hr></a>
-                              <a href="new_bici.php">Agregar una Bici<hr></a>
-                              <?php
-                           }
                            ?>
                            
                            </li>
+
+
                               
                            <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Escribe Una Historia</span></h2>

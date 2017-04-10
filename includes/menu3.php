@@ -77,8 +77,8 @@
                                         
                                         <a><?php echo "Hola ".$_SESSION['NAME']; ?></a>
                                           <ul class="sub-menu">
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="account/perfil_edit.php">Mi Perfil</a></li>
-                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="account/tours_users">Mis Tours</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="../perfil_edit.php">Mi Perfil</a></li>
+                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="">Mis Tours</a></li>
                                              <?php $rol=$_SESSION['ROL'];
                                              if(($rol==2)or($rol==3))
                                              {
@@ -87,13 +87,13 @@
                                              <?php
                                              }
                                              ?>
-                                             <li><a href="account/logout.php">Cerrar Sesión</a></li>
+                                             <li><a href="../logout.php">Cerrar Sesión</a></li>
                                           </ul>
                                           <?PHP
                                           }
                                           else{
 
-                                             ?><li> <a href="account/login.php">Iniciar Sesión</a> <?PHP
+                                             ?><li> <a href="login.php">Iniciar Sesión</a> <?PHP
                                           }              
                                           ?>
                                        </li>

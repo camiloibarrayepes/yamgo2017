@@ -511,7 +511,13 @@ var _zxcvbnSettings = {"src":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/
 		<h2>Login</h2>
 
 		<form action="con.php" method="post" class="login">
-
+		<?php
+		if(isset($_GET['desc_ac']))
+		{
+		print"
+		<p style='color: red' >Por seguridad debes volver a iniciar sesión luego de modificar tu rol en yamgo</p>";
+		}
+		?>
 			
 			<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
 				<label for="username">Email <span class="required">*</span></label>
@@ -531,7 +537,8 @@ var _zxcvbnSettings = {"src":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/
 			<p class="form-row">
 				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="80fdecff64" /><input type="hidden" name="_wp_http_referer" value="/grandtour/demo/my-account/" />				<input type="submit" class="woocommerce-Button button" name="login" value="Iniciar Sesión" />
 				<label for="rememberme" class="inline">
-					<br><br><input class="woocommerce-Input woocommerce-Input--checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> Recordarme</label>
+				<!--
+					<br><br><input class="woocommerce-Input woocommerce-Input--checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> Recordarme</label>-->
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
 				<a style="color: black" href="lost-password/index.html">Olvide mi contraseña</a>

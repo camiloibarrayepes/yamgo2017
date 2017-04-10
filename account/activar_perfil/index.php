@@ -546,7 +546,7 @@
                               <a href="index.html#" class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
                            </div>
                            <br />
-                           <center><a href="../perfil_edit.php">Volver a mi perfil</a></center>
+                           <center><a href="../login.php?desc_ac">Volver a mi perfil</a></center>
                            
                            </p>
                         </div>
