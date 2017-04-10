@@ -531,7 +531,19 @@
                   <div id="page_main_content" class="sidebar_content left_sidebar fixed_column">
                      <div class="standard_wrapper">
                         <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
-                           
+                        <?php 
+                         if(isset($_REQUEST['ok']))
+                        {
+                        ?>
+                           <div id="148929302253306086" class="alert_box success">
+                              <i class="fa fa-flag alert_icon"></i>
+                              <div class="alert_box_msg">Tour Agregado...!!!</div>
+                              <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
+                           </div><br>
+                        <?php
+                         }
+                        ?>
+
                             <h4>Mis Tours </h4><br>
                            <?php $id=$_SESSION['ID'];                           
                            $query = "SELECT * FROM tour WHERE id_user = '$id'";
@@ -604,8 +616,15 @@
                      <div class="sidebar">
                         <div class="content">
                            <ul class="sidebar_widget">
+                           <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                                 
+                                 <center><a href="../../registro/newtour2.php">Agregar Nuevo Tour</a></center>
+                                 
+                              </li>
+
                               <li id="grandtour_cat_posts-5" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Mis Historias</span></h2>
+
                                  <ul class="posts blog withthumb ">
                                     <li>
                                        <div class="post_circle_thumb"><a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>

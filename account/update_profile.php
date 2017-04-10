@@ -27,7 +27,7 @@ $resultado = $link->query($query);
 if($resultado)
 {
 ?>
-	<script>window.location.assign("perfil_edit.php")</script>
+	<script>window.location.assign("perfil_edit.php?edit")</script>
    
 <?php
    

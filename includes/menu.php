@@ -75,7 +75,7 @@
                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children arrow menu-item-2442">
 
                                         
-                                        <a href="shop/index.html"><?php echo "Hola ".$_SESSION['NAME']; ?></a>
+                                        <a><?php echo "Hola ".$_SESSION['NAME']; ?></a>
                                           <ul class="sub-menu">
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="account/perfil_edit.php">Mi Perfil</a></li>
                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="account/tours_users">Mis Tours</a></li>

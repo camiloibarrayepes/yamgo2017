@@ -566,7 +566,7 @@ $resultado = $link->query($query);
 if($resultado)
 {
 ?>
-   <b> Registro Exitoso, Tour Añadido. <BR>
+   <script>window.location.assign("../../account/tours_users/index.php?ok")</script>
 <?php
    
 }

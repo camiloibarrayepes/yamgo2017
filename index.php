@@ -452,7 +452,10 @@ session_start();
                         while($row = mysqli_fetch_array($qry))                        
                         {
                            $username=$row['username'];
-                     ?>
+                           $rol=$row['rol'];
+                           if(($rol==1)or($rol==3))
+                           {                     
+                              ?>
                         <div class="element grid photoframe fixed_columns classic5_cols animated1">
                            <div class="one_fifth gallery5 classic filterable">
                               <div class="post_img">
@@ -471,7 +474,7 @@ session_start();
                            </div>
                         </div>
                      <?php
-                        }
+                        }}
                      }
                      ?>
                     </div>

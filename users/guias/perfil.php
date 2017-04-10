@@ -375,10 +375,10 @@
                       {
                      ?>
                   <div class="page_title_content">
-                     <h1 ><?php echo $row2['username']; ?></h1>
+                     <h1 ><?php echo $row2['nombre']; ?></h1>
                      <img style="border-radius: 50%;" width="160px" height="160px" width="160px" height="160px" src="../../account/<?php echo $row2['foto'];?>"> <br>
                      <div class="page_tagline">
-                        <?php echo $row2['nombre']." Soy de ".$row2['ciudad']; ?>
+                        <?php  echo "Soy de ".$row2['ciudad']; ?>
                      </div>
                   </div>
                </div>

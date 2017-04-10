@@ -61,7 +61,7 @@
          exit();
       }else {
          //Login failed
-         header("location: error.php");
+         header("location: login.php?error");
          exit();
       }
    }else {

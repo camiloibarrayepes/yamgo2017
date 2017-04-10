@@ -521,15 +521,20 @@ var _zxcvbnSettings = {"src":"http:\/\/themes.themegoods2.com\/grandtour\/demo\/
 				<label for="password">Password <span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" required />
 			</p>
+			<?php
+			if(isset($_GET['error']))
+			{
+			print"<a>Datos invalidos</a>";
+			}
+			?>
 
-			
 			<p class="form-row">
 				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="80fdecff64" /><input type="hidden" name="_wp_http_referer" value="/grandtour/demo/my-account/" />				<input type="submit" class="woocommerce-Button button" name="login" value="Iniciar Sesión" />
 				<label for="rememberme" class="inline">
 					<br><br><input class="woocommerce-Input woocommerce-Input--checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> Recordarme</label>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
-				<a href="lost-password/index.html">Olvide mi contraseña</a>
+				<a style="color: black" href="lost-password/index.html">Olvide mi contraseña</a>
 			</p>
 
 			

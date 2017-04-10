@@ -516,7 +516,7 @@
                      }
                      else
                      {?>
-                        <img style="border-radius: 50%;" width="160px" height="160px" src="<?php echo $foto; ?>"><br>
+                        <img style="border-radius: 50%;" width="160px" height="160px" src="../account/<?php echo $foto; ?>"><br>
                         <a href="../account/foto_upload.php"><button>Editar Foto</button></a><br>
                      <?php
                   }
@@ -556,7 +556,7 @@
          ?>
 
 
-                  <form action="update_profile.php" method="post">
+                  <form action="../logic/logic_registro_newtour.php" method="post" class="wpcf7-form" enctype="multipart/form-data">
                   <?php 
                   if(isset($_REQUEST['edit']))
                   {
@@ -580,39 +580,53 @@
                      
                      
                      <div class="one_half " style="">
-                              <h5>Nombre del Tour</h5>
+                               <p><label> Nombre del Tour
                               <span class="wpcf7-form-control-wrap your-name"><input   minlength="5" type="text" name="nombre" value="" size="30" required/></span> </label>
                                  </p>
                            </div>
                            <div class="one_third " style="">
-                              <h5>Destino</h5>                              
+                               <p><label> Destino<br />                            
                                  <span class="wpcf7-form-control-wrap your-email"><input type="text" name="destino" value="" size="30" required/></span> </label>
                            </div>
-                                    
 
-                                 
+
+                           <div class="one_half " style="">
                                  <p><label> Origen<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="origen" value="" size="70"  required/></span> </label>
+                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="origen" value="" size="30" required/></span> </label>
                                  </p>
-                                  <p><label> Fecha Salida<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="fecha_salida" value="" size="70" 
-                                     placeholder="De que Ciudad eres o donde estas?" required/></span> </label>
+                           </div>
+
+
+                            <div class="one_third " style="">
+                                 <p><label> Cupos<br />
+                                   <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="cupos" value="" size="30"  required/></span> </label>
                                  </p>
-                                  <p><label> Fecha Llegada<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="fecha_llegada" value="" size="70" 
+                           </div>
+                                  
+
+                           <div class="one_half" style="">
+                               <p><label> Fecha Salida<br />   
+                               <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="fecha_salida" value="" size="70" 
                                      placeholder="De que Ciudad eres o donde estas?" required/></span> </label>
-                                 </p>  
+                            </div>
+
+                             <div class="one_third " style="">
+                               <p><label> Fecha Llegada   
+                               <span class="wpcf7-form-control-wrap tel-729"><input type="date" name="fecha_llegada" value="" size="70" 
+                                     placeholder="De que Ciudad eres o donde estas?" required/></span> </label>
+                            </div>
+                                  
+                            <div class="one_half " style="">
+                               <p><label> Hora Salida<br />   
+                                <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="hora_salida" value="" size="30" required/></span> </label>
+                            </div>
+
+                             <div class="one_third " style="">
+                               <p><label> Hora  llegada (opcional)<br />   
+                                 <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="hora_llegada" value="" /></span> </label>
+                            </div>
                                  
-                                  <p><label> Hora Salida<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="hora_salida" value="" size="70"  required/></span> </label>
-                                 </p>
-                                  <p><label> Hora llegada (opcional)<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="hora_llegada" value="" size="70" /></span> </label>
-                                 </p>
-                                  <p><label> Cupos<br />
-                                    <span class="wpcf7-form-control-wrap tel-729"><input type="text" name="cupos" value="" size="70"  required/></span> </label>
-                                 </p><br>
- <hr>
+                           <hr>
                                  <input type="text" style="visibility: hidden;" name="id_user" value="<?php echo $_SESSION['ID']; ?>" />
                                  
                                   <p><label> Contacto Organizador<br />
@@ -769,8 +783,8 @@
 
                            <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                            
-                           <a href="../registro/newtour.php">Agregar un nuevo Tour<hr></a>
-                           <a href="tours_users/">Ver mis Tours<hr></a>
+                           
+                           <a href="../account/tours_users/">Ver mis Tours</a>
                            <?php 
                            
                            if($rol==2 or $rol==3)

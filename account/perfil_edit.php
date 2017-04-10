@@ -556,23 +556,26 @@
          ?>
 
 
-                  <form action="update_profile.php" method="post">
+                  
                   <?php 
                   if(isset($_REQUEST['edit']))
                   {
                      ?>
                      <div id="148929302253306086" class="alert_box success">
                               <i class="fa fa-flag alert_icon"></i>
-                              
                               <div class="alert_box_msg">Datos Actualizados...!!!</div>
                               <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
-                           </div>
+                           </div><br>
                      <?php
                   }
                   ?>
-                     <?php 
-
-                     ?>
+                  <!-- verificar si es persona o es empresa, 1 para persona 2 para empresa -->
+                  <!-- mostramos la funcion de abajo solo si es 2, empresa -->
+                  <?php
+                  $tipo=$_SESSION['TIPO'];
+                  if($tipo==2)
+                  {
+                  ?>
                      <!-- Verificar si tiene 2 o menos tours -->
                      <?php $id=$_SESSION['ID'];    
                                            
@@ -582,18 +585,20 @@
                      if($numero==0)
                      {
                      ?>
-                     <a href=""><h6 class="float:left;">Aún no tienes Tours Agregados, agrega uno haciendo <div style="color: red;"> click aquí</div></h6></a><br>
+                     <a href="../registro/newtour2.php"><h6 class="float:left;">Aún no tienes Tours Agregados, agrega uno haciendo <div style="color: red;"> click aquí</div></h6></a><br>
+                     <img src="http://www.freetourssydney.com.au/images/i-am-free-tours-guide.jpg"> <br><br>
                      <?php 
                      }
                      else if(($numero==1)or($numero==2))
                      {
                      ?>
                      <a href=""><h6 class="float:left;">Tienes pocos Tours, puedes agregar mas Tours cuando quieras</h6></a><br>
+                     <img src="http://www.freetourssydney.com.au/images/i-am-free-tours-guide.jpg"> <br><br>
                      <?php
-                     }
+                     }}
                      ?>
-                     <img src="http://www.freetourssydney.com.au/images/i-am-free-tours-guide.jpg">
-                     <br><br>
+                     
+                     <form action="update_profile.php" method="post">
                      <h4 class="p1">Edita la Información de tu Perfil</h4>
                      <p>
                         <label> Username<br />
@@ -629,6 +634,7 @@
                           <textarea rows="3" cols="88" name="perfil"><?php echo $row2['perfil']; ?></textarea>
                            </span> </label>
                      </p>
+                     <input type="hidden" name="id" value="<?php echo $id ?>">
                      <input type="submit" name="login" value="Actualizar Datos">
 
                      </form><br><br>
@@ -746,7 +752,7 @@
                                     
 
                                  }
-                                 elseif ($rol==3) 
+                                 else
                                  {
                                     print "<img width='70px' src='imagenes/iconos/guia.png'>";
                                     print "  <img width='70px' src='imagenes/iconos/bike.png'>";
@@ -764,12 +770,20 @@
                               </li>
                               <?php } ?>
 
+                            <?php
+                           $tipo=$_SESSION['TIPO'];
+                           if($tipo==2)
+                           {
+                           ?>
+
                            <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                            
-                           <a href="../registro/newtour.php">Agregar un nuevo Tour<hr></a>
+                          
+                           <a href="../registro/newtour2.php">Agregar un nuevo Tour<hr></a>
                            <a href="tours_users/">Ver mis Tours<hr></a>
+
                            <?php 
-                           
+                           }
                            if($rol==2 or $rol==3)
                            {
                               ?>
