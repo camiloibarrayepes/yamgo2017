@@ -743,7 +743,10 @@
                                           <div style="text-transform: capitalize;" class="post_attribute"><? echo $row['ciudad']."<br> Hace 5 días" ?></div>
 
                                        </li>
-                                       <?}}?>
+                                       <?php
+                                          }
+                                       }
+                                       ?>
                                     </ul>
                                  </li>
                                  <li id="grandtour_instagram-7" class="widget Grandtour_Instagram">
@@ -757,7 +760,7 @@
                                        <li>
                                        <a target="_blank" href="../../tours/users_tours/ver.php?id=<?php echo $row['id'];?>"><img style="width: 100px; height: 70px;" src="../../logic/<? echo $row['foto']; ?>" /></a>
                                        </li>
-                                    <? } ?>
+                                    <?php } ?>
                                     </ul>
                                     <br class="clear"/>
                                  </li>

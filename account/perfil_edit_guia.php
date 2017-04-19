@@ -696,54 +696,59 @@
 
                            <ul class="sidebar_widget">
 
-                            <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                            <!-- modulo ROl en yamgo, guia, pbiker o ambas -->
+                           <li style="background-color: #FAFAFA;" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
                                  <ul class="posts blog withthumb ">
                                  <?php     
-                                 $rol=$_SESSION['ROL'];                             
+                                      $rol=$_SESSION['ROL'];                  
                                  
                                  if($rol==1){
                                     print "<img width='60px' src='imagenes/iconos/guia.png'>";
-                                    print "<br><a href='perfil_edit.php'>Ver mi Perfil</a><hr>";
                                     print "<br>Soy Guia <hr><br>";
-                                    print "<a href=''>Editar Perfil de Guía</a><hr>";
+                                    print "<a href='perfil_edit_guia.php'>Editar Perfil de Guía</a><hr>";
                                     print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Presta Biker
                                     </b></a><hr>";
-                                    print "<a href=''>Desactivar perfil <b>Guía</b></a><hr>";
+                                    
 
 
                                  }
                                  elseif ($rol==2) 
                                  {
                                     print "<img width='70px' src='imagenes/iconos/bike.png'>";
-                                    print "<br><a href='perfil_edit.php'>Ver mi Perfil</a><hr>";
                                     print "<br>soy Presta Biker<hr>";
-                                    print "<br><a href=''>Editar Perfil de Presta Biker</a><hr>";
+                                   
                                     print "<a href='activar_perfil/logic.php?est=3'>Activar perfil <b>Guía
                                     </b></a><hr>";
-                                    print "<a href=''>Desactivar perfil <b>Presta Biker</b></a><hr>";
                                     
 
                                  }
-                                 elseif ($rol==3) 
+                                 else
                                  {
                                     print "<img width='70px' src='imagenes/iconos/guia.png'>";
                                     print "  <img width='70px' src='imagenes/iconos/bike.png'>";
 
-
-                                    print "<br>soy Guia y Presta Biker<hr>";
-                                   
-                                    print "<br><a href='perfil_edit.php'>Ver mi Perfil</a><hr>";
-                                    print "<a href='perfil_edit.php'>Editar Perfil de Presta Biker</a><hr>";
-                                    print "<a href=''>Editar Perfil de  Guía</a><hr>";
+                                    print "<br>soy Guia y Presta Biker<hr><br>";
+                                    
+                                    print "<a href='perfil_edit_guia.php'>Editar Perfil de Guía</a><hr>";
                                     print "<a href='activar_perfil/logic.php?est=1'>Desactivar perfil <b>Presta Biker</b></a><hr>";
                                     print "<a href='activar_perfil/logic.php?est=2'>Desactivar perfil <b>Guía</b></a><hr>";
 
                                  }
 
                                    ?>
+                                    <?php
+                                 if($rol==2 or $rol==3)
+                                 {
+                                    ?>
+                                    <a href="bikes_users/">Ver mis Bicis<hr></a>
+                                    <a href="new_bici.php">Agregar una Bici<hr></a>
+                                    <?php
+                                 }
+                                 ?>
                                  </ul>
                               </li>
+                              <!-- modulo ROl en yamgo, guia, pbiker o ambas FIN -->
 
                            <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                            

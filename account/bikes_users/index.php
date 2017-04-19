@@ -532,7 +532,7 @@
                      <div class="standard_wrapper">
                         <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
                            
-                            <h4>Mis Bicis </h4><br>
+                           <h4>Mis Bicis </h4><br>
                            <?php $id=$_SESSION['ID'];                           
                            $query = "SELECT * FROM bike WHERE id_user = '$id'";
                            $resultado2 = $link->query($query);
@@ -575,26 +575,34 @@
                      <div class="sidebar">
                         <div class="content">
                            <ul class="sidebar_widget">
-                              <li id="grandtour_cat_posts-5" class="widget Grandtour_Cat_Posts">
-                                 <h2 class="widgettitle"><span>Mis Historias</span></h2>
-                                 <ul class="posts blog withthumb ">
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Memorial Day to Someone Told Me to Travel</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../7-tips-for-nomads-on-a-budget/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-212388-150x150.jpeg" alt="" /></a></div>
-                                       <a href="../../7-tips-for-nomads-on-a-budget/index.html">7 Tips For Nomads On A Budget Trips</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../../taking-a-travel-blog-victory-lap/index.html"><img class="alignleft frame post_thumb" src="../../wp-content/uploads/2016/12/pexels-photo-24484-150x150.jpg" alt="" /></a></div>
-                                       <a href="../../taking-a-travel-blog-victory-lap/index.html">Taking A Travel Blog Victory Lap</a>
-                                       <div class="post_attribute">December 10, 2016</div>
+                              <!-- si hay bicis se muestran START -->
+                           <?php                            
+                           $query = "SELECT * FROM bike WHERE id_user = '$id' ORDER BY id DESC LIMIT 3";
+                           $resultado2 = $link->query($query);
+                           while($row1 = $resultado2->fetch_assoc())
+                           {
+                           ?>
+                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                              <h2 class="widgettitle"><span>Mis Bicis</span></h2>
+                              <ul class="posts blog withthumb ">
+                                  <li>
+                                       <div class="post_circle_thumb"><a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>""><img style="width: 70px; height: 70px;" class="alignleft frame post_thumb" src="../../logic/<?php echo $row1['foto']; ?>" alt="" /></a></div>
+                                       <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>">   <? echo $row1['marca']." ".$row1['color']; ?></a>
                                     </li>
                                  </ul>
-                              </li>
+                           <?php
+                           $result2 = mysqli_query($link, $query);
+                           $numero = mysqli_num_rows($result2);
+                           if($numero>=3)
+                           {
+                              print "<a href='bikes_users'>Ver mas </a>";
+                           }
+                           ?>
+                           </li>
+                           <?php
+                           }
+                           ?>
+                           <!-- si hay bicis se muestran FIN -->
                               <li id="grandtour_instagram-6" class="widget Grandtour_Instagram">
                                  <h2 class="widgettitle">Recent Trips</h2>
                                  <ul class="flickr">
