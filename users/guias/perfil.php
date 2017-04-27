@@ -399,13 +399,13 @@
                         <div class="one_fourth">
                            <div class="tour_attribute_icon ti-time"></div>
                            <div class="tour_attribute_content">
-                              3&nbsp;days								
+                              3&nbsp;dias								
                            </div>
                         </div>
                         <div class="one_fourth">
                            <div class="tour_attribute_icon ti-id-badge"></div>
                            <div class="tour_attribute_content">
-                              Age									12+								
+                              Edad									12+								
                            </div>
                         </div>
                         <div class="one_fourth">
@@ -417,7 +417,7 @@
                         <div class="one_fourth last">
                            <div class="tour_attribute_icon ti-user"></div>
                            <div class="tour_attribute_content">
-                              Availability									50								
+                              Disponibilidad								50								
                            </div>
                         </div>
                      </div>
