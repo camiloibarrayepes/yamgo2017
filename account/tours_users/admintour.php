@@ -573,6 +573,9 @@
                            tr:hover{background-color:#f5f5f5}
                            </style>
                            <img style="border-radius: 3%" src="../../logic/<? echo $tour['foto']; ?>">
+                           <br>
+                           <button>Eliminar Tour</button>
+                           <button>Editar Tour</button>
                            <br><br>
 
                            <h5>Cupos separados</h5>
@@ -611,6 +614,8 @@
                      <div class="sidebar">
                         <div class="content">
                            <ul class="sidebar_widget">
+                           
+
                               <li id="grandtour_cat_posts-5" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Bicis Disponibles</span></h2>
                                  <ul class="posts blog withthumb ">

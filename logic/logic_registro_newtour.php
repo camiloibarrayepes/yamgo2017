@@ -566,7 +566,8 @@ $resultado = $link->query($query);
 if($resultado)
 {
 ?>
-   <script>window.location.assign("../../account/tours_users/index.php?ok")</script>
+   <script>window.location.assign("../account/tours_users/index.php?ok")</script>
+   
 <?php
    
 }

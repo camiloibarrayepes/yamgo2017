@@ -400,13 +400,17 @@
                         <?php 
                          if(isset($_REQUEST['ok']))
                         {
+                        print "
+                           <div id='time1' class='alert_box success'>
+                              <i class='fa fa-flag alert_icon'></i>
+                              <div class='alert_box_msg'>Tour Agregado...!!!</div>
+                              <a class='close_alert' data-target='148929302253306086'><i class='fa fa-times'></i></a>       
+                                                  
+                           </div><br>";
                         ?>
-                           <div id="148929302253306086" class="alert_box success">
-                              <i class="fa fa-flag alert_icon"></i>
-                              <div class="alert_box_msg">Tour Agregado...!!!</div>
-                              <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
-                           </div><br>
-                        <?php
+                        <meta http-equiv="refresh" content="4; url=index.php" /><br>
+                        <?php 
+                        
                          }
                         ?>
 
@@ -466,6 +470,7 @@
                                     <br>
                                     <a href="admintour.php?id=<?php echo $row2['id']; ?>"><button class="button button1">Vista Admin</button></a>
                                     <a href="../../tours/users_tours/ver.php?id=<?php echo $row2['id']; ?>"><button style="float: right;" class="button button1">Vista Previa</button></a>
+                                    
                                      
                                  </div>
 
@@ -634,6 +639,7 @@
          <a id="close_share" href="javascript:;"><span class="ti-close"></span></a>
       </div>
       <div id="option_wrapper">
+      
       <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>
          /* <![CDATA[ */

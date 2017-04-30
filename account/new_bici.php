@@ -557,7 +557,7 @@
                         <div class="content">
                            <ul class="sidebar_widget">
                           
-                              
+                            <!--  
                            <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Escribe Una Historia</span></h2>
                                  <ul class="posts blog withthumb ">
@@ -573,14 +573,23 @@
                                     <input type="submit" value="Publicar">                        
                                     </form>
                                  </ul>
-                              </li>
+                              </li>-->
 
 
+                              <?php
+                              $tipo=$_SESSION['TIPO'];
+                              if($tipo==2)
+                              {
+                                 
+                              }else{
 
+                              ?>
                                <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Rol en Yamgo</span></h2>
                                  <ul class="posts blog withthumb ">
                                  <?php 
+                                 
+
                                  $rol=$_SESSION['ROL'];
                                  
                                  if($rol==1){
@@ -602,61 +611,36 @@
 
                                    ?>
                                  </ul>
-                              </li>
+                              </li><?php } ?>
 
 
 
                               <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
-                                 <h2 class="widgettitle"><span>Travel Tips</span></h2>
+                                 <h2 class="widgettitle"><span>Mira Bicis de otros Usuarios</span></h2>
                                  <ul class="posts blog withthumb ">
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html"><img class="alignleft frame post_thumb" src="../wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-150x150.jpg" alt="" /></a></div>
-                                       <a href="../my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Memorial Day to Someone Told Me to Travel</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../7-tips-for-nomads-on-a-budget/index.html"><img class="alignleft frame post_thumb" src="../wp-content/uploads/2016/12/pexels-photo-212388-150x150.jpeg" alt="" /></a></div>
-                                       <a href="../7-tips-for-nomads-on-a-budget/index.html">7 Tips For Nomads On A Budget Trips</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                    <li>
-                                       <div class="post_circle_thumb"><a href="../taking-a-travel-blog-victory-lap/index.html"><img class="alignleft frame post_thumb" src="../wp-content/uploads/2016/12/pexels-photo-24484-150x150.jpg" alt="" /></a></div>
-                                       <a href="../taking-a-travel-blog-victory-lap/index.html">Taking A Travel Blog Victory Lap</a>
-                                       <div class="post_attribute">December 10, 2016</div>
-                                    </li>
-                                 </ul>
+                                    <?php
+                                       $qry2=mysqli_query($link,"SELECT * FROM bike ORDER BY id ASC LIMIT 3"); 
+                                       while($row1 = mysqli_fetch_array($qry2))                        
+                                       {
+                                          $id_user=$row1['id_user'];
+                                          $qry=mysqli_query($link,"SELECT * FROM users WHERE id='$id_user'"); 
+                                          while($row = mysqli_fetch_array($qry))                        
+                                       {
+                                       ?>
+                                       <li>
+                                          <div class="post_circle_thumb"><a href="../users/bikes/ver.php?id=<?php echo $row1['id']; ?>""><img style="width: 70px; height: 70px;" class="alignleft frame post_thumb" src="../logic/<?php echo $row1['foto']; ?>" alt="" /></a></div>
+                                          <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>"><? echo $row1['marca']." ".$row1['color']; ?></a>
+                                          <div style="text-transform: capitalize;" class="post_attribute"><? echo $row['ciudad']."<br> Hace 5 días" ?></div>
+
+                                       </li>
+                                       <?php
+                                          }
+                                       }
+                                       ?>
+                                    </ul>
+                                 
                               </li>
-                              <li id="mc4wp_form_widget-6" class="widget widget_mc4wp_form_widget">
-                                 <h2 class="widgettitle">Newsletter</h2>
-                                 <script type="text/javascript">(function() {
-                                    if (!window.mc4wp) {
-                                    	window.mc4wp = {
-                                    		listeners: [],
-                                    		forms    : {
-                                    			on: function (event, callback) {
-                                    				window.mc4wp.listeners.push({
-                                    					event   : event,
-                                    					callback: callback
-                                    				});
-                                    			}
-                                    		}
-                                    	}
-                                    }
-                                    })();
-                                 </script><!-- MailChimp for WordPress v4.0.13 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                 <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-184" method="post" data-id="184" data-name="Newsletter" >
-                                    <div class="mc4wp-form-fields">
-                                       Don't miss a thing! Sign up to receive daily deals
-                                       <input type="email" name="EMAIL" placeholder="Your Email Address" required />
-                                       <br/>
-                                       <input type="submit" value="Subscribe" />
-                                       <div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></div>
-                                       <input type="hidden" name="_mc4wp_timestamp" value="1489293016" /><input type="hidden" name="_mc4wp_form_id" value="184" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
-                                    </div>
-                                    <div class="mc4wp-response"></div>
-                                 </form>
-                                 <!-- / MailChimp for WordPress Plugin -->
-                              </li>
+                              
                               <li id="grandtour_tour_posts-6" class="widget Grandtour_Tour_Posts">
                                  <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-26689-700x466.jpg');">
                                     <a class="tour_image" href="../tour/colorful-singapore/index.html"></a>	

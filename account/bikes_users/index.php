@@ -531,7 +531,21 @@
                   <div id="page_main_content" class="sidebar_content left_sidebar fixed_column">
                      <div class="standard_wrapper">
                         <div id="portfolio_filter_wrapper" class="gallery classic two_cols portfolio-content section content clearfix" data-columns="3">
-                           
+                        <!-- bloque bici agregada OK -->
+                        <?php 
+                        if(isset($_REQUEST['ok']))
+                        {
+                           ?>
+                           <div id="148929302253306086" class="alert_box success">
+                                    <i class="fa fa-flag alert_icon"></i>
+                                    <div class="alert_box_msg">Bici Agregada con éxito...!!!</div>
+                                    <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
+                                 </div><br>
+                                 <meta http-equiv="refresh" content="4; url=index.php" /><br>
+                           <?php
+                        }
+                        ?>
+
                            <h4>Mis Bicis </h4><br>
                            <?php $id=$_SESSION['ID'];                           
                            $query = "SELECT * FROM bike WHERE id_user = '$id'";
@@ -541,8 +555,8 @@
                            ?>
                            <div class="element grid classic2_cols animated13">
                               <div class="one_half gallery2 classic static filterable portfolio_type themeborder" data-id="post-13">
-                                 <a class="tour_image" href="../colorful-singapore/index.html">
-                                    <img src="<?php echo "../../logic/".$row2['foto']; ?>" alt="Colorful Singapore" />
+                                 <a class="tour_image" href="../../users/bikes/ver.php?id=<?php echo $row2['id']; ?>">
+                                    <img style="height: 220px" src="<?php echo "../../logic/".$row2['foto']; ?>" alt="Colorful Singapore" />
                                     <div class="tour_price has_discount">
                                        <span>Precio</span>
                                        $1,700													
@@ -576,31 +590,30 @@
                         <div class="content">
                            <ul class="sidebar_widget">
                               <!-- si hay bicis se muestran START -->
+                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                              <h2 class="widgettitle"><span>Mis Bicis</span></h2>
                            <?php                            
                            $query = "SELECT * FROM bike WHERE id_user = '$id' ORDER BY id DESC LIMIT 3";
                            $resultado2 = $link->query($query);
                            while($row1 = $resultado2->fetch_assoc())
                            {
                            ?>
-                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
-                              <h2 class="widgettitle"><span>Mis Bicis</span></h2>
+                           
                               <ul class="posts blog withthumb ">
                                   <li>
                                        <div class="post_circle_thumb"><a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>""><img style="width: 70px; height: 70px;" class="alignleft frame post_thumb" src="../../logic/<?php echo $row1['foto']; ?>" alt="" /></a></div>
-                                       <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>">   <? echo $row1['marca']." ".$row1['color']; ?></a>
+                                       <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>">   <? echo $row1['marca']." <br>".$row1['color']; ?></a>
                                     </li>
                                  </ul>
                            <?php
+                        }
                            $result2 = mysqli_query($link, $query);
                            $numero = mysqli_num_rows($result2);
-                           if($numero>=3)
-                           {
-                              print "<a href='bikes_users'>Ver mas </a>";
-                           }
+                           
                            ?>
                            </li>
                            <?php
-                           }
+                           
                            ?>
                            <!-- si hay bicis se muestran FIN -->
                               <li id="grandtour_instagram-6" class="widget Grandtour_Instagram">
@@ -618,18 +631,7 @@
                                  </ul>
                                  <br class="clear"/>
                               </li>
-                              <li id="grandtour_social_profiles_posts-5" class="widget Grandtour_Social_Profiles_Posts">
-                                 <h2 class="widgettitle">Connect to Us</h2>
-                                 <div class="social_wrapper shortcode light small">
-                                    <ul>
-                                       <li class="facebook"><a target="_blank" title="Facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                                       <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                                       <li class="youtube"><a target="_blank" title="Youtube" href="index.html#"><i class="fa fa-youtube"></i></a></li>
-                                       <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                                       <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                 </div>
-                              </li>
+                              
                               <li id="grandtour_tour_posts-2" class="widget Grandtour_Tour_Posts">
                                  <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg');">
                                     <a class="tour_image" href="../french-autumn/index.html"></a>	

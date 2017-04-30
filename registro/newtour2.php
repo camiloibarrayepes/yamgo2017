@@ -566,7 +566,7 @@
                               
                               <div class="alert_box_msg">Datos Actualizados...!!!</div>
                               <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
-                           </div>
+                           </div><br>
                      <?php
                   }
                   ?>
@@ -646,11 +646,11 @@
                                  </p>
 
 
-                     <input type="submit" name="login" value="Actualizar Datos">
+                     <input type="submit" name="login" value="Publicar Tour">
 
                      </form><br><br>
 
-                     <h4>Mis historias</h4><hr><br>
+                    <!-- <h4>Mis historias</h4><hr><br>
                      <?php
                      $qry=mysqli_query($link,"SELECT * FROM experiencias WHERE id_user = '$id'");     
                         while($historias = mysqli_fetch_array($qry))                        
@@ -681,7 +681,7 @@
                            <?php
                            
                         }
-                     ?>
+                     ?>-->
 
 
                      
