@@ -344,9 +344,7 @@ session_start();
                               <!-- Begin side menu -->
                               <a href="javascript:;" id="mobile_nav_icon"><span class="ti-menu"></span></a>
                               <!-- End side menu -->
-                              <div class="header_cart_wrapper">
-                                 <a href="cart/index.html" title="View Cart"><span class="ti-shopping-cart"></span></a>
-                              </div>
+                              
                            </div>
                            <!-- End right corner buttons -->
                         </div>
@@ -363,7 +361,7 @@ session_start();
                   <div class="inner_content">
                      <div class="standard_wrapper">
                         <h2 class="ppb_title" style="color:#ffffff;">Bienvenido a Yamgo otra vez</h2>
-                        <div class="page_tagline" style="color:#ffffff;">Viaj, experiencias y lugares. Todo en un mismo servicio. Trips, experiences, and places. All in one service.</div>
+                        <div class="page_tagline" style="color:#ffffff;">Viajes, experiencias y lugares. Todo en un mismo servicio. Trips, experiences, and places. All in one service.</div>
                         <form id="tour_search_form" class="tour_search_form" method="get" action="tour/tour-3-columns-grid/index.html">
                            <div class="tour_search_wrapper">
                            </div>
