@@ -538,7 +538,7 @@ if(isset($_FILES['photo1'])&& $_FILES['photo1']['tmp_name']!=""){
 $filename=basename($_FILES['photo1']['name']);
 $tipoimagen=$_FILES['photo1']['type'];
 
-$ruta="assets/imagenes/";
+$ruta="assets/imagenes";
 $ruta2="assets/imagenes";
 if(!file_exists($ruta)){
    mkdir($ruta,0777, true);
@@ -566,7 +566,12 @@ $resultado = $link->query($query);
 if($resultado)
 {
 ?>
+<<<<<<< Updated upstream
    <script>window.location.assign("../../account/tours_users/index.php?ok")</script>
+=======
+   
+   
+>>>>>>> Stashed changes
 <?php
    
 }

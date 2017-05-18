@@ -649,8 +649,8 @@
                      <input type="submit" name="login" value="Actualizar Datos">
 
                      </form><br><br>
-
-                     <h4>Mis historias</h4><hr><br>
+                        <!--
+                     <h4>Mis historias</h4><hr><br>-->
                      <?php
                      $qry=mysqli_query($link,"SELECT * FROM experiencias WHERE id_user = '$id'");     
                         while($historias = mysqli_fetch_array($qry))                        
@@ -797,7 +797,7 @@
                            ?>
                            
                            </li>
-                              
+                           <!--   
                            <li style="background-color: #FAFAFA" id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Escribe Una Historia</span></h2>
                                  <ul class="posts blog withthumb ">
@@ -813,14 +813,14 @@
                                     <input type="submit" value="Publicar">                        
                                     </form>
                                  </ul>
-                              </li>
+                              </li>-->
 
 
 
                               
 
 
-
+<!--
                               <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Travel Tips</span></h2>
                                  <ul class="posts blog withthumb ">
@@ -841,6 +841,8 @@
                                     </li>
                                  </ul>
                               </li>
+                              -->
+                              <!--
                               <li id="mc4wp_form_widget-6" class="widget widget_mc4wp_form_widget">
                                  <h2 class="widgettitle">Newsletter</h2>
                                  <script type="text/javascript">(function() {
@@ -858,7 +860,7 @@
                                     	}
                                     }
                                     })();
-                                 </script><!-- MailChimp for WordPress v4.0.13 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                 </script><!-- MailChimp for WordPress v4.0.13 - https://wordpress.org/plugins/mailchimp-for-wp/ 
                                  <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-184" method="post" data-id="184" data-name="Newsletter" >
                                     <div class="mc4wp-form-fields">
                                        Don't miss a thing! Sign up to receive daily deals
@@ -873,6 +875,32 @@
                                  <!-- / MailChimp for WordPress Plugin -->
                               </li>
                               <li id="grandtour_tour_posts-6" class="widget Grandtour_Tour_Posts">
+                              <?php                            
+                                    $qry=mysqli_query($link,"SELECT * FROM tour ORDER BY id DESC LIMIT 3 ");     
+                                    while($row = mysqli_fetch_array($qry))                        
+                                    {
+                                    ?> 
+                                       
+                                 <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../logic/<? echo $row['foto']; ?>');">
+                                    <a class="tour_image"></a> 
+                                    <div class="portfolio_info_wrapper">
+                                       <div class="tour_price has_discount">
+                                          $1,700                                             
+                                       </div>
+                                       <h5><?php echo $row['nombre']; ?></h5>
+                                       <div class="tour_attribute_wrapper">
+                                          <div class="tour_attribute_rating">
+                                             <div class="br-theme-fontawesome-stars-o">
+                                                <div class="br-widget">
+                                                   <a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a>                               
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <?php } ?>
+                              <!--<li id="grandtour_tour_posts-6" class="widget Grandtour_Tour_Posts">
                                  <div class="one gallery1 grid static filterable portfolio_type themeborder" style="background-image:url('../wp-content/uploads/2016/12/pexels-photo-26689-700x466.jpg');">
                                     <a class="tour_image" href="../tour/colorful-singapore/index.html"></a>	
                                     <div class="portfolio_info_wrapper">
@@ -915,7 +943,7 @@
                                     </div>
                                  </div>
                                  <br class="clear"/>
-                              </li>
+                              </li>-->
                            </ul>
                         </div>
                      </div>
@@ -928,6 +956,7 @@
          </div>
          <br class="clear"/><br/>
          <br class="clear"/>
+         <!--
          <div class="tour_recently_view">
             <div class="standard_wrapper">
                <h3 class="sub_title">Ultimos Tours Agregados</h3>
@@ -972,6 +1001,7 @@
                </div>
             </div>
          </div>
+         -->
          <div id="footer" class=" ">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">

@@ -841,6 +841,8 @@
          </div>
          <br class="clear"/><br/>
          <br class="clear"/>
+         <!-- VER TOURS HORIZONTAL -->
+         <!--
          <div class="tour_recently_view">
             <div class="standard_wrapper">
                <h3 class="sub_title">Ultimos Tours Agregados</h3>
@@ -885,6 +887,7 @@
                </div>
             </div>
          </div>
+         -->
          <div id="footer" class=" ">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">

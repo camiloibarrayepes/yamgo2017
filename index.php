@@ -611,6 +611,8 @@ session_start();
             </div>
          </div>
          <div  class="parallax" data-jarallax-video="https://www.youtube.com/watch?v=ckpwSAv5we8" style="height:40vh; "></div>
+         <div><br></div>
+         <!--
          <div  class="one withsmallpadding ppb_header " style="text-align:center;padding:0px 0 0px 0;margin-top:70px;margin-bottom:50px;" >
             <div class="standard_wrapper">
                <div class="page_content_wrapper">
@@ -704,6 +706,7 @@ session_start();
                </div>
             </div>
          </div>
+         -->
       </div>
       <br class="clear"/>
       <!--
