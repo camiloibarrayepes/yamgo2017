@@ -363,7 +363,7 @@ session_start();
                   <div class="inner_content">
                      <div class="standard_wrapper">
                         <h2 class="ppb_title" style="color:#ffffff;">Bienvenido a Yamgo otra vez</h2>
-                        <div class="page_tagline" style="color:#ffffff;">Trips, experiences, and places. All in one service.</div>
+                        <div class="page_tagline" style="color:#ffffff;">Viajes, experiences, and places. All in one service.</div>
                         <form id="tour_search_form" class="tour_search_form" method="get" action="tour/tour-3-columns-grid/index.html">
                            <div class="tour_search_wrapper">
                            </div>
