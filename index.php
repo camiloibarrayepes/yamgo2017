@@ -363,7 +363,7 @@ session_start();
                   <div class="inner_content">
                      <div class="standard_wrapper">
                         <h2 class="ppb_title" style="color:#ffffff;">Bienvenido a Yamgo otra vez</h2>
-                        <div class="page_tagline" style="color:#ffffff;">Viajes, experiences, and places. All in one service.</div>
+                        <div class="page_tagline" style="color:#ffffff;">Viaj, experiencias y lugares. Todo en un mismo servicio. Trips, experiences, and places. All in one service.</div>
                         <form id="tour_search_form" class="tour_search_form" method="get" action="tour/tour-3-columns-grid/index.html">
                            <div class="tour_search_wrapper">
                            </div>
@@ -616,7 +616,7 @@ session_start();
                <div class="page_content_wrapper">
                   <div class="inner">
                      <div style="margin:auto;width:100%">
-                        <h2 class="ppb_title" style="">Yamgo Blog</h2>
+                        <h2 class="ppb_title" style="">Blog Yamgo</h2>
                         <div class="page_tagline" style="">Ultimos Post</div>
                      </div>
                   </div>
@@ -640,14 +640,14 @@ session_start();
                                     <div class="post_header grid">
                                        <div class="post_detail single_post">
                                           <span class="post_info_date">
-                                          <a href="my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html" title="Memorial Day to Someone Told Me to Travel">December 10, 2016</a>
+                                          <a href="my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html" title="Memorial Day to Someone Told Me to Travel">Diciembre 10, 2016</a>
                                           </span>
                                        </div>
-                                       <h6><a href="my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html" title="Memorial Day to Someone Told Me to Travel">Memorial Day to Someone Told Me to Travel</a></h6>
+                                       <h6><a href="my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html" title="Memorial Day to Someone Told Me to Travel">Tips para seleccionar un Tour</a></h6>
                                     </div>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
+                                    <p> Lo primero que debes de tener en cuenta es tu destino y de que forma piensas disfrutarlo
                                     <div class="post_button_wrapper">
-                                       <a class="readmore" href="my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Read More<span class="ti-angle-right"></span></a>
+                                       <a class="readmore" href="my-memorial-day-tribute-to-someone-who-told-me-to-travel/index.html">Leer Mas<span class="ti-angle-right"></span></a>
                                     </div>
                                  </div>
                               </div>
@@ -663,14 +663,14 @@ session_start();
                                     <div class="post_header grid">
                                        <div class="post_detail single_post">
                                           <span class="post_info_date">
-                                          <a href="7-tips-for-nomads-on-a-budget/index.html" title="7 Tips For Nomads On A Budget Trips">December 10, 2016</a>
+                                          <a href="7-tips-for-nomads-on-a-budget/index.html" title="7 Tips For Nomads On A Budget Trips">Diciembre 10, 2016</a>
                                           </span>
                                        </div>
-                                       <h6><a href="7-tips-for-nomads-on-a-budget/index.html" title="7 Tips For Nomads On A Budget Trips">7 Tips For Nomads On A Budget Trips</a></h6>
+                                       <h6><a href="7-tips-for-nomads-on-a-budget/index.html" title="7 Tips For Nomads On A Budget Trips">Como seleccionar una buena bicicleta? </a></h6>
                                     </div>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
+                                    <p>Antes de seleccionar la bicicleta debes de saber que tipo de turismo en bici vas a realizar
                                     <div class="post_button_wrapper">
-                                       <a class="readmore" href="7-tips-for-nomads-on-a-budget/index.html">Read More<span class="ti-angle-right"></span></a>
+                                       <a class="readmore" href="7-tips-for-nomads-on-a-budget/index.html">Leer Mas<span class="ti-angle-right"></span></a>
                                     </div>
                                  </div>
                               </div>
@@ -686,14 +686,14 @@ session_start();
                                     <div class="post_header grid">
                                        <div class="post_detail single_post">
                                           <span class="post_info_date">
-                                          <a href="taking-a-travel-blog-victory-lap/index.html" title="Taking A Travel Blog Victory Lap">December 10, 2016</a>
+                                          <a href="taking-a-travel-blog-victory-lap/index.html" title="Taking A Travel Blog Victory Lap">Diciembre 10, 2016</a>
                                           </span>
                                        </div>
-                                       <h6><a href="taking-a-travel-blog-victory-lap/index.html" title="Taking A Travel Blog Victory Lap">Taking A Travel Blog Victory Lap</a></h6>
+                                       <h6><a href="taking-a-travel-blog-victory-lap/index.html" title="Taking A Travel Blog Victory Lap">Tips para tu empacar tu maleta de viaje</a></h6>
                                     </div>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
+                                    <p>Lo primero que debes de hacer es realizar una lista de todo lo necesario para tu viaje
                                     <div class="post_button_wrapper">
-                                       <a class="readmore" href="taking-a-travel-blog-victory-lap/index.html">Read More<span class="ti-angle-right"></span></a>
+                                       <a class="readmore" href="taking-a-travel-blog-victory-lap/index.html">Leer Mas<span class="ti-angle-right"></span></a>
                                     </div>
                                  </div>
                               </div>

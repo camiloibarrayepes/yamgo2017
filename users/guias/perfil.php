@@ -405,19 +405,19 @@
                         <div class="one_fourth">
                            <div class="tour_attribute_icon ti-id-badge"></div>
                            <div class="tour_attribute_content">
-                              Edad									12+								
+                              Edad								12+								
                            </div>
                         </div>
                         <div class="one_fourth">
                            <div class="tour_attribute_icon ti-calendar"></div>
                            <div class="tour_attribute_content">
-                              Jun,&nbsp;Jul,&nbsp;Aug,&nbsp;Sep								
+                              Jun,&nbsp;Jul,&nbsp;Ag,&nbsp;Sep								
                            </div>
                         </div>
                         <div class="one_fourth last">
                            <div class="tour_attribute_icon ti-user"></div>
                            <div class="tour_attribute_content">
-                              Disponibilidad								50								
+                              Disponibilidad 							50								
                            </div>
                         </div>
                      </div>
@@ -450,7 +450,7 @@
                            <div class="single_tour_departure_content"><?php echo $row2['ciudad']; ?></div>
                         </li>
                         <li>
-                           <div class="single_tour_departure_title">Conoce Lugares como: </div>
+                           <div class="single_tour_departure_title">Lugares que conoce: </div>
                            <div class="single_tour_departure_content"><?php echo $row3['lugares']; ?></div>
                         </li>
                         <li>
@@ -550,40 +550,40 @@
                      
                      <div class="fullwidth_comment_wrapper sidebar">
                      <br><br>
-                        <h3 class="comment_title">4 Reviews</span></h3>
+                        <h3 class="comment_title">4 Reseñas</span></h3>
                         <div class="avg_comment_rating_wrapper themeborder">
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Accomodation</div>
+                              <div class="comment_rating_label">Alojamiento</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Destination</div>
+                              <div class="comment_rating_label">Destino</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Meals</div>
+                              <div class="comment_rating_label">Comidas</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Transport</div>
+                              <div class="comment_rating_label">Transporte</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Value For Money</div>
+                              <div class="comment_rating_label">Relacion calidad-precio</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Overall</div>
+                              <div class="comment_rating_label">General</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
@@ -597,42 +597,42 @@
                               </div>
                               <div class="right ">
                                  <h7>Jack Dawson</h7>
-                                 <div class="comment_date">December 15, 2016 at 2:41 pm</div>
+                                 <div class="comment_date">Deciembre 15, 2016 at 2:41 pm</div>
                                  <a rel='nofollow' class='comment-reply-link' href='index-replytocom=16.html#respond' onclick='return addComment.moveForm( "comment-16", "16", "respond", "164" )' aria-label='Reply to Jack Dawson'>Reply</a>						
                                  <div class="comment_text"/>
                                     <p>Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt. Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko tempor duis single-origin coffee. Banksy, elit small batch freegan sed.</p>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Accomodation</div>
+                                       <div class="comment_rating_label">Alojamiento</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Destination</div>
+                                       <div class="comment_rating_label">Destino</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Meals</div>
+                                       <div class="comment_rating_label">Comidas</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Transport</div>
+                                       <div class="comment_rating_label">Transporte</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Value For Money</div>
+                                       <div class="comment_rating_label">Relacion calidad-precio</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Overall</div>
+                                       <div class="comment_rating_label">General</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
@@ -648,42 +648,42 @@
                               </div>
                               <div class="right ">
                                  <h7>Anna Kornikova</h7>
-                                 <div class="comment_date">December 15, 2016 at 2:41 pm</div>
+                                 <div class="comment_date">Diciembre 15, 2016 at 2:41 pm</div>
                                  <a rel='nofollow' class='comment-reply-link' href='index-replytocom=17.html#respond' onclick='return addComment.moveForm( "comment-17", "17", "respond", "164" )' aria-label='Reply to Anna Kornikova'>Reply</a>						
                                  <div class="comment_text"/>
                                     <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar stumptown yr pop-up artisan sunt. Craft beer elit seitan exercitation, photo booth,</p>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Accomodation</div>
+                                       <div class="comment_rating_label">Alojamiento</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Destination</div>
+                                       <div class="comment_rating_label">Destino</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Meals</div>
+                                       <div class="comment_rating_label">Comidas</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Transport</div>
+                                       <div class="comment_rating_label">Transporte</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Value For Money</div>
+                                       <div class="comment_rating_label">Relacion calidad-precio</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Overall</div>
+                                       <div class="comment_rating_label">General</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
@@ -699,42 +699,42 @@
                               </div>
                               <div class="right ">
                                  <h7>Marie Argeris</h7>
-                                 <div class="comment_date">December 15, 2016 at 2:41 pm</div>
+                                 <div class="comment_date">Diciembre 15, 2016 at 2:41 pm</div>
                                  <a rel='nofollow' class='comment-reply-link' href='index-replytocom=18.html#respond' onclick='return addComment.moveForm( "comment-18", "18", "respond", "164" )' aria-label='Reply to Marie Argeris'>Reply</a>						
                                  <div class="comment_text"/>
                                     <p>Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Accomodation</div>
+                                       <div class="comment_rating_label">Alojamiento</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Destination</div>
+                                       <div class="comment_rating_label">Destino</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Meals</div>
+                                       <div class="comment_rating_label">Comidas</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Transport</div>
+                                       <div class="comment_rating_label">Transporte</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Value For Money</div>
+                                       <div class="comment_rating_label">Relacion calidad-precio</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Overall</div>
+                                       <div class="comment_rating_label">General</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
@@ -755,37 +755,37 @@
                                  <div class="comment_text"/>
                                     <p>Foam padding in the insoles leather finest quality staple flat slip-on design pointed toe off-duty shoe. Black knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Accomodation</div>
+                                       <div class="comment_rating_label">Alojamiento</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Destination</div>
+                                       <div class="comment_rating_label">Destino</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Meals</div>
+                                       <div class="comment_rating_label">Comidas</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Transport</div>
+                                       <div class="comment_rating_label">Transporte</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Value For Money</div>
+                                       <div class="comment_rating_label">Relacion calidad-precio</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Overall</div>
+                                       <div class="comment_rating_label">General</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
@@ -799,15 +799,15 @@
                         <!-- End of thread -->  
                         <div style="height:10px"></div>
                         <div id="respond" class="comment-respond">
-                           <h3 id="reply-title" class="comment-reply-title">Write A Review <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
+                           <h3 id="reply-title" class="comment-reply-title">Escribe una reseña <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
                            <form action="http://themes.themegoods2.com/grandtour/demo/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-                              <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
-                              <p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p>
-                              <p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
-                              <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
-                              <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+                              <p class="comment-notes"><span id="email-notes">Tu direccion de correo electronico no sera publicada.</span> Required fields are marked <span class="required">*</span></p>
+                              <p class="comment-form-comment"><label for="comment">Comentario</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p>
+                              <p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+                              <p class="comment-form-email"><label for="email">Correo electronico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+                              <p class="comment-form-url"><label for="url">Pagina Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
                               <p class="comment-form-rating">
-                                 <label for="accomodation_rating">Accomodation</label>
+                                 <label for="accomodation_rating">Alojamiento</label>
                                  <span class="commentratingbox">
                                  <select id="accomodation_rating" name="accomodation_rating">
                                     <option value="1">1</option>
@@ -818,7 +818,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="destination_rating">Destination</label>
+                                 <label for="destination_rating">Destino</label>
                                  <span class="commentratingbox">
                                  <select id="destination_rating" name="destination_rating">
                                     <option value="1">1</option>
@@ -829,7 +829,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="meals_rating">Meals</label>
+                                 <label for="meals_rating">Comidas</label>
                                  <span class="commentratingbox">
                                  <select id="meals_rating" name="meals_rating">
                                     <option value="1">1</option>
@@ -840,7 +840,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="transport_rating">Transport</label>
+                                 <label for="transport_rating">Transporte</label>
                                  <span class="commentratingbox">
                                  <select id="transport_rating" name="transport_rating">
                                     <option value="1">1</option>
@@ -851,7 +851,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="value_rating">Value For Money</label>
+                                 <label for="value_rating">Relacion calidad-precio</label>
                                  <span class="commentratingbox">
                                  <select id="value_rating" name="value_rating">
                                     <option value="1">1</option>
@@ -862,7 +862,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="overall_rating">Overall</label>
+                                 <label for="overall_rating">General</label>
                                  <span class="commentratingbox">
                                  <select id="overall_rating" name="overall_rating">
                                     <option value="1">1</option>
@@ -882,7 +882,7 @@
                                  jQuery("#accomodation_rating, #destination_rating, #meals_rating, #transport_rating, #value_rating, #overall_rating").barrating("set", 0);
                                  });
                               </script>
-                              <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='164' id='comment_post_ID' />
+                              <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar comentario" /> <input type='hidden' name='comment_post_ID' value='164' id='comment_post_ID' />
                                  <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
                               </p>
                            </form>
@@ -1027,19 +1027,19 @@
          <div id="footer" class=" ">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">
-                  <h2 class="widgettitle">Our Awards</h2>
+                  <h2 class="widgettitle">Nuestros premios</h2>
                   <div class="textwidget">
-                     <p>London is a megalopolis of people, ideas and frenetic energy. The capital and largest city of the United Kingdom.<br />
+                     <p> Yamgo es una plataforma de guias tours y prestabikers mas grande del suroccidente Colombiano.<br />
                         <img src="../../wp-content/uploads/2016/12/awards.png" width="246" height="113" style="margin-top:30px;" alt=""/>
                      </p>
                   </div>
                </li>
                <li id="text-4" class="widget widget_text">
-                  <h2 class="widgettitle">Contact Info</h2>
+                  <h2 class="widgettitle">Informacion de contacto</h2>
                   <div class="textwidget">
-                     <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
-                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
-                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+                     <p><span class="ti-mobile" style="margin-right:10px;"></span>3015411825 - 3217736762</p>
+                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>Popayan - Cauca</p>
+                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Lun - Sab 8.00 - 18.00 Domingos CERRADO</p>
                      <div style="margin-top:20px;">
                         <div class="social_wrapper shortcode dark ">
                            <ul>
@@ -1054,7 +1054,7 @@
                   </div>
                </li>
                <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
-                  <h2 class="widgettitle">Recent Trips</h2>
+                  <h2 class="widgettitle">Viajes Recientes</h2>
                   <ul class="flickr">
                      <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
                      <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
@@ -1071,10 +1071,10 @@
             <div class="footer_bar_wrapper ">
                <div class="menu-footer-menu-container">
                   <ul id="footer_menu" class="footer_nav">
-                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Home</a></li>
-                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../index.html">Tour</a></li>
+                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Inicio</a></li>
+                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../index.html">Tours</a></li>
                      <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../../blog/index.html">Blog</a></li>
-                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
+                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#"></a></li>
                   </ul>
                </div>
                <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>

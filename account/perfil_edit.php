@@ -388,18 +388,10 @@
                }
                      ?>
                       
-                     <!-- si es persona se dice "soy de", si es empresa se dice "ubicado en "-->
+
                      <div class="page_tagline">
-                     <?php 
-                     $tipo=$_SESSION['TIPO'];
-                     if($tipo==1)
-                     {
-                     ?>
-                        Soy de <?php  echo $_SESSION['CIUDAD']; 
-                     }else{?>
-                        Ubicado en <?php  echo $_SESSION['CIUDAD']; 
-                     }
-                     ?>  
+
+                        Soy de <?php  echo $_SESSION['CIUDAD']; ?>  
 
                      </div>
 
@@ -428,6 +420,8 @@
 
          ?>
 
+
+                  
                   <?php 
                   if(isset($_REQUEST['edit']))
                   {
@@ -437,7 +431,6 @@
                               <div class="alert_box_msg">Datos Actualizados...!!!</div>
                               <a class="close_alert" data-target="148929302253306086"><i class="fa fa-times"></i></a>                              
                            </div><br>
-                           <meta http-equiv="refresh" content="4; url=perfil_edit.php" /><br>
                      <?php
                   }
                   ?>
@@ -739,34 +732,26 @@
                            <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
                                  <h2 class="widgettitle"><span>Mis Bicis</span></h2>
                                  <p>No hay bicis aún</p>
-                              <a href="new_bici.php">Agregar una Bici</a>
                               </li>
-                              
-                              
-                              
                            <?php
                            }
                            ?>
                            <!--Comprobar si hay o no hay bicis FIN -->
                            <!-- si hay bicis se muestran START -->
-                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
-                              <h2 class="widgettitle"><span>Mis Bicis</span></h2>
-                              <ul class="posts blog withthumb ">
                            <?php                            
                            $query = "SELECT * FROM bike WHERE id_user = '$id' ORDER BY id DESC LIMIT 3";
                            $resultado2 = $link->query($query);
                            while($row1 = $resultado2->fetch_assoc())
                            {
                            ?>
-                           
+                           <li id="grandtour_cat_posts-7" class="widget Grandtour_Cat_Posts">
+                              <h2 class="widgettitle"><span>Mis Bicis</span></h2>
+                              <ul class="posts blog withthumb ">
                                   <li>
                                        <div class="post_circle_thumb"><a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>""><img style="width: 70px; height: 70px;" class="alignleft frame post_thumb" src="../logic/<?php echo $row1['foto']; ?>" alt="" /></a></div>
-                                       <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>">   <? echo $row1['marca']." <br>".$row1['color']; ?></a>
-                                    </li><br>
-                                    <?php } ?>
+                                       <a href="../../users/bikes/ver.php?id=<?php echo $row1['id']; ?>">   <? echo $row1['marca']." ".$row1['color']; ?></a>
+                                    </li>
                                  </ul>
-                                 <a href="new_bici.php">Agregar una Bici</a><br>
-                                 <hr><a href='bikes_users'>Ver Bicis </a><hr>
                            <?php
                            $result2 = mysqli_query($link, $query);
                            $numero = mysqli_num_rows($result2);
@@ -775,11 +760,10 @@
                               print "<a href='bikes_users'>Ver mas </a>";
                            }
                            ?>
-                           
-                           <?php
-                           
-                           ?>
                            </li>
+                           <?php
+                           }
+                           ?>
                            <!-- si hay bicis se muestran FIN -->
                            <!--Modulo para ver Bicis de usuario FIN-->
 

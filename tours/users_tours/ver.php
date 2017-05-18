@@ -611,7 +611,7 @@
                      </div>
                      <br class="clear"/>
                      <div class="single_tour_content">
-                        <h4 class="p1">Day 1</h4>
+                        <h4 class="p1">Dia 1</h4>
                         <p class="p1">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse.</p>
                         
                            <img style="border-radius: 2%;" class="wp-image-78 size-large" src="<?php echo "../../logic/".$row2['foto']; ?>" width="1024" height="576" />
@@ -647,67 +647,67 @@
                            <div class="single_tour_departure_title">Incluye</div>
                            <div class="single_tour_departure_content">
                               <div class="one_half ">
-                                 <span class="ti-check"></span>Airfare                    
+                                 <span class="ti-check"></span>Tarifa Aerea                    
                               </div>
                               <div class="one_half last">
-                                 <span class="ti-check"></span>Local transportation                   
+                                 <span class="ti-check"></span>Transporte local                   
                               </div>
                               <div class="one_half ">
-                                 <span class="ti-check"></span>5 Star Accomodation                    
+                                 <span class="ti-check"></span>Alojamiento 5 estrellas                    
                               </div>
                               <div class="one_half last">
-                                 <span class="ti-check"></span>Professional Guide                     
+                                 <span class="ti-check"></span>Guia Profesional                     
                               </div>
                            </div>
                         </li>
                         <li>
-                           <div class="single_tour_departure_title">Not Incluye</div>
+                           <div class="single_tour_departure_title">No Incluye</div>
                            <div class="single_tour_departure_content">
                               <div class="one_half ">
-                                 <span class="ti-close"></span>Departure Taxes                     
+                                 <span class="ti-close"></span>Impuestos de Salida                     
                               </div>
                               <div class="one_half last">
-                                 <span class="ti-close"></span>Entry Fees                    
+                                 <span class="ti-close"></span>Cuotas de inscripcion                    
                               </div>
                            </div>
                         </li>
                      </ul>
                      <div class="fullwidth_comment_wrapper sidebar">
                         <br>
-                     <br><h3 class="comment_title">4 Reviews</span></h3>
+                     <br><h3 class="comment_title">4 Reseñas</span></h3>
                         <div class="avg_comment_rating_wrapper themeborder">
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Accomodation</div>
+                              <div class="comment_rating_label">Alojamiento</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Destination</div>
+                              <div class="comment_rating_label">Destino</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Meals</div>
+                              <div class="comment_rating_label">Comidas</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Transport</div>
+                              <div class="comment_rating_label">Transporte</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Value For Money</div>
+                              <div class="comment_rating_label">Relacion calidad-precio</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
                            </div>
                            <div class="comment_rating_wrapper">
-                              <div class="comment_rating_label">Overall</div>
+                              <div class="comment_rating_label">General</div>
                               <div class="br-theme-fontawesome-stars-o">
                                  <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                               </div>
@@ -722,7 +722,7 @@
                               </div>
                               <div class="right ">
                                  <h7>Jessica Medina</h7>
-                                 <div class="comment_date">December 15, 2016 at 4:41 pm</div>
+                                 <div class="comment_date">Deciembre 15, 2016 a las 4:41 pm</div>
                                  <a rel='nofollow' class='comment-reply-link' href='index-replytocom=55.html#respond' onclick='return addComment.moveForm( "comment-55", "55", "respond", "180" )' aria-label='Reply to Jessica Medina'>Reply</a>                 
                                  <div class="comment_text"/>
                                     <p>Foam padding in the insoles leather finest quality staple flat slip-on design pointed toe off-duty shoe. Black knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
@@ -733,31 +733,31 @@
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Destination</div>
+                                       <div class="comment_rating_label">Destino</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Meals</div>
+                                       <div class="comment_rating_label">Comidas</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Transport</div>
+                                       <div class="comment_rating_label">Transporte</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Value For Money</div>
+                                       <div class="comment_rating_label">Relacion calidad-precio</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
                                     </div>
                                     <div class="comment_rating_wrapper">
-                                       <div class="comment_rating_label">Overall</div>
+                                       <div class="comment_rating_label">General</div>
                                        <div class="br-theme-fontawesome-stars-o">
                                           <div class="br-widget"><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;" class="br-selected"></a><a href="javascript:;"></a></div>
                                        </div>
@@ -774,23 +774,23 @@
                            <h3 id="reply-title" class="comment-reply-title">Escribe un comentario<small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
                            <form action="http://themes.themegoods2.com/grandtour/demo/wp-comments-post.php" method="post" id="commentform" class="comment-form">
                               <p class="comment-notes">
-                              <span id="email-notes">Your email address will not be published.</span> Required fields are marked 
+                              <span id="email-notes">Tu direccion de correo electronico no sera publicada.</span> Los campos obligatorios estan marcados con
                               <span class="required">*</span></p>
                               <p class="comment-form-comment">
-                              <label for="comment">Comment</label> 
+                              <label for="comment">Comentario</label> 
                               <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required">                                 
                               </textarea></p>
                               <p class="comment-form-author">
-                              <label for="author">Name <span class="required">*</span></label> 
+                              <label for="author">Nombre <span class="required">*</span></label> 
                               <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
                               <p class="comment-form-email">
-                              <label for="email">Email <span class="required">*</span></label> 
+                              <label for="email">Correo electronico <span class="required">*</span></label> 
                               <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
                               <p class="comment-form-url">
-                              <label for="url">Website</label> 
+                              <label for="url">Pagina web</label> 
                               <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
                               <p class="comment-form-rating">
-                                 <label for="accomodation_rating">Accomodation</label>
+                                 <label for="accomodation_rating">Alojamiento</label>
                                  <span class="commentratingbox">
                                  <select id="accomodation_rating" name="accomodation_rating">
                                     <option value="1">1</option>
@@ -801,7 +801,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="destination_rating">Destination</label>
+                                 <label for="destination_rating">Destino</label>
                                  <span class="commentratingbox">
                                  <select id="destination_rating" name="destination_rating">
                                     <option value="1">1</option>
@@ -812,7 +812,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="meals_rating">Meals</label>
+                                 <label for="meals_rating">Comidas</label>
                                  <span class="commentratingbox">
                                  <select id="meals_rating" name="meals_rating">
                                     <option value="1">1</option>
@@ -823,7 +823,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="transport_rating">Transport</label>
+                                 <label for="transport_rating">Transporte</label>
                                  <span class="commentratingbox">
                                  <select id="transport_rating" name="transport_rating">
                                     <option value="1">1</option>
@@ -834,7 +834,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="value_rating">Value For Money</label>
+                                 <label for="value_rating">Relacion calidad-precio</label>
                                  <span class="commentratingbox">
                                  <select id="value_rating" name="value_rating">
                                     <option value="1">1</option>
@@ -845,7 +845,7 @@
                                  </select>
                               </p>
                               <p class="comment-form-rating">
-                                 <label for="overall_rating">Overall</label>
+                                 <label for="overall_rating">General</label>
                                  <span class="commentratingbox">
                                  <select id="overall_rating" name="overall_rating">
                                     <option value="1">1</option>
@@ -865,7 +865,7 @@
                                  jQuery("#accomodation_rating, #destination_rating, #meals_rating, #transport_rating, #value_rating, #overall_rating").barrating("set", 0);
                                  });
                               </script>
-                              <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='180' id='comment_post_ID' />
+                              <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar comentario" /> <input type='hidden' name='comment_post_ID' value='180' id='comment_post_ID' />
                                  <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
                               </p>
                            </form>
@@ -906,7 +906,7 @@
                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" <?php if($total>=10)
                                      {print"disabled='disabled'";}?>/></span> </label>
                                     </p>
-                                    <p><label> Email <br />
+                                    <p><label> Correo electronico <br />
                                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"  <?php if($total>=10)
                                      {print"disabled='disabled'";}?>/></span> </label>
                                     </p>
@@ -941,7 +941,7 @@
                                      <input style="visibility: hidden; display: none" type="text" name="id_tour" value="<?php echo $_REQUEST['id']; ?>">
 
                                     <p>
-                                    <input type="submit" value="Registrar" <?php if($total>=10)
+                                    <input type="submit" value="Registrarme" <?php if($total>=10)
                                      {print"disabled='disabled'";}?>/>
                                     </p>
 
@@ -955,13 +955,13 @@
                             
                               <br class="clear"/>
                            </div>
-                           <a id="single_tour_share_button" href="javascript:;" class="button ghost themeborder"><span class="ti-email"></span>Share this tour</a>
+                           <a id="single_tour_share_button" href="javascript:;" class="button ghost themeborder"><span class="ti-email"></span>Compartir este tour</a>
                            <ul class="sidebar_widget">
                               <li id="text-3" class="widget widget_text">
-                                 <h2 class="widgettitle">For More Informations</h2>
-                                 <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227
+                                 <h2 class="widgettitle">Para mayor informacion</h2>
+                                 <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>3015411825- 3217736762
                                     <br/>
-                                    <span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00
+                                    <span class="ti-alarm-clock" style="margin-right:10px;"></span>Lun - Sab 8.00 - 18.00
                                  </div>
                               </li>
                            </ul>
@@ -1050,7 +1050,7 @@
          <div id="footer" class=" ">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">
-                  <h2 class="widgettitle">Our Awards</h2>
+                  <h2 class="widgettitle">Nuestros premios</h2>
                   <div class="textwidget">
                      <p>London is a megalopolis of people, ideas and frenetic energy. The capital and largest city of the United Kingdom.<br />
                         <img src="../../wp-content/uploads/2016/12/awards.png" width="246" height="113" style="margin-top:30px;" alt=""/>
@@ -1058,11 +1058,11 @@
                   </div>
                </li>
                <li id="text-4" class="widget widget_text">
-                  <h2 class="widgettitle">Contact Info</h2>
+                  <h2 class="widgettitle">Informacion de contacto</h2>
                   <div class="textwidget">
-                     <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
-                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
-                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+                     <p><span class="ti-mobile" style="margin-right:10px;"></span>3015411825- 3217736762</p>
+                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>Popayan-Cauca</p>
+                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Lun - Sab 8.00 - 18.00 Domingos CERRADO</p>
                      <div style="margin-top:20px;">
                         <div class="social_wrapper shortcode dark ">
                            <ul>
@@ -1077,7 +1077,7 @@
                   </div>
                </li>
                <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
-                  <h2 class="widgettitle">Recent Trips</h2>
+                  <h2 class="widgettitle">Viajes recientes</h2>
                   <ul class="flickr">
                      <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
                      <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
@@ -1094,13 +1094,13 @@
             <div class="footer_bar_wrapper ">
                <div class="menu-footer-menu-container">
                   <ul id="footer_menu" class="footer_nav">
-                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Home</a></li>
-                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../index.html">Tour</a></li>
+                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Inicio</a></li>
+                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../index.html">Tours</a></li>
                      <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../../blog/index.html">Blog</a></li>
-                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
+                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#"></a></li>
                   </ul>
                </div>
-               <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
+               <div id="copyright">© Copyright Grand Tour Theme  - Tema por ThemeGoods</div>
                <br class="clear"/>      
                <a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
             </div>

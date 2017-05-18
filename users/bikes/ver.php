@@ -711,7 +711,7 @@
                                  <input id="url" name="url" type="text" value="" size="30" maxlength="200" />
                                  </p>
                                  <p class="form-submit">
-                                 <input name="submit" type="submit" id="submit" class="submit" value="Comentar" /> 
+                                 <input name="submit" type="submit" id="submit" class="submit" value="Publicar Comentario" /> 
                                  <input type='hidden' name='comment_post_ID' value='285' id='comment_post_ID' />
                                  <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
                                  </p>
@@ -774,7 +774,7 @@
                <!-- End main content -->
                <br class="clear"/>
                <div class="tour_related">
-                  <h3 class="sub_title">Related Tours</h3>
+                  <h3 class="sub_title">Tours relacionados</h3>
                   <div id="portfolio_filter_wrapper" class="gallery classic three_cols portfolio-content section content clearfix" data-columns="3">
                      <div class="element grid classic3_cols">
                         <div class="one_third gallery3 classic static filterable portfolio_type themeborder">
@@ -887,7 +887,7 @@
          <br class="clear"/>
          <div class="tour_recently_view">
             <div class="standard_wrapper">
-               <h3 class="sub_title">Recently View Tours</h3>
+               <h3 class="sub_title">Tours Vistos Recientemente</h3>
                <div id="portfolio_filter_wrapper" class="gallery grid four_cols portfolio-content section content clearfix" data-columns="4">
                   <div class="element grid classic4_cols animated1">
                      <div class="one_fourth gallery4 grid static filterable portfolio_type themeborder" data-id="post-1" style="background-image:url('../../wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg');">
@@ -926,19 +926,19 @@
          <div id="footer" class=" ">
             <ul class="sidebar_widget three">
                <li id="text-2" class="widget widget_text">
-                  <h2 class="widgettitle">Our Awards</h2>
+                  <h2 class="widgettitle">Nuestro Premios</h2>
                   <div class="textwidget">
-                     <p>London is a megalopolis of people, ideas and frenetic energy. The capital and largest city of the United Kingdom.<br />
+                     <p>Yamgo es una plataforma de guias tours y prestabikers mas grande del suroccidente Colombiano.<br />
                         <img src="../../wp-content/uploads/2016/12/awards.png" width="246" height="113" style="margin-top:30px;" alt=""/>
                      </p>
                   </div>
                </li>
                <li id="text-4" class="widget widget_text">
-                  <h2 class="widgettitle">Contact Info</h2>
+                  <h2 class="widgettitle">Informacion de Contacto</h2>
                   <div class="textwidget">
-                     <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
-                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
-                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+                     <p><span class="ti-mobile" style="margin-right:10px;"></span>3015411825 - 3217736762</p>
+                     <p><span class="ti-location-pin" style="margin-right:10px;"></span>Popayan - Cauca</p>
+                     <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Lun - Sab 8.00 - 18.00 Domingo CERRADO</p>
                      <div style="margin-top:20px;">
                         <div class="social_wrapper shortcode dark ">
                            <ul>
@@ -953,7 +953,7 @@
                   </div>
                </li>
                <li id="grandtour_instagram-9" class="widget Grandtour_Instagram">
-                  <h2 class="widgettitle">Recent Trips</h2>
+                  <h2 class="widgettitle">Viajes Recientes</h2>
                   <ul class="flickr">
                      <li><a target="_blank" href="https://www.instagram.com/p/BRgXWsqFBLD/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/17125594_1309391605815084_2848303834034339840_n.jpg" width="75" height="75" alt="" /></a></li>
                      <li><a target="_blank" href="https://www.instagram.com/p/BRbMpSplJqX/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/c0.134.1080.1080/15035595_1936401566587633_4455313788257697792_n.jpg" width="75" height="75" alt="" /></a></li>
@@ -970,10 +970,10 @@
             <div class="footer_bar_wrapper ">
                <div class="menu-footer-menu-container">
                   <ul id="footer_menu" class="footer_nav">
-                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Home</a></li>
-                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../../tour/index.html">Tour</a></li>
+                     <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215"><a href="../../index.html">Inicio</a></li>
+                     <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../../tour/index.html">Tours</a></li>
                      <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../../blog/index.html">Blog</a></li>
-                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#">Purchase Theme</a></li>
+                     <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="index.html#"></a></li>
                   </ul>
                </div>
                <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
@@ -986,7 +986,7 @@
          <a id="close_share" href="javascript:;"><span class="ti-close"></span></a>
          <div id="fullscreen_share_wrapper">
             <div class="fullscreen_share_content">
-               <h2>Share</h2>
+               <h2>Compartir</h2>
                <div class="page_tagline">Venice</div>
                <div id="social_share_wrapper">
                   <ul>
@@ -1000,7 +1000,6 @@
             </div>
          </div>
       </div>
-      
       <script type='text/javascript' src='../../wp-includes/js/comment-reply.min.js'></script>
       <script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
       <script type='text/javascript'>
